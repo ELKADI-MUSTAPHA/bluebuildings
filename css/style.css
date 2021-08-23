@@ -57,29 +57,29 @@ header{
 }
 
 
-.sc-header .socials{
+.sc-header .socials, footer .socials{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-.sc-header .socials li{
+.sc-header .socials li, footer .socials li{
     display: inline-block;
 }
 
-.sc-header .socials li a{
+.sc-header .socials li a, footer .socials li a{
     color: #58cddf;
 }
 
 
-.sc-header .socials li i{
+.sc-header .socials li i, footer .socials li i{
     font-size: 1.2rem;
     margin: 0 0.3rem;
     transition: all 0.5s;
 }
 
-.sc-header .socials li:hover i{
+.sc-header .socials li:hover i, footer .socials li:hover i{
     transform: scale(1.5);
 }
 
@@ -616,7 +616,9 @@ padding: 3rem;
      padding: 2rem 1rem;
      margin: 2rem;
      display: flex;
-     background-color: #58cddf81;
+     background-color: #67def082;
+     border: 2px solid #76eafb;
+     border-radius: 50px;
  }
   
  .contact #container .form{
@@ -653,7 +655,7 @@ padding: 3rem;
   .contact label {
     padding: 12px 12px 12px 0;
     display: inline-block;
-    color: #fafafa;
+    color: #ffffff;
   }
   
   .contact input[type=submit] {
@@ -702,10 +704,12 @@ padding: 3rem;
 
   .contact .sec-two {
     width: 50%;
-    /* background-color: #10a78d56; */
     margin: 0  0 1rem;
     padding: 2rem 1.5rem 0;
     color: white;
+  }
+  .contact .sec-two p span{
+    font-weight: bold;
   }
 
   .contact .sec-two iframe{
@@ -719,47 +723,87 @@ padding: 3rem;
   /* =============================================== footer ============================== */
 
 footer .container {
-    margin: 2rem auto;
-    padding: 1rem 2rem;
-    text-align: center;
+    padding: 3rem 0;
+    margin: 3rem 3rem 0;
 }
 
-footer .container img {
-    margin-bottom: 2rem;
-}
-
-
-footer .container p {
-    color: rgb(143, 142, 142);
-    margin-bottom: 2rem;
-}
-
-
-footer .socials{
+footer .row {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+footer .row .col-3 {
+    width: 33%;
+    padding: 0 2rem;
+    text-align: left;
+}
+
+footer .row .col-3.social1{
+    width: 45%;
 }
 
 
-footer .socials li{
-    display: inline-block;
+footer .row .col-3 ul{
+    padding: 0;
 }
 
-footer .socials li a{
+
+footer .row .col-3 h3 {
+    color: #58cddf;
+    font-size: 1.4rem;
+}
+
+footer .row .col-3 ul li {
+    list-style-type: none;
+}
+
+footer .social1 p {
+    text-align: left;
+    line-height: 30px;
+    color: #6c757d;
+}
+
+footer .social {
+    display: flex;
+}
+
+footer .social li {
+    margin: 15px;
+}
+
+footer .info li {
+    color: #6c757d;
+    margin: 15px auto;
+}
+
+footer .info li p {
+    text-align: left;
+    color: #6c757d;
+}
+
+footer .quick-links li {
+    margin: 15px 0;
+}
+
+footer .quick-links li a {
+    font-size: 18px;
     color: #58cddf;
 }
 
-
-footer .socials li i{
-    font-size: 1.2rem;
-    margin: 0 0.3rem;
-    transition: all 0.5s;
+footer .copyright {
+    width: 100%;
+    text-align: center;
 }
 
-footer .socials li:hover i{
-    transform: scale(1.5);
+footer .copyright p {
+    margin: 50px auto 20px;
+    color: #6c757d;
 }
+
+footer .copyright p span {
+    color: #58cddf;
+}
+
 
   /* =============================================== query ============================== */
 
