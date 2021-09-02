@@ -8,69 +8,143 @@
 
 		<!-- style -->
 		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="./css/all.min.css" />
+		<link rel="stylesheet" href="/css/all.min.css" />
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+		<!-- <link rel="stylesheet" href="/css/style.css"> -->
+		<link rel="stylesheet" href="/css/style-support.css">
+		<link rel="stylesheet" href="css/flickity.css" />
     </head>
     <body>
-		
-    <!--========== HEADER ==========-->
-	<header>
-		<div class="sc-header">
+		<!--========== HEADER ==========-->
 
-			<div class="first-sc-header">
-				<label class="logo"><a href="index.html"><img src="./img/logo.png" alt="logo"></a></label>
+		<header class="header">
+			<div class="sc-header">
+
+				<div class="first-sc-header">
+					<label class="logo"><a href="index.html"><img src="./img/logo.png" alt="logo"></a></label>
+				</div>
+				<div class="second-sc-header">
+					
+					<nav class="nav" role="navigation">
+						<input type="checkbox" id="check"/>
+						<label for="check" class="checkbtn">
+							<i class="fas fa-bars"></i>
+						</label>
+							<ul>
+								<li><a href="#" class="active js-scroll-trigger">HOME<span></span><span></span><span></span><span></span></a></li>
+								<li><a href="#" class="js-scroll-trigger">ABOUT<span></span><span></span><span></span><span></span></a></li>
+								<li><a href="#" class="js-scroll-trigger">SERVICES<span></span><span></span><span></span><span></span></a></li>
+								<li><a href="#" class="js-scroll-trigger">PORTFOLIO<span></span><span></span><span></span><span></span></a></li>
+								<li><a href="#" class="js-scroll-trigger">CAREERS<span></span><span></span><span></span><span></span></a></li>
+								<li><a href="#contact" class="js-scroll-trigger">CONTACT<span></span><span></span><span></span><span></span></a></li>
+							</ul>
+					</nav>
+					<ul class="socials">
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+					</ul>
+
+				</div>
 			</div>
-			<div class="second-sc-header">
-				
-				<nav class="nav" role="navigation">
-					<input type="checkbox" id="check"/>
-					<label for="check" class="checkbtn">
-						<i class="fas fa-bars"></i>
-					</label>
-						<ul>
-							<li><a href="#" class="active js-scroll-trigger">HOME<span></span><span></span><span></span><span></span></a></li>
-							<li><a href="#" class="js-scroll-trigger">ABOUT<span></span><span></span><span></span><span></span></a></li>
-							<li><a href="#" class="js-scroll-trigger">SERVICES<span></span><span></span><span></span><span></span></a></li>
-							<li><a href="#" class="js-scroll-trigger">PORTFOLIO<span></span><span></span><span></span><span></span></a></li>
-							<li><a href="#" class="js-scroll-trigger">CAREERS<span></span><span></span><span></span><span></span></a></li>
-							<li><a href="#" class="js-scroll-trigger">CONTACT<span></span><span></span><span></span><span></span></a></li>
-						</ul>
-				</nav>
-				<ul class="socials">
-					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-				</ul>
 
-			</div>
-		</div>
-
-	</header>
-
+		</header>
+	
 	<!-- ============ banner section ================== -->
 
 	<section class="banner">
 		<div class="container">
+			<video id="background-video" autoplay loop muted poster="/img/bgd2.jpg">
+				<source src="/img/design-video-bgd.mp4" type="video/mp4">
+			</video>
 			<div class="row">
 				  <div class="banner-content">
+					  <img class="img-logo" src="/img/px-logo-removebg-preview.png" alt="">
+					<div class="title-banner">
+						<div class="centering">
+							<h3>Welcome to</h3><br>
+							<h2>The <span>Blue</span><br>Buildings</h2>
+							<div class="anime">
+								<span class="anim one">Design</span>
+								<span class="anim two">Build</span>
+								<span class="anim three">Prove</span>
+							</div>
+						</div>
+					</div>
 					  <div class="box">
 						  <span></span>
 						  <span></span>
-						  <span></span>
-						  <span></span>
 						  <div class="content">
-							  <h2>The Blue Buildings  </h2>
-							  <p> is an international architectural and engineering consulting company dedicated to creating places of lasting value and improving lives through design</p>
+							<div class="centering">
+								<h3>Build your house</h3>
+								<p>International architectural and engineering consulting company dedicated to creating places of lasting value and improving lives through design</p>
+								<div class="cnt">
+									<a href="#contact">Contact us</a>
+									<a href="#">Portfolio</a>
+								</div>
+							</div>
 						</div>
 					  </div>
 				</div>
 			</div>
 		</div>
 	</section>
+	
+	
+	<section class="inset">
+		<h2>This can be your future home</h2>
+		<div class="Container">
+			<blockquote class="Content">
+				<h3 class="headline Quotation">The Blue Buildings was able to make a complex process much easier.</h3>
+				<div class="Testifier">
+					<strong>Abdulrahman Majed,</strong>
+					founder of The Blue Buildings
+				</div>
+				<a target="_blank" class="Link" href="#">Case Study</a>
+			</blockquote>
+			<div class="Image">
+				<div style="display:block;overflow:hidden;position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;margin:0">
+					<img alt="An office lounge area with long leather couch, coffee table, and kitchen in the background" src="/img/interior-design.jpg" decoding="async" data-nimg="true" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover"/>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	
+		<section class="offering">
+			<div class="container">
+				<div class="darker">
+					<h1>Our mission</h1>
+					<span id="typer">Think</span>
+					<div class="row">
+						<div class="col">
+							<h2><span>Top</span> Customer Focus</h2>
+							<p>We provide high focus to all the contacts without any differences
+								- Irrespective of size, profitability or criticality.
+								Each client is more important to us,
+								So feel free to contact us!
+								you are in the right place.
+								</p>
+							<img src="/img/villa-design.jpg" alt="">
+						</div>
+						<div class="col">
+							<h2><span>Top</span> Employer Satisfaction</h2>
+							<p>At the blue buildings, we sincerely work towards keeping our employees happy and comfortable, in order to make them successful . Our HR policies have been modeled to support the growth of all the employees who work towards the success of our clients. We just don't drive our teams to work only as a team, but to live as one familly.</p>
+							<img src="/img/room-design.jpg" alt="">
+						</div>
+						<div class="col">
+							<h2><span>Top</span> Quality Service</h2>
+							<p>We are deddicated to think, execute, and prove in meeting high standars to our work. our team of Interior Architects brainstorm creative and unique ideas based on research into the customer needs.</p>
+							<img src="/img/saba-design.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
+	
 	<section class="under-banner">
 		<div class="container">
 			<div class="inder-img">
@@ -93,67 +167,149 @@
 		</div>
 	</section>
 
-	<section class="offering">
+
+	<section class="projects">
 		<div class="container">
-			<div class="darker">
-				<h1>Our mission</h1>
-				<span id="typer">Think</span>
-				<div class="row">
-					<div class="col">
-						<h2><span>Top</span> Customer Focus</h2>
-						<p>We provide high focus to all the contacts without any differences
-							- Irrespective of size, profitability or criticality.
-							Each client is more important to us,
-							So feel free to contact us!
-							you are in the right place.
-							</p>
-						<img src="/img/villa-design.jpg" alt="">
+			<div class="children">
+				<div class="portfolio">
+					<div class="gallery js-flickity"
+						data-flickity-options='{ "wrapAround": true }'>
+						<div class="gallery-cell" style="background-image: url(/img/villa1.jpg); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
+						<div class="gallery-cell" style="background-image: url(/img/villa2.jpg); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
+						<div class="gallery-cell" style="background-image: url(/img/villa3.jpg); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
+						<div class="gallery-cell" style="background-image: url(/img/villa4.jpg); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
 					</div>
-					<div class="col">
-						<h2><span>Top</span> Employer Satisfaction</h2>
-						<p>At the blue buildings, we sincerely work towards keeping our employees happy and comfortable, in order to make them successful . Our HR policies have been modeled to support the growth of all the employees who work towards the success of our clients. We just don't drive our teams to work only as a team, but to live as one familly.</p>
-						<img src="/img/room-design.jpg" alt="">
+				</div>
+				<div class="description">
+					<h3 class="one">Villa design | 350m².</h3>
+					<p class="three">Local : Riyadh, Saudi Arabia.</p>
+
+					<p class="two">Our design team can make changes to any plan, big or small, to make it perfect for your needs. Our QuikQuotes will get you the cost to build a specific house design.</p>
+					<ul class="tags">
+						<li>#architecture</li>
+						<li>#design</li>
+						<li>#housedesign</li>
+						<li>#homedesign</li>
+					</ul>
+				</div>
+			</div>
+			<div class="children">
+				<div class="portfolio">
+					<div class="gallery js-flickity"
+						data-flickity-options='{ "wrapAround": true }'>
+						<div class="gallery-cell" style="background-image: url(/img/coffee1.jpg); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
+						<div class="gallery-cell" style="background-image: url(/img/coffee2.jpg); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
+						<div class="gallery-cell" style="background-image: url(/img/coffee3.jpg); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
 					</div>
-					<div class="col">
-						<h2><span>Top</span> Quality Service</h2>
-						<p>We are deddicated to think, execute, and prove in meeting high standars to our work. our team of Interior Architects brainstorm creative and unique ideas based on research into the customer needs.</p>
-						<img src="/img/saba-design.jpg" alt="">
+				</div>
+				<div class="description">
+					<h3 class="one">Coffee Shop Design | 350m².</h3>
+					<p class="three">local : Riyadh, Saudi Arabia.</p>
+
+					<p class="two">Our design team can make changes to any plan, big or small, to make it perfect for your needs. Our QuikQuotes will get you the cost to build a specific house design.</p>
+					<ul class="tags">
+						<li>#roomdesign</li>
+						<li>#luxuryhomes</li>
+						<li>#designinggardens</li>
+						<li>#chalets</li>
+					</ul>
+				</div>
+			</div>
+			<div class="children">
+				<div class="portfolio">
+					<div class="gallery js-flickity"
+						data-flickity-options='{ "wrapAround": true }'>
+						<div class="gallery-cell" style="background-image: url(/img/room-design.jpg); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
 					</div>
+				</div>
+				<div class="description">
+					<h3 class="one">Room design | 50m².</h3>
+					<p class="three">Local : Riyadh, Saudi Arabia.</p>
+					<p class="two">Our design team can make changes to any plan, big or small, to make it perfect for your needs. Our QuikQuotes will get you the cost to build a specific house design.</p>
+					<ul class="tags">
+						<li>#housedesign</li>
+						<li>#homedesign</li>
+						<li>#interiordesign</li>
+						<li>#roomdesign</li>
+					</ul>
+				</div>
+			</div>
+			<div class="children">
+				<div class="portfolio">
+					<div class="gallery js-flickity"
+						data-flickity-options='{ "wrapAround": true }'>
+						<div class="gallery-cell" style="background-image: url(/img/sc-villa1.jpg); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
+						<div class="gallery-cell" style="background-image: url(/img/sc-villa2.jpg); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
+						<div class="gallery-cell" style="background-image: url(/img/sc-villa3.jpg); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
+						<div class="gallery-cell" style="background-image: url(/img/sc-villa4.jpg); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
+					</div>
+				</div>
+				<div class="description">
+					<h3 class="one">Villa design | 300m².</h3>
+					<p class="three">Riyadh, Saudi Arabia.</p>
+
+					<p class="two">Our design team can make changes to any plan, big or small, to make it perfect for your needs. Our QuikQuotes will get you the cost to build a specific house design.</p>
+					<ul class="tags">
+						<li>#architecture</li>
+						<li>#design</li>
+						<li>#housedesign</li>
+						<li>#homedesign</li>
+					</ul>
+				</div>
+			</div>
+			<div class="children">
+				<div class="portfolio">
+					<div class="gallery js-flickity"
+						data-flickity-options='{ "wrapAround": true }'>
+						<div class="gallery-cell" style="background-image: url(/img/salon-spa1.jpg); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
+						<div class="gallery-cell" style="background-image: url(/img/salon-spa2.jpg); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
+						<div class="gallery-cell" style="background-image: url(/img/salon-spa3.jpg); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
+						<div class="gallery-cell" style="background-image: url(/img/salon-spa4.jpg); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
+						<div class="gallery-cell" style="background-image: url(/img/salon-spa5.jpg); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
+					</div>
+				</div>
+				<div class="description">
+					<h3 class="one">Salon SPA Design | 300m².</h3>
+					<p class="three">Riyadh, Saudi Arabia.</p>
+
+					<p class="two">Our design team can make changes to any plan, big or small, to make it perfect for your needs. Our QuikQuotes will get you the cost to build a specific house design.</p>
+					<ul class="tags">
+						<li>#architecture</li>
+						<li>#design</li>
+						<li>#housedesign</li>
+						<li>#homedesign</li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<section class="gallery">
+<!-- 
+	<section class="gallerys">
 		<div class="container">
 			<h1>GALLERY</h1>
 			<div class="row">
 				<div class="col">
-					<img class="myImg" src="/img/exterior-design.jpg" alt="exterior design">
 					<img class="myImg" src="/img/room-design.jpg" alt="room design">
 					<img class="myImg" src="/img/saba-design.jpg" alt="saba design">
 					<img class="myImg" src="/img/saba-women-design.jpg" alt="saba women design">
 				</div>
 				<div class="col">
 					<img class="myImg" src="/img/saba-women-design.jpg" alt="saba women design">
-					<img class="myImg" src="/img/exterior-design.jpg" alt="exterior design">
 					<img class="myImg" src="/img/room-design.jpg" alt="room design">
 					<img class="myImg" src="/img/saba-design.jpg" alt="saba design">
 				</div>
 				<div class="col">
-					<img class="myImg" src="/img/saba-design.jpg" alt="saba design">
 					<img class="myImg" src="/img/space-coffe-design.jpg" alt="space coffe design">
 					<img class="myImg" src="/img/saba-women-design.jpg" alt="saba women design">
 					<img class="myImg" src="/img/villa-design.jpg" alt="villa design">
 				</div>
 				<div class="col">
-					<img class="myImg" src="/img/exterior-design.jpg" alt="exterior design">
 					<img class="myImg" src="/img/room-design.jpg" alt="room design">
 					<img class="myImg" src="/img/saba-design.jpg" alt="saba design">
 					<img class="myImg" src="/img/saba-women-design.jpg" alt="saba women design">
 				</div>
 			</div>
-			<!-- The Modal -->
+			<a href="#" class="link">See more</a>
 			<div id="myModal" class="modal">
 				<span class="close">&times;</span>
 				<img class="modal-content" id="img01">
@@ -161,18 +317,19 @@
 			</div>
   
 		</div>
-	</section>
+	</section> -->
 
-	<section class="contact">
+	<section class="contact" id="contact">
 		<div class="darker">
 		<div id="container">
+			<h1 class="h1">Contact us</h1>
 			<form class="form" action="">
 				<div class="row">
 				  <div class="col-25">
-					<label for="fname">You Name</label>
+					<label for="fname">Your Name</label>
 				  </div>
 				  <div class="col-75">
-					<input type="text" id="fname" name="fullName" placeholder="Your name..">
+					<input type="text" id="fname" name="fullName" placeholder="Your name.." autocomplete="off">
 				  </div>
 				</div>
 				<div class="row">
@@ -180,15 +337,28 @@
 					<label for="phone">Number Phone</label>
 				  </div>
 				  <div class="col-75">
-					<input type="text" id="phone" name="phone" placeholder="Your Number Phone..">
+					<input type="text" id="phone" name="phone" placeholder="Your Number Phone.." autocomplete="off">
 				  </div>
 				</div>
 				<div class="row">
 				  <div class="col-25">
-					<label for="eamil">Email</label>
+					<label for="email">Email</label>
 				  </div>
 				  <div class="col-75">
-					<input type="text" id="email" name="email" placeholder="Your Email..">
+					<input type="text" id="email" name="email" placeholder="Your Email.." autocomplete="off">
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="col-25">
+					<label for="kind">Kind of project</label>
+				  </div>
+				  <div class="col-75">
+					<select name="kind">
+						<option value="House">House</option>
+						<option value="Coffe">Coffe</option>
+						<option value="Restaurant">Restaurant</option>
+						<option value="Office">Office</option>
+					</select>
 				  </div>
 				</div>
 				<div class="row">
@@ -204,12 +374,12 @@
 				</div>
 			  </form>
 			  <div class="sec-two">
-					<div class="col">
-						<p>Email : <span>thebluebuildings@gmail.com</span></p>
-						<p>Phone : <span>+966509666005</span></p>
+					<div class="col first">
+						<a href="mailto:thebluebuildings@gmail.com"><div><span class="one spn">Email</span> <span class="two">thebluebuildings@gmail.com</span></div></a>
+						<a href="tel:+966509666005"><div><span class="one">Phone</span> <span class="two">+966509666005</span></div></a>
+						<a href="https://wa.me/966509666005"><div><span class="one">WhatsApp</span> <span class="two">+966509666005</span></div></a>
 					</div>
 					<div class="col two">
-						<p>We Are Here</p>
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14948760.685730455!2d36.022635127756836!3d23.8328268438997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e7b33fe7952a41%3A0x5960504bc21ab69b!2sArabie%20saoudite!5e0!3m2!1sfr!2sma!4v1629731026694!5m2!1sfr!2sma"  allowfullscreen="" loading="lazy"></iframe>
 					</div>
 			  </div>
@@ -281,36 +451,37 @@
 	
 	  <!--========== SCROLL REVEAL ==========-->
 	  <script src="https://unpkg.com/scrollreveal"></script>
+	  <script src="/js/flickity.pkgd.js"></script>
 
 	  <script src="js/main.js"></script>
 	  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
 	  <script>
-		const images = [];		
-		// Get the modal
-		var modal = document.getElementById("myModal");
+		// const images = [];		
+		// // Get the modal
+		// var modal = document.getElementById("myModal");
 
-		// Get the image and insert it inside the modal - use its "alt" text as a caption
-		var imgs = document.getElementsByClassName('myImg');
-		images.push(...imgs);
-		var modalImg = document.getElementById("img01");
-		var captionText = document.getElementById("caption");
+		// // Get the image and insert it inside the modal - use its "alt" text as a caption
+		// var imgs = document.getElementsByClassName('myImg');
+		// images.push(...imgs);
+		// var modalImg = document.getElementById("img01");
+		// var captionText = document.getElementById("caption");
 
-		images.forEach(img => {
-			img.addEventListener('click', function(){
-				modal.style.display = "block";
-				modalImg.src = this.src;
-				captionText.innerHTML = this.alt;
-			})
-		});
+		// images.forEach(img => {
+		// 	img.addEventListener('click', function(){
+		// 		modal.style.display = "block";
+		// 		modalImg.src = this.src;
+		// 		captionText.innerHTML = this.alt;
+		// 	})
+		// });
 
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
+		// // Get the <span> element that closes the modal
+		// var span = document.getElementsByClassName("close")[0];
 
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() { 
-		modal.style.display = "none";
-		}
+		// // When the user clicks on <span> (x), close the modal
+		// span.onclick = function() { 
+		// modal.style.display = "none";
+		// }
 
 		// modal.onclick = function() { 
 		// modal.style.display = "none";
@@ -328,6 +499,22 @@
 				elem.fadeIn();
 			});
 		}
+
+
+		$(window).scroll(function(){
+			if ($(window).scrollTop() >= 10) {
+				$('header').addClass('fixed-header');
+			}
+			else {
+				$('header').removeClass('fixed-header');
+			}
+		});
+
+		// $(document).ready(function() {
+			window.setTimeout(function(){$(".anim.one").addClass('scale-it');}, 500);
+			window.setTimeout(function(){$(".anim.two").addClass('scale-it');}, 700);
+			window.setTimeout(function(){$(".anim.three").addClass('scale-it');}, 900);
+		// });
 
 	  </script>
     </body>

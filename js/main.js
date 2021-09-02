@@ -1,6 +1,4 @@
 
-
-
 const sr = ScrollReveal({
     origin: 'left',
     distance: '150px',
@@ -10,11 +8,23 @@ const sr = ScrollReveal({
 });
 
 
-sr.reveal(`.img-one`, {
+sr.reveal(`.img-one, .Content`, {
     interval: 150
 })
 
 const sr2 = ScrollReveal({
+    origin: 'right',
+    distance: '150px',
+    duration: 1500,
+    reset: false
+});
+
+sr2.reveal(`.img-two, .Image`, {
+    interval: 150
+})
+
+
+const sr3 = ScrollReveal({
     origin: 'left',
     distance: '300px',
     duration: 2000,
@@ -23,19 +33,7 @@ const sr2 = ScrollReveal({
 });
 
 
-sr2.reveal(`.h2.one`, {
-    interval: 150
-})
-
-
-const sr3 = ScrollReveal({
-    origin: 'right',
-    distance: '150px',
-    duration: 1500,
-    reset: false
-});
-
-sr3.reveal(`.img-two`, {
+sr3.reveal(`.h2.one`, {
     interval: 150
 })
 
@@ -76,6 +74,7 @@ sr6.reveal(`.inder-img span`, {
 })
 
 
+
 //slide automatic
 var myIndex = 0;
 carousel();
@@ -91,4 +90,3 @@ if (myIndex > x.length) {myIndex = 1}
 x[myIndex-1].style.display = "block";  
 setTimeout(carousel, 10000); // Change image every 2 seconds
 }
-
