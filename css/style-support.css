@@ -10,6 +10,14 @@ html{
   margin: 0;
   padding: 0;
 }
+label,
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 section, header, footer{
   max-width: 1300px;
   max-height: 800px;
