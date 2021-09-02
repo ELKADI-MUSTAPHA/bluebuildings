@@ -338,7 +338,7 @@ label.logo img{
     font-weight: 700;
     box-shadow: 2px 2px 20px 6px #58cddf;
     transform: scale(0);
-    transition: all 1s;
+    transition: all 0.5s;
   }
 
   .scale-it {
