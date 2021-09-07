@@ -69,30 +69,17 @@ q {
   bottom: 1rem;
   right: 1rem;
   font-size: 4rem;
-  color: #075e54;
+  color: #fff;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #019483;
   z-index: 9;
 }
-/* .whatsapp:hover {
-  cursor: help;
-} */
+.whatsapp:focus{
+  color: #fff;
+  background-color: #00c7b0;
+}
 .whatsapp span {
   display: none
-}
-.whatsapp:hover span {
-  border: 2px solid #50dfdb;
-  color: #000;
-  font-size: 1rem;
-  padding: 5px;
-  display: block;
-  z-index: 100;
-  background-color: white;
-  right: 2rem;
-  width: 220px;
-  position: absolute;
-  bottom: 3rem;
-  text-decoration: none;
 }
 
 /* ============================= header ============================ */
@@ -881,6 +868,11 @@ label.logo img {
   justify-content: end;
   padding: 1rem;
 }
+@supports not (justify-content: end){
+  .projects .row a .col .back{
+    padding: 4rem 1rem 0;
+  }
+}
 .projects .row a .col .back:hover{
   background-color: rgba(0, 0, 0, 0.199);
 }
@@ -1165,10 +1157,44 @@ x
   width: 100%;
 }
 
-.contact .sec-two .col.first a{
+.contact .sec-two .col.first {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact .sec-two .col.first a {
   font-size: 2.5rem;
   color: #474747;
   margin: 1rem;
+  line-height: 0.5;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 140px;
+  border-radius: 50%;
+  background-color: #55908e;
+}
+.contact .sec-two .col.first a:hover i{
+  animation: moveIt 0.3s;
+}
+@keyframes moveIt {
+  0%{
+    transform: rotate(20deg);
+  }
+ 50%{
+    transform: rotate(-20deg);
+  }
+  100%{
+    transform: rotate(20deg);
+  }
+}
+.contact .sec-two .col.first a i{
+  color: #ffffff;
+}
+.contact .sec-two .col.first a span{
+  font-size: 1.2rem;
+  color: #ffffff;
 }
 .contact .sec-two iframe {
   width: 100%;
@@ -1548,7 +1574,37 @@ footer .copyright p span {
     margin-bottom: 1rem;
   }
   
+.contact .sec-two .col.first a {
+  font-size: 2rem;
+  width: 100px;
+  min-height: 100px;
+  border-radius: 50%;
 }
+.contact .sec-two .col.first i {
+  font-size: 1.4rem;
+}
+.contact .sec-two .col.first span {
+  font-size: 1rem !important;
+}
+}
+@media only screen and (min-width: 700px) {
+  .whatsapp:hover span {
+    border: 2px solid #50dfdb;
+    color: #000;
+    font-size: 1rem;
+    padding: 5px;
+    display: block;
+    z-index: 100;
+    background-color: white;
+    right: 2rem;
+    width: 220px;
+    position: absolute;
+    bottom: 3rem;
+    text-decoration: none;
+  }
+  
+}
+  
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
@@ -1556,6 +1612,7 @@ footer .copyright p span {
   .projects .row a {
     width: 45%;
   }
+
 }
 @media screen and (max-width: 600px) {
   
@@ -1712,9 +1769,11 @@ footer .copyright p span {
   
   
   .contact #container {
-    width: 98%;
+    width: 100%;
+    padding: 2rem 0.2rem;
     border: none;
   }
+  
   .contact #container .form {
     padding: 2rem 0;
   }
@@ -1724,7 +1783,19 @@ footer .copyright p span {
   .contact .sec-two .col {
     width: 100%;
   }
-  .contact .sec-two .col.first {
+  .contact .sec-two .col.first a {
+    font-size: 1rem;
+    width: 80px;
+    min-height: 80px;
+    border-radius: 50%;
+  }
+  .contact .sec-two .col.first i {
+    font-size: 1rem;
+  }
+  .contact .sec-two .col.first span {
+    font-size: 0.8rem !important;
+  }
+  /* .contact .sec-two .col.first {
     display: flex;
     justify-content: space-around;
   }
@@ -1735,7 +1806,7 @@ footer .copyright p span {
   .contact .sec-two .col.first a span{
     font-size: 1.2rem;
     color: #222222;
-  }
+  } */
   .contact .sec-two .col div {
     width: 100%;
   }
