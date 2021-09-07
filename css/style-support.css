@@ -1149,6 +1149,10 @@ x
   padding: 2rem 1.5rem 0;
   color: #fff;
 }
+.contact .sec-two h2{
+  color: #000;
+  margin-bottom: 1rem;
+}
 .contact .sec-two .col {
   width: 100%;
 }
@@ -1725,6 +1729,9 @@ footer .copyright p span {
   .banner .box .content .cnt {
     margin-top: 1rem;
   }
+  .banner .box .content .cnt a {
+    font-size: 0.8rem;
+  }
   .inset {
     padding: 2rem 1rem;
   }
@@ -1732,8 +1739,7 @@ footer .copyright p span {
     padding: 40px 20px;
   }
   .inset .col-1 h1 {
-    font-size: 1.5rem;
-    color: #16aaa5;
+    font-size: 1.3rem;
   }
   .projects .row a {
     width: 100%;
@@ -1741,6 +1747,7 @@ footer .copyright p span {
   }
   .projects .row a .col .back{
     padding: 4rem 1rem 0 !important;
+    background-color: rgb(0, 0, 0, 33%);
   }
   .projects .row a .col .back span:last-child {
     opacity: 1;
@@ -1791,6 +1798,9 @@ footer .copyright p span {
   .contact .sec-two {
     padding: 2rem 0 0;
   }
+  .contact .sec-two h2{
+    font-size: 1.4rem;
+  }
   .contact .sec-two .col {
     width: 100%;
   }
@@ -1806,18 +1816,7 @@ footer .copyright p span {
   .contact .sec-two .col.first span {
     font-size: 0.8rem !important;
   }
-  /* .contact .sec-two .col.first {
-    display: flex;
-    justify-content: space-around;
-  }
-  .contact .sec-two .col.first a {
-    line-height: 0.5;
-    width: 33%;
-  }
-  .contact .sec-two .col.first a span{
-    font-size: 1.2rem;
-    color: #222222;
-  } */
+  
   .contact .sec-two .col div {
     width: 100%;
   }
