@@ -865,12 +865,12 @@ label.logo img {
   background-color: rgba(161, 161, 161, 0.109);
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  padding: 4rem 1rem 0;
   padding: 1rem;
 }
-@supports not (justify-content: end){
+@supports (justify-content: end){
   .projects .row a .col .back{
-    padding: 4rem 1rem 0;
+    justify-content: end;
   }
 }
 .projects .row a .col .back:hover{
@@ -1776,6 +1776,8 @@ footer .copyright p span {
   
   .contact #container .form {
     padding: 2rem 0;
+    margin: 0 auto;
+    width: 95%;
   }
   .contact .sec-two {
     padding: 2rem 0 0;
