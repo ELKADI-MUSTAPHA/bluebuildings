@@ -869,7 +869,8 @@ label.logo img {
 }
 @supports (justify-content: end){
   .projects .row a .col .back{
-    /* justify-content: end; */
+    justify-content: end;
+    padding: 0 1rem !important;
   }
 }
 .projects .row a .col .back:hover{
@@ -1443,8 +1444,6 @@ footer .copyright p span {
   
 }
 @media screen and (max-width: 800px) {
-  
-  
   footer .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1660,6 +1659,9 @@ footer .copyright p span {
   }
   .services .container .col-2 h1 {
     font-size: 1.5rem;
+  }
+  .projects .row a .col .back span {
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 450px) {
