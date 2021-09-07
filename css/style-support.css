@@ -65,6 +65,7 @@ q {
 .whatsapp {
   position: fixed;
   width: 80px;
+  height: 80px;
   text-align: center;
   bottom: 1rem;
   right: 1rem;
@@ -1750,6 +1751,12 @@ footer .copyright p span {
   .services .container {
     padding: 0 0.7rem;
   }
+  .services .container .col-2 .col h2 i {
+    font-size: 1.5rem;
+  }
+  .services .container .col-2 .col .padd {
+    padding-left: 2.3rem;
+  }
   .offering h1 {
     font-size: 2rem;
   }
@@ -1794,7 +1801,7 @@ footer .copyright p span {
     border-radius: 50%;
   }
   .contact .sec-two .col.first i {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .contact .sec-two .col.first span {
     font-size: 0.8rem !important;
@@ -1815,8 +1822,8 @@ footer .copyright p span {
     width: 100%;
   }
   footer .container {
-    padding: 2rem 0;
-    margin: 3rem 0 0;
+    padding: 0 0 2rem;
+    margin:0;
   }
   footer .row .col-3 {
     width: 100% !important;
@@ -1825,4 +1832,7 @@ footer .copyright p span {
   footer .copyright p {
     padding: 0 2rem;
   }
+  footer .row .col-3 .quick-links {
+    justify-content: space-between;
+}
 }
