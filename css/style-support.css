@@ -865,14 +865,9 @@ label.logo img {
   background-color: rgba(161, 161, 161, 0.109);
   display: flex;
   flex-direction: column;
-  padding: 4rem 1rem 0;
+  padding: 5rem 1rem 0;
 }
-@supports (justify-content: end){
-  .projects .row a .col .back{
-    justify-content: end;
-    padding: 1rem !important;
-  }
-}
+
 .projects .row a .col .back:hover{
   background-color: rgba(0, 0, 0, 0.199);
 }
