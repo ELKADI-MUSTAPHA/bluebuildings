@@ -1662,6 +1662,9 @@ footer .copyright p span {
   .projects .row a .col .back span {
     font-size: 1.2rem;
   }
+  .carousel {
+    height: 270px;
+  }
 }
 @media screen and (max-width: 450px) {
   
