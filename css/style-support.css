@@ -1743,6 +1743,9 @@ footer .copyright p span {
     width: 100%;
     height: 170px;
   }
+  .projects .row a .col .back{
+    padding: 4rem 1rem 0 !important;
+  }
   .projects .row a .col .back span:last-child {
     opacity: 1;
   }
