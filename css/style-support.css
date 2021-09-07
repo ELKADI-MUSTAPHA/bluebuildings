@@ -870,6 +870,7 @@ label.logo img {
 @supports (justify-content: end){
   .projects .row a .col .back{
     justify-content: end;
+    padding: 1rem !important;
   }
 }
 .projects .row a .col .back:hover{
@@ -1650,8 +1651,8 @@ footer .copyright p span {
   .services .container .col-2 .col .padd p {
     font-size: 0.8rem;
   }
-
 }
+
 @media screen and (max-width: 480px) {
   .services .container .col-2 .col {
     width: 75%;
@@ -1666,8 +1667,8 @@ footer .copyright p span {
     height: 270px;
   }
 }
+
 @media screen and (max-width: 450px) {
-  
   .banner .row .title-banner h3 {
     font-size: 1.3rem;
   }
