@@ -870,7 +870,6 @@ label.logo img {
 @supports (justify-content: end){
   .projects .row a .col .back{
     justify-content: end;
-    padding: 0 1rem !important;
   }
 }
 .projects .row a .col .back:hover{
