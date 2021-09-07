@@ -866,11 +866,10 @@ label.logo img {
   display: flex;
   flex-direction: column;
   padding: 4rem 1rem 0;
-  padding: 1rem;
 }
 @supports (justify-content: end){
   .projects .row a .col .back{
-    justify-content: end;
+    /* justify-content: end; */
   }
 }
 .projects .row a .col .back:hover{
