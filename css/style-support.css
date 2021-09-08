@@ -845,22 +845,26 @@ label.logo img {
 
 }
 
-.projects .row a {
+.projects .row a,
+.projects-single .row a {
   width: 24%;
   height: 200px;
   float: left;
   margin: 0.3rem;
 }
 
-.projects .row a .col{
+.projects .row a .col,
+.projects-single .row a .col{
   width: 100%;
   height: 100%;
   transition: 1s;
 }
-.projects .row a:hover .col{
+.projects .row a:hover .col,
+.projects-single .row a:hover .col{
   background-size: 160% !important;
 }
-.projects .row a .col .back{
+.projects .row a .col .back,
+.projects-single .row a .col .back{
   height: 100%;
   width: 100%;
   background-color: rgba(161, 161, 161, 0.109);
@@ -869,18 +873,22 @@ label.logo img {
   padding: 5rem 1rem 0;
 }
 
-.projects .row a .col .back:hover{
+.projects .row a .col .back:hover,
+.projects-single .row a .col .back:hover{
   background-color: rgba(0, 0, 0, 0.199);
 }
 
-.projects .row a .col .back span{
+.projects .row a .col .back span,
+.projects-single .row a .col .back span{
   color: #50dfdb;
   font-weight: 700;
 }
-.projects .row a .col .back span:first-child{
+.projects .row a .col .back span:first-child,
+.projects-single .row a .col .back span:first-child{
   border-top: 1px solid #50dfdb;
 }
-.projects .row a .col .back span:last-child{
+.projects .row a .col .back span:last-child,
+.projects-single .row a .col .back span:last-child{
   opacity: 0;
   border: 1px solid #50dfdb;
   width: fit-content;
@@ -888,7 +896,8 @@ label.logo img {
   margin: 0 auto;
   transition: 1s;
 }
-.projects .row a:hover .col .back span:last-child{
+.projects .row a:hover .col .back span:last-child,
+.projects-single .row a:hover .col .back span:last-child{
   opacity: 1;
 }
 
@@ -1285,6 +1294,309 @@ footer .copyright p {
 footer .copyright p span {
   color: #58cddf;
 }
+
+
+/* ============================================== single page ======================= */
+
+.banner-single{
+  width: 100%;
+  min-height: auto;
+}
+
+.banner-single .container{
+  width: 100%;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-single .container .darker{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.356);
+}
+
+
+.banner-single .container h1{
+  width: fit-content;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+
+.inset.single {
+  width: 70%;
+  float: left;
+}
+
+
+.inset.single .container .col{
+  width: 100%;
+  min-height: 500px;
+  margin: 2rem auto;
+}
+
+.inset.single .gallery {
+  width: 100%;
+}
+.inset.single .gallery-cell {
+  width: 100%;
+  height: 500px;
+  counter-increment: gallery-cell;
+  margin: 0 5px;
+}
+.inset.single .gallery-cell:before {
+  display: none;
+}
+.inset.single .nobuton .flickity-prev-next-button:disabled {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.inset.single .wrapper {
+  width: 100%;
+  margin: 2rem auto;
+  /* height: 500px; */
+  background-color: transparent;
+}
+
+.inset.single .video {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(1, 1, 29);
+}
+
+.playing {
+  background-color: #dddddd;
+}
+.inset.single .description {
+  font-size: 10px;
+  line-height: 20px;
+  width: auto;
+  color: white;
+}
+
+.inset.single .title {
+  font-size: 26px;
+  margin: 0;
+  color: white;
+}
+
+
+.inset.single .button {
+  width: 42px;
+  height: 42px;
+  border: none;
+  background-color: transparent;
+  background-repeat: none;
+  background-position: center;
+  cursor: pointer;
+  margin-right: 10px;
+  outline: none;
+}
+
+.inset.single .button:active {
+  transform: scale(0.9);
+}
+
+.inset.single .backward {
+  background-image: url('../assets/icons/backward.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.inset.single .expand {
+  background-image: url('../assets/icons/expandd.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  margin-right: 0;
+}
+
+.inset.single .forward {
+  background-image: url('../assets/icons/forward.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.inset.single .pause {
+  background-image: url('../assets/icons/pause.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.inset.single .play {
+  background-image: url('../assets/icons/play.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.inset.single .reduce {
+  background-image: url('../assets/icons/reduce.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  margin-right: 0;
+}
+
+.inset.single .silence {
+  background-image: url('../assets/icons/silence.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.inset.single .volume {
+  background-image: url('../assets/icons/volume.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.inset.single .player {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.inset.single .player-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) -22.28%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  z-index: 1;
+  transition: 0.3s opacity;
+}
+
+.inset.single .content {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+.inset.single .information-container {
+  width: 100%;
+  height: 80%;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inset.single .player-container {
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: #6b6b6bab;
+  height: 20%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.inset.single .player-progress-bar {
+  width: 100%;
+}
+
+.inset.single .video-progress {
+  display: flex;
+  width: 100%;
+  height: 6px;
+  transition: 0.3s;
+  background-color: #7c7c7c;
+  cursor: pointer;
+}
+
+.inset.single .video-progress-filled {
+  width: 0;
+  background-color: white;
+}
+
+.inset.single .player-controls {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inset.single .player-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.inset.single .volume-progress {
+  display: flex;
+  width: 70px;
+  height: 6px;
+  transition: 0.3s;
+  background-color: #7c7c7c;
+  cursor: pointer;
+}
+
+.inset.single .volume-progress-filled {
+  width: 0;
+  background-color: white;
+}
+
+.inset.single .time-container {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+.inset.single .time-container p {
+  color: white;
+}
+.inset.single .current-time {
+  width: 40px;
+}
+
+.inset.single .duration-video {
+  width: 40px;
+}
+
+.inset.single .time-separator {
+  margin: 0 10px 0 5px;
+}
+
+.inset.single .expand-container {
+  display: flex;
+  align-items: center;
+}
+
+.projects-single {
+  width: 30%;
+  height: auto;
+  float: right;
+  margin: 0;
+  padding-top: 17rem;
+  text-align: center;
+}
+
+.projects-single .row {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.projects-single .row a{
+  width: 80%;
+  float: none;
+}
+
+.projects-single .row a .col{
+  margin: 1rem auto;
+}
+.clear {
+  clear: both;
+}
 @media screen and (min-width: 960px) {
   /* #background-video {
     max-height: 800px;
@@ -1572,18 +1884,41 @@ footer .copyright p span {
     margin-bottom: 1rem;
   }
   
-.contact .sec-two .col.first a {
-  font-size: 2rem;
-  width: 100px;
-  min-height: 100px;
-  border-radius: 50%;
-}
-.contact .sec-two .col.first i {
-  font-size: 1.4rem;
-}
-.contact .sec-two .col.first span {
-  font-size: 1rem !important;
-}
+  .contact .sec-two .col.first a {
+    font-size: 2rem;
+    width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+  }
+  .contact .sec-two .col.first i {
+    font-size: 1.4rem;
+  }
+  .contact .sec-two .col.first span {
+    font-size: 1rem !important;
+  }
+  
+  .inset.single {
+    width: 100%;
+    float: none;
+  }
+  .inset.single .container .col {
+    min-height: 300px;
+  }
+  .projects-single {
+    width: 100%;
+    padding-top: 0;
+    float: none;
+  }
+  
+  .projects-single .row {
+    width: 100%;
+  }
+  .projects-single .row a{
+    width: 48%;
+    float: left;
+  }
+
+
 }
 @media only screen and (min-width: 700px) {
   .whatsapp:hover span {
@@ -1666,6 +2001,15 @@ footer .copyright p span {
   .carousel {
     height: 270px;
   }
+  .projects-single .row a{
+    width: 98%;
+    float: none;
+  }
+  .inset {
+    padding: 2rem 0.3rem;
+  }
+
+
 }
 
 @media screen and (max-width: 450px) {
