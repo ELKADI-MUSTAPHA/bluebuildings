@@ -498,19 +498,19 @@
 	  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
 	  <script>
-        document.onreadystatechange = function() {
-            if (document.readyState !== "complete") {
-                document.querySelector(
-                  "body").style.visibility = "hidden";
-                document.querySelector(
-                  "#loader").style.visibility = "visible";
-            } else {
-                document.querySelector(
-                  "#loader").style.display = "none";
-                document.querySelector(
-                  "body").style.visibility = "visible";
-            }
-        };	
+        // document.onreadystatechange = function() {
+        //     if (document.readyState !== "complete") {
+        //         document.querySelector(
+        //           "body").style.visibility = "hidden";
+        //         document.querySelector(
+        //           "#loader").style.visibility = "visible";
+        //     } else {
+        //         document.querySelector(
+        //           "#loader").style.display = "none";
+        //         document.querySelector(
+        //           "body").style.visibility = "visible";
+        //     }
+        // };	
 		var text = ['THINK', 'EXECUTE', 'PROVE'];
 		var counter = 0;
 		var elem = $("#typer");
@@ -530,11 +530,11 @@
 			window.setTimeout(function(){$(".anim.two").addClass('scale-it');}, 700);
 			window.setTimeout(function(){$(".anim.three").addClass('scale-it');}, 900);
 
-
-			window.setTimeout(function(){
-				$("#loader").addClass('hide-it');
-			}, 6000);
-
+			// $(document).ready(function(){
+				window.setTimeout(function(){
+					$("#loader").addClass('hide-it');
+				}, 6000);
+			// });
 		// const radios = document.querySelectorAll('.carousel__activator');
 
 		// radios.forEach((name, i) => {
