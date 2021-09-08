@@ -42,12 +42,12 @@
 						<label for="check" class="checkbtn">
 							<i class="fas fa-bars"></i>
 						</label>
-							<ul>
-								<li><a href="index.html" class="active js-scroll-trigger">HOME<span></span><span></span><span></span><span></span></a></li>
-								<li><a href="#offering" class="js-scroll-trigger">ABOUT<span></span><span></span><span></span><span></span></a></li>
-								<li><a href="#services" class="js-scroll-trigger">SERVICES<span></span><span></span><span></span><span></span></a></li>
-								<li><a href="#portfolio" class="js-scroll-trigger">PORTFOLIO<span></span><span></span><span></span><span></span></a></li>
-								<li><a href="#contact" class="js-scroll-trigger">CONTACT<span></span><span></span><span></span><span></span></a></li>
+							<ul id="ulList">
+								<li><a id="toggle-link" onclick="toggleLink()" href="index.html" class="active js-scroll-trigger">HOME<span></span><span></span><span></span><span></span></a></li>
+								<li><a id="toggle-link" onclick="toggleLink()" href="#offering" class="js-scroll-trigger">ABOUT<span></span><span></span><span></span><span></span></a></li>
+								<li><a id="toggle-link" onclick="toggleLink()" href="#services" class="js-scroll-trigger">SERVICES<span></span><span></span><span></span><span></span></a></li>
+								<li><a id="toggle-link" onclick="toggleLink()" href="#portfolio" class="js-scroll-trigger">PORTFOLIO<span></span><span></span><span></span><span></span></a></li>
+								<li><a id="toggle-link" onclick="toggleLink()" href="#contact" class="js-scroll-trigger">CONTACT<span></span><span></span><span></span><span></span></a></li>
 							</ul>
 					</nav>
 					<ul class="socials">
@@ -498,6 +498,14 @@
 	  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
 	  <script>
+
+		const check = document.getElementById('check');
+
+		function toggleLink(){
+			check.checked = false;
+		}
+
+
         // document.onreadystatechange = function() {
         //     if (document.readyState !== "complete") {
         //         document.querySelector(
