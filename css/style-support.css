@@ -9,13 +9,14 @@ body {
   box-sizing: border-box;
   font-weight: 400;
   background-color: #f1f1f1;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 a,
 button,
 input,
@@ -23,6 +24,55 @@ label,
 select,
 textarea {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+#loader {
+  background-image: url(../assets/img/salon15.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#loader .darker{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.541);
+}
+#loader .darker .centering{
+  width: fit-content;
+  text-align: center;
+}
+#loader .darker .centering h1{
+  font-size: 5rem;
+  padding: 1rem 2rem;
+  background: black;
+  display: table;
+  color: white;
+  mix-blend-mode: multiply;
+}
+#loader .darker .centering .blacker{
+  margin: auto;
+  background: linear-gradient( #50dfdb , #50dfdb) white no-repeat 0 0;
+  background-size: 0 100%;
+  animation: colorIt 6s linear 1 forwards;
+}
+
+#loader .darker .centering p{
+  color: #50dfdb;
+  font-size: 2rem;
+}
+.hide-it{
+  display: none;
+}
+@keyframes colorIt {
+  to {
+    background-size: 100% 100%;
+  }
 }
 footer,
 header,
@@ -1334,8 +1384,16 @@ footer .copyright p span {
 .inset.single {
   width: 70%;
   float: left;
+  padding-top: 10px;
 }
 
+.inset-description{
+  margin: 2rem auto 0;
+  width: 90%;
+}
+.inset-description h1{
+  color: #00c7b0;
+}
 
 .inset.single .container .col{
   width: 100%;
@@ -1577,7 +1635,7 @@ footer .copyright p span {
   height: auto;
   float: right;
   margin: 0;
-  padding-top: 17rem;
+  padding-top: 20px;
   text-align: center;
 }
 
@@ -1587,7 +1645,9 @@ footer .copyright p span {
 }
 
 .projects-single .row a{
-  width: 80%;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
   float: none;
 }
 
@@ -1756,6 +1816,9 @@ footer .copyright p span {
   
 }
 @media screen and (max-width: 800px) {
+  #loader .darker .centering h1{
+    font-size: 2.5rem;
+  }
   footer .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1862,8 +1925,8 @@ footer .copyright p span {
   }
   .services .container {
     width: 100%;
-}
-.services .container .col-2 h1 {
+  }
+  .services .container .col-2 h1 {
   font-size: 2rem;
   }
   .offering .row {
@@ -1897,12 +1960,16 @@ footer .copyright p span {
     font-size: 1rem !important;
   }
   
+  
   .inset.single {
     width: 100%;
     float: none;
   }
   .inset.single .container .col {
     min-height: 300px;
+  }
+  .inset.single .gallery-cell {
+    height: 300px;
   }
   .projects-single {
     width: 100%;
@@ -1989,6 +2056,13 @@ footer .copyright p span {
 }
 
 @media screen and (max-width: 480px) {
+  #loader .darker .centering h1{
+    font-size: 2rem;
+    margin: 1rem auto;
+  }
+  #loader .darker .centering p{
+    font-size: 1.5rem;
+  }
   .services .container .col-2 .col {
     width: 75%;
   }
