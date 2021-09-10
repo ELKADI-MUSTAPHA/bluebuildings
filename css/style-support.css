@@ -137,6 +137,9 @@ q {
 .whatsapp span {
   display: none
 }
+.hide-it2{
+  display: none !important;
+}
 
 /* ============================= header ============================ */
 header {
@@ -281,13 +284,13 @@ label.logo img {
   --m: 4;
 }
 .nav ul li a {
-  color: #999;
+  color: rgb(61, 61, 61);
   font-weight: 600;
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 .nav ul li:hover a {
-  color: #f3f3f3;
+  color: #ffffff;
 }
 .checkbtn {
   color: #0b5475;
@@ -303,8 +306,8 @@ label.logo img {
 }
 /* Style The Dropdown Button */
 .dropbtn {
-  background-color: #58cddf;
-  color: white;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -336,7 +339,7 @@ label.logo img {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #a4f3ff}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -345,7 +348,7 @@ label.logo img {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #6c757d;
+  background-color: #a4f3ff;
 }
 /* ===================== under header section ================== */
 
@@ -916,8 +919,8 @@ label.logo img {
   margin-right: -10px;
   height: 100%;
   padding-top: 51%;
-  -webkit-transform: translateY(-32px);
-  transform: translateY(-32px);
+  -webkit-transform: translateY(32px);
+  transform: translateY(32px);
   box-shadow: 0 0 6px #777;
 }
 .inset .image.ar{
@@ -2051,16 +2054,17 @@ footer .copyright p span {
 
 }
 @media only screen and (min-width: 700px) {
-  .whatsapp:hover span {
+  .whatsapp:hover .span-wts {
     border: 2px solid #50dfdb;
+    border-radius: 15px;
     color: #000;
-    font-size: 1rem;
-    padding: 5px;
-    display: block;
+    font-size: 1.8rem;
+    padding: 10px;
+    display: block !important;
     z-index: 100;
     background-color: white;
     right: 2rem;
-    width: 220px;
+    width: 320px;
     position: absolute;
     bottom: 3rem;
     text-decoration: none;
@@ -2074,6 +2078,21 @@ footer .copyright p span {
   }
   .projects .row a {
     width: 45%;
+  }
+  .whatsapp .span-wts {
+    border: 2px solid #50dfdb;
+    border-radius: 10px;
+    color: #000;
+    font-size: 1.3rem;
+    padding: 8px 6px;
+    display: block;
+    z-index: 100;
+    background-color: white;
+    right: 2rem;
+    width: 320px;
+    position: absolute;
+    bottom: 3rem;
+    text-decoration: none;
   }
 
 }

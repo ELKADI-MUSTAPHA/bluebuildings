@@ -27,7 +27,7 @@
 		
 		<!--========== HEADER ==========-->
 
-		<a class="whatsapp" href="https://wa.me/966509666005"><span>Hi! Let's talk on WhatsApp</span><i class="fab fa-whatsapp"></i></a>
+		<a class="whatsapp" href="https://wa.me/966509666005"><span class="span-wts">Hi! Let's talk on WhatsApp</span><i class="fab fa-whatsapp"></i></a>
 
 		<header class="header">
 			<div class="sc-header">
@@ -613,14 +613,12 @@
 
 		for (let i = 0; i < beaches.length; i++) {
 			const beach = beaches[i];
-			const hi = "holla";
 			new google.maps.Marker({
 			position: { lat: beach[1], lng: beach[2] },
 			map,
 			// icon: image,
 			shape: shape,
 			title: beach[0],
-			addClass: hi,
 			zIndex: beach[3],
 			});
 		}
