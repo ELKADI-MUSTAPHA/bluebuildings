@@ -61,6 +61,11 @@ textarea {
   background-size: 0 100%;
   animation: colorIt 6s linear 1 forwards;
 }
+#loader .darker .centering .blacker.ar{
+  background: linear-gradient( #50dfdb , #50dfdb) white no-repeat top right;
+  background-size: 0 100%;
+  animation: colorIt 6s linear 1 forwards;
+}
 
 #loader .darker .centering p{
   color: #50dfdb;
@@ -295,6 +300,52 @@ label.logo img {
 }
 #check {
   display: none;
+}
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: #58cddf;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 90px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 9;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #6c757d;
 }
 /* ===================== under header section ================== */
 
@@ -858,16 +909,21 @@ label.logo img {
   letter-spacing: -0.5px;
   border-bottom: 2px solid #58cddf;
 }
-.inset .Image {
-  margin-left: -10px;
+.inset .image {
+  position: relative;
+  width: 100%;
+  margin-left: -30px;
   margin-right: -10px;
-  height: 0;
-  padding-top: 66%;
+  height: 100%;
+  padding-top: 51%;
   -webkit-transform: translateY(-32px);
   transform: translateY(-32px);
   box-shadow: 0 0 6px #777;
 }
-
+.inset .image.ar{
+  margin-left: -10px;
+  margin-right: -30px;
+}
 /* =================================== projects links ============================== */
 
 .projects{
@@ -1261,6 +1317,11 @@ x
   margin: 32px auto 0;
   margin: 2rem auto 0;
 }
+.contact #map .gm-style div[role=img][title]:hover::after {
+  width: 93px !important;
+  height: 99px !important;
+  font-size: 4rem;
+}
 
 /* ================================= footer section ========================== */
 footer .container {
@@ -1640,13 +1701,12 @@ footer .copyright p span {
 }
 
 .projects-single .row {
-  width: fit-content;
+  width: 100%;
   margin: 0 auto;
 }
 
 .projects-single .row a{
   width: 100%;
-  margin: 0 auto;
   display: block;
   float: none;
 }
@@ -1711,7 +1771,10 @@ footer .copyright p span {
   .banner .container {
     margin-top: 4rem;
   }
-  
+  .dropdown {
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
   .checkbtn {
     display: block;
   }
@@ -1777,9 +1840,9 @@ footer .copyright p span {
   .headline {
     font-size: 26px;
   }
-  .inset .Image {
-    -webkit-transform: translateY(-32px) !important;
-    transform: translateY(-32px) !important;
+  .inset .image, .inset .image.ar {
+    margin-left: 0;
+    margin-right: 0;
   }
   
   .banner .row .title-banner h3 {
@@ -1857,7 +1920,7 @@ footer .copyright p span {
     top: auto;
     bottom: 0;
     right: auto;
-    left: 50%;
+    left: 50% !important;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 100%;

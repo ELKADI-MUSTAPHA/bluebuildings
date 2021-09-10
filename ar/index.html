@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>بلو بويلدينغز - تصميم معماري وهندسي</title>
+
+		<!-- style -->
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/all.min.css" />
+		<link rel="stylesheet" href="../css/normalize.css">
+		<link rel="stylesheet" href="../css/style-support.css">
+		<link rel="stylesheet" href="../css/flickity.css" />
+
+		<style>
+			.projects-single{
+				float: left;
+			}
+			.inset.single{
+				float: right;
+			}
+			.contact .form .row {
+				float: right !important;
+			}
+			.contact .form .row .col-25, 
+			.contact .form .row .col-75, 
+			footer .row .col-3, 
+			footer .social1 p,
+			footer .info li p,
+			.banner .banner-content,
+			.banner .box .content .centering,
+			.services .container .col-2 .cols,
+			.offering .row .col{
+				text-align: right !important;
+			}
+			.banner .box {
+				right: auto !important;
+				left: 10% !important;
+			}
+			.services .container .col-2 .col .padd {
+				padding-right: 2rem;
+			}
+			.services .container .col-2 .col h2 i {
+				margin-left: 0.5rem;
+			}
+			.contact input[type="submit"] {
+				float: right;
+			}
+		</style>
+    </head>
+    <body  dir='rtl' lang='ar'>
+		<div id="loader" class="center">
+			<div class="darker">
+				<div class="centering">
+					<div class="blacker ar">
+						<h1>بلو بويلدينغز</h1>
+					</div>
+					<p>!...إنتضر لحضة من فضلك</p>
+				</div>
+			</div>
+		</div>
+		
+		<!--========== HEADER ==========-->
+
+		<a class="whatsapp" href="https://wa.me/966509666005"><span>أهلا! لنتحدث على الواتساب</span><i class="fab fa-whatsapp"></i></a>
+
+		<header class="header"  dir='ltr' lang='en'>
+			<div class="sc-header">
+
+				<div class="first-sc-header">
+					<label class="logo"><a href="index.html"><img src="../assets/img/logo.jpg" width="80px" height="70px" alt="logo"></a></label>
+				</div>
+				<div class="second-sc-header">
+					
+					<nav class="nav" role="navigation">
+						<input type="checkbox" id="check"/>
+						<label for="check" class="checkbtn">
+							<i class="fas fa-bars"></i>
+						</label>
+							<ul id="ulList">
+								<li><a id="toggle-link" onclick="toggleLink()" href="index.html" class="active js-scroll-trigger">الرئيسية<span></span><span></span><span></span><span></span></a></li>
+								<li><a id="toggle-link" onclick="toggleLink()" href="#offering" class="js-scroll-trigger">من نحن<span></span><span></span><span></span><span></span></a></li>
+								<li><a id="toggle-link" onclick="toggleLink()" href="#services" class="js-scroll-trigger">الخدمات<span></span><span></span><span></span><span></span></a></li>
+								<li><a id="toggle-link" onclick="toggleLink()" href="#portfolio" class="js-scroll-trigger">المشاريع<span></span><span></span><span></span><span></span></a></li>
+								<li><a id="toggle-link" onclick="toggleLink()" href="#contact" class="js-scroll-trigger">تواصل معنا<span></span><span></span><span></span><span></span></a></li>
+							</ul>
+					</nav>
+					<ul class="socials">
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+					</ul>
+					<div class="dropdown">
+						<button class="dropbtn"><i class="fas fa-sort-down"></i> العربية</button>
+						<div class="dropdown-content">
+						  <a href="/ar/index.html">العربية</a>
+						  <a href="/index.html">English</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+	<!-- ============ under header section ============ -->
+
+	<section class="under-header" >
+		<div class="container">
+			<div class="carousel-container">
+				<ul class="carousel my-carousel carousel--thumb">
+					<input class="carousel__activator" type="radio" id="K" name="thumb" checked="checked" />
+					<input class="carousel__activator" type="radio" id="L" name="thumb" />
+					<input class="carousel__activator" type="radio" id="M" name="thumb" />
+					<input class="carousel__activator" type="radio" id="N" name="thumb" />
+					<input class="carousel__activator" type="radio" id="O" name="thumb" />
+					<div class="carousel__controls"><label class="carousel__control carousel__control--backward" for="O"></label><label class="carousel__control carousel__control--forward" for="L"></label></div>
+					<div class="carousel__controls"><label class="carousel__control carousel__control--backward" for="K"></label><label class="carousel__control carousel__control--forward" for="M"></label></div>
+					<div class="carousel__controls"><label class="carousel__control carousel__control--backward" for="L"></label><label class="carousel__control carousel__control--forward" for="N"></label></div>
+					<div class="carousel__controls"><label class="carousel__control carousel__control--backward" for="M"></label><label class="carousel__control carousel__control--forward" for="O"></label></div>
+					<div class="carousel__controls"><label class="carousel__control carousel__control--backward" for="N"></label><label class="carousel__control carousel__control--forward" for="K"></label></div>
+					<li class="banner carousel__slide">
+						<h1>K</h1>
+						<video id="background-video" autoplay loop muted poster="../assets/img/villa-two2.jpg">
+							<source src="../assets/video/design-video-bgd.mp4" type="video/mp4">
+						</video>
+						<div class="row">
+							<div class="banner-content">
+							  <div class="title-banner">
+								  <div class="centering">
+									  <h3>مرحبا بك</h3><br>
+									  <h2>في <span>بلو</span><br>بويلدينغز</h2>
+									  <div class="anime">
+										  <span class="anim one">نصمم</span>
+										  <span class="anim two">نبني</span>
+										  <span class="anim three">نختبر</span>
+									  </div>
+								  </div>
+							  </div>
+								<div class="box">
+									<span></span>
+									<span></span>
+									<div class="content">
+									  <div class="centering">
+										  <h3 class="fst">إبن منزل أحلامك</h3>
+										  <h3 class="lst" style="display: none;"> بلوبويلدينغز</h3>
+										  <p>شركة استشارات معمارية وهندسية دولية مكرسة لإنشاء أماكن ذات قيمة دائمة وتحسين الحياة من خلال التصميم</p>
+										  <div class="cnt">
+											  <a href="#contact">تواصل معنا</a>
+											  <a href="#portfolio">المشاريع</a>
+										  </div>
+									  </div>
+								  </div>
+								</div>
+						  </div>
+					  </div>
+					</li>
+					<li class="carousel__slide">
+						<h1>L</h1>
+						<img src="../assets/img/chalet.jpg" alt="">
+						<div class="slide-content">
+							<h2>تصميم شاليه | 2000 م²</h2>
+							<p>بمساحة 2600 م | في الرياض | حي الرمال | تم أخذ فكرة التصميم من الحرف U وتم تدويرها وزيادة بعض الأجزاء مع مراعاة التدفق والتناسق والاستفادة من الممرات وتلاشي المساحات الميتة في التصميم مع الحفاظ على نوع التصميم الحديث وضمان تنوع الأشجار المتوفرة والصالحة للعيش مع طقوس المدن الصحراوية</p>
+						</div>
+					</li>
+					<li class="carousel__slide">
+						<h1>M</h1>
+						<img src="../assets/img/coffe.jpg" alt="">
+						<div class="slide-content">
+							<h2>تصميم كوفي شوب</h2>
+							<p>تصميم كوفي شوب بمساحة منفصلة بتصميم مميز.</p>
+						</div>
+					</li>
+					<li class="carousel__slide">
+						<h1>N</h1>
+						<img src="../assets/img/commercial-building.jpg" alt="">
+						<div class="slide-content">
+							<h2>تصميم مبنى تجاري</h2>
+							<p>تصميم وترميم مبنى تجاري بهوية مختلفة.</p>
+						</div>
+					</li>
+					<li class="carousel__slide">
+						<h1>O</h1>
+						<img src="../assets/img/villa.jpg" alt="">
+						<div class="slide-content">
+							<h2>فيلا | 745 م²</h2>
+							<p>تصميم فيلا خاصة بجدة</p>
+						</div>
+					</li>
+					<div class="carousel__indicators"><label class="carousel__indicator" for="K"></label><label class="carousel__indicator" for="L"></label><label class="carousel__indicator" for="M"></label><label class="carousel__indicator" for="N"></label><label class="carousel__indicator" for="O"></label></div>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="inset">
+		<div class="col-1">
+			<h1>مرحبا بك بلوبويلدينغز</h1>
+			<p>نحن استوديو للتصميم الداخلي مع لمسة مقرها في المملكة العربية السعودية ، نقدم خدمات التصميم الداخلي المتكاملة وحلول الحياة الذكية. تمنحنا خبرتنا في المشاريع السكنية والتجارية ميزة على أي شركة أخرى من خلال اختيار أفضل المنتجات في السوق بطريقة فعالة من حيث التكلفة</p>
+		</div>
+		<div class="Container">
+			<blockquote class="Content">
+				<h3 class="headline Quotation">بلوبويلدينغز قادرة على جعل العملية المعقدة أسهل بكثير</h3>
+				<div class="Testifier">
+					<strong>عبد الرحمان ماجد</strong>
+					مؤسس شركة بلوبويلدينغز
+				</div>
+				<a target="_blank" class="Link" href="#">دراسة الحالة</a>
+			</blockquote>
+			<div class="image ar">
+				<div style="display:block;overflow:hidden;position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;margin:0">
+					<img alt="An office lounge area with long leather couch, coffee table, and kitchen in the background" src="../assets/img/interior-design111.jpg" decoding="async" data-nimg="true" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover"/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="projects" id="portfolio">
+		<div class="container">
+			<h1>أحدث إنجازاتنا في التصميم المعماري</h1>
+			<div class="row">
+				<a href="/project/ar/chalet2000m.html">
+					<div class="col" style="background-image: url(../assets/img/chalet1.jpg); background-size: 140% ; background-position: center center ; background-repeat: no-repeat;">
+						<div class="back">
+							<span>تصميم شاليه | 2000 م²</span><br>
+							<span>عرض</span>
+						</div>
+					</div>
+				</a>
+				<a href="/project/ar/villa350m.html">
+					<div class="col" style="background-image: url(../assets/img/class-villa1.jpg); background-size: 140% ; background-position: center center ; background-repeat: no-repeat;">
+						<div class="back">
+							<span>فيلا | 350 م²</span><br>
+							<span>عرض</span>
+						</div>
+					</div>
+				</a>
+				<a href="/project/ar/coffeeshop.html">
+					<div class="col" style="background-image: url(../assets/img/coffe-shop1.jpg); background-size: 140% ; background-position: center center ; background-repeat: no-repeat;">
+						<div class="back">
+							<span>مقهى</span><br>
+							<span>عرض</span>
+						</div>
+					</div>
+				</a>
+				<a href="/project/ar/commercialbuilding.html">
+					<div class="col" style="background-image: url(../assets/img/commerc-buildings.jpg); background-size: 140% ; background-position: center center ; background-repeat: no-repeat;">
+						<div class="back">
+							<span>مبنى تجاري </span><br>
+							<span>عرض</span>
+						</div>
+					</div>
+				</a>
+				<a href="/project/ar/exteriordesign.html">
+					<div class="col" style="background-image: url(../assets/img/exterior1.jpg); background-size: 140% ; background-position: center center ; background-repeat: no-repeat;">
+						<div class="back">
+							<span>تصميم خارجي</span><br>
+							<span>عرض</span>
+						</div>
+					</div>
+				</a>
+				<a href="/project/ar/villa745m.html">
+					<div class="col" style="background-image: url(../assets/img/full-vila20.jpg); background-size: 140% ; background-position: center center ; background-repeat: no-repeat;">
+						<div class="back">
+							<span>فيلا | 745 م²</span><br>
+							<span>عرض</span>
+						</div>
+					</div>
+				</a>
+				<a href="/project/ar/gamingcenter.html">
+					<div class="col" style="background-image: url(../assets/img/gaming1.jpg); background-size: 140% ; background-position: center center ; background-repeat: no-repeat;">
+						<div class="back">
+							<span>مركز الألعاب | 300 م²</span><br>
+							<span>عرض</span>
+						</div>
+					</div>
+				</a>
+				<a href="/project/ar/storefront.html">
+					<div class="col" style="background-image: url(../assets/img/interface1.jpg); background-size: 140% ; background-position: center center ; background-repeat: no-repeat;">
+						<div class="back">
+							<span>واجهة محل تجاري</span>
+							<span>عرض</span>
+						</div>
+					</div>
+				</a>
+				<a href="/project/ar/interiordesign.html">
+					<div class="col" style="background-image: url(../assets/img/interior-deign5.jpg); background-size: 140% ; background-position: center center ; background-repeat: no-repeat;">
+						<div class="back">
+							<span>تصميم داخلي</span><br>
+							<span>عرض</span>
+						</div>
+					</div>
+				</a>
+				<a href="/project/ar/interiordesign2.html">
+					<div class="col" style="background-image: url(../assets/img/interior-villa1.jpg); background-size: 140% ; background-position: center center ; background-repeat: no-repeat;">
+						<div class="back">
+							<span>تصميم داخلي</span><br>
+							<span>عرض</span>
+						</div>
+					</div>
+				</a>
+				<a href="/project/ar/villa800m.html">
+					<div class="col" style="background-image: url(../assets/img/nice-villa1.jpg); background-size: 140% ; background-position: center center ; background-repeat: no-repeat;">
+						<div class="back">
+							<span>فيلا | 800 م²</span><br>
+							<span>عرض</span>
+						</div>
+					</div>
+				</a>
+				<a href="/project/ar/roomdesign.html">
+					<div class="col" style="background-image: url(../assets/img/room-two1.jpg); background-size: 140% ; background-position: center center ; background-repeat: no-repeat;">
+						<div class="back">
+							<span>تصميم غرفة</span><br>
+							<span>عرض</span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	
+
+	<section class="services" id="services">
+		<div class="container">
+			<div class="col-2">
+				<h1>الخدمات</h1>
+				<div class="cols">
+					<div class="col">
+						<h2><i class="fas fa-shapes"></i> التصميم المعماري</h2>
+						<div class="padd">
+							<p>إنشاء مساحات للمعيشة باستخدام أدوات معينة وخاصة الإبداع.</p>
+						</div>
+					</div>
+					<div class="col">
+						<h2><i class="fas fa-magic"></i>تصميم داخلي</h2>
+						<div class="padd">
+							<p>يقوم مصمم الديكور لدينا بتصميم مساحات المعيشة الخاصة بك بطريقة تناسب رغباتك وميزانياتك وأذواقك.</p>
+						</div>
+					</div>
+					<div class="col">
+						<h2><i class="fas fa-place-of-worship"></i>التصميم الخارجي</h2>
+						<div class="padd">
+							<p>فهم أن التصميم أكثر من مجرد مشروع ، إنه منزلك أو عملك.</p>
+						</div>
+					</div>
+					<div class="col">
+						<h2><i class="far fa-eye"></i>إشراف</h2>
+						<div class="padd">
+							<p>نحن هنا لضمان استمرارية مشاريعك والتحكم فيها.</p>
+						</div>
+					</div>
+					<div class="col">
+						<h2><i class="fas fa-tasks"></i>ادارة مشروع</h2>
+						<div class="padd">
+							<p>نحن هنا لبدء وإرشادك في تحقيق مشروعك.</p>
+						</div>
+					</div>
+					<div class="col">
+						<h2><i class="fas fa-drafting-compass"></i>الاستشارات الهندسية</h2>
+						<div class="padd">
+							<p>مهندسين ذوي خبرة قادرين على تقديم مشورة فنية قصيرة الأجل مقابل رسوم.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="offering" id="offering">
+		<div class="container">
+			<div class="darker">
+				<h1>مهمتنا</h1>
+				<span id="typer">نفكر</span>
+				<div class="row">
+					<div class="col">
+						<h2><span>أفضل</span> تركيز مع الزبناء</h2>
+						<p>نحن نقدم تركيزًا عاليًا لجميع جهات الاتصال دون أي اختلافات
+							- بغض النظر عن الحجم أو الربحية أو الأهمية.
+							كل عميل هو أكثر أهمية بالنسبة لنا ،
+							لذلك لا تتردد في الاتصال بنا!
+							انت في المكان الصحيح.
+							</p>
+						<img src="../assets/img/villa-design.jpg" alt="">
+					</div>
+					<div class="col">
+						<h2><span>أفضل</span> رضا الزبناء</h2>
+						<p>في بلوبويلدينغز ، نعمل بإخلاص على إبقاء موظفينا سعداء ومرتاحين ، من أجل إنجاحهم. تم تصميم سياسات الموارد البشرية لدينا لدعم نمو جميع الموظفين الذين يعملون من أجل نجاح عملائنا. نحن لا نقود فرقنا للعمل كفريق واحد فقط ، ولكن للعيش كعائلة واحدة.</p>
+						<img src="../assets/img/room-design.jpg" alt="">
+					</div>
+					<div class="col">
+						<h2><span>أفضل</span> جودة الخدمات</h2>
+						<p>نحن ملتزمون بالتفكير والتنفيذ والتوفير في تلبية المعايير العالية لعملنا. يقوم فريق المهندسين المعماريين لدينا بطرح الأفكار الإبداعية والفريدة من نوعها بناءً على البحث في احتياجات العملاء.</p>
+						<img src="../assets/img/saba-design.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="darker">
+		<div id="container">
+			<h1 class="h1">تواصل معنا</h1>
+			<form class="form" action="">
+				<div class="row">
+				  <div class="col-25">
+					<label for="fname">الإسم الكامل</label>
+				  </div>
+				  <div class="col-75">
+					<input type="text" id="fname" name="fullName" placeholder="الإسم الكامل.." autocomplete="off">
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="col-25">
+					<label for="phone">رقم الهاتف</label>
+				  </div>
+				  <div class="col-75">
+					<input type="text" id="phone" name="phone" placeholder="رقم الهاتف.." autocomplete="off">
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="col-25">
+					<label for="email">البريد الإلكتروني</label>
+				  </div>
+				  <div class="col-75">
+					<input type="text" id="email" name="email" placeholder="البريد الإلكتروني.." autocomplete="off">
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="col-25">
+					<label for="kind">نوع المشروع</label>
+				  </div>
+				  <div class="col-75">
+					<select name="kind">
+						<option value="House">منزل</option>
+						<option value="Coffe">مقهى</option>
+						<option value="Restaurant">مطعم</option>
+						<option value="Office">مكتب</option>
+					</select>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="col-25">
+					<label for="subject">الموضوع</label>
+				  </div>
+				  <div class="col-75">
+					<textarea id="subject" name="subject" placeholder="أكتب ما تريد.." style="height:200px"></textarea>
+				  </div>
+				</div>
+				<div class="row">
+				  <input type="submit" value="إرسال">
+				</div>
+			  </form>
+			  <div class="sec-two">
+				  <h2>!روابط إتصال سريعة</h2>
+					<div class="col first">
+						<a href="mailto:thebluebuildings@gmail.com"><i class="fas fa-envelope"></i><br><span>البريد</span></a>
+						<a href="tel:+966509666005"><i class="fas fa-phone"></i><br><span>الهاتف</span></a>
+						<a href="https://wa.me/966509666005"><i class="fab fa-whatsapp"></i><br><span>الواتساب</span></a>
+					</div>
+					<div class="col two">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14948760.685730455!2d36.022635127756836!3d23.8328268438997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e7b33fe7952a41%3A0x5960504bc21ab69b!2sArabie%20saoudite!5e0!3m2!1sfr!2sma!4v1629731026694!5m2!1sfr!2sma"  allowfullscreen="" loading="lazy"></iframe>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 social1">
+                    <h3>بلو بويلدينغز</h3>
+                    <p>نحن استوديو للتصميم الداخلي و الخارجي مع لمسة مقرها في المملكة العربية السعودية ، نقدم خدمات التصميم الداخلي و الخارجي المتكاملة وحلول الحياة الذكية. تمنحنا خبرتنا في المشاريع السكنية والتجارية ميزة على أي شركة أخرى من خلال اختيار أفضل المنتجات في السوق بطريقة فعالة من حيث التكلفة.</p>
+                    <ul class="socials">
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+					</ul>
+
+                </div>
+                <div class="col-3">
+                    <h3>معلومات</h3>
+                    <div>
+                        <ul class="info">
+                            <li>
+                                <p>
+                                    العنوان :<br />  الفورات 34، الرياض، المملكة العربية السعودية
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    الهاتف:<br /> +966509666005
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    البريد الإلكتروني:<br /> thebluebuildings@gmail.com
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h3>روابط تصفح سريعة</h3>
+                    <div>
+                        <ul class="quick-links">
+                            <li><a href="#about">من نحن</a></li>
+                            <li><a href="#offering">الخدمات</a></li>
+                            <li><a href="#projects">المشاريع</a></li>
+                            <li><a href="#contact">تواصل معنا</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="copyright">
+                    <p>
+						حقوق النشر &copy; 2021 تم إنشاء هذا النموذج بواسطة <span class="creator">بلو بويلدينغز</span>.
+						 <!-- تم إنشاء هذا النموذج بواسطة &copy; 2020 حقوق النشر .<span class="creator">بلو بويلدينغز</span>
+						.<span class="creator">بلو بويلدينغز</span>	تم إنشاء هذا النموذج بواسطة   -->
+                    
+					</p>
+					<img src="../assets/img/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+	
+	  <!--========== SCROLL REVEAL ==========-->
+	  <script src="https://unpkg.com/scrollreveal"></script>
+	  <script src="../js/flickity.pkgd.js"></script>
+	  <script src="..js/index.js"></script>
+
+	  <script src="../js/main.js"></script>
+	  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+	  <script>
+
+		const check = document.getElementById('check');
+
+		function toggleLink(){
+			check.checked = false;
+		}
+
+
+        // document.onreadystatechange = function() {
+        //     if (document.readyState !== "complete") {
+        //         document.querySelector(
+        //           "body").style.visibility = "hidden";
+        //         document.querySelector(
+        //           "#loader").style.visibility = "visible";
+        //     } else {
+        //         document.querySelector(
+        //           "#loader").style.display = "none";
+        //         document.querySelector(
+        //           "body").style.visibility = "visible";
+        //     }
+        // };	
+		var text = ['نصمم', 'نبني', 'نختبر'];
+		var counter = 0;
+		var elem = $("#typer");
+		setInterval(change, 2000);
+		function change() {
+			elem.fadeOut(function(){
+				elem.html(text[counter]);
+				counter++;
+				if(counter >= text.length) { counter = 0; }
+				elem.fadeIn();
+			});
+		}
+
+
+		
+			window.setTimeout(function(){$(".anim.one").addClass('scale-it');}, 500);
+			window.setTimeout(function(){$(".anim.two").addClass('scale-it');}, 700);
+			window.setTimeout(function(){$(".anim.three").addClass('scale-it');}, 900);
+
+			// $(document).ready(function(){
+				window.setTimeout(function(){
+					$("#loader").addClass('hide-it');
+				}, 6000);
+			// });
+		// const radios = document.querySelectorAll('.carousel__activator');
+
+		// radios.forEach((name, i) => {
+		// 	setTimeout(() => {
+		// 		name.checked = true;
+		// 	}, i * 7000);
+		// });
+		
+
+		
+
+	  </script>
+	  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwVVtbxIF1Pm4eMue5W-H-KtsGoU0KgJo&callback=initMap&libraries=&v=weekly" async ></script>
+	  <script type="text/javascript">
+		// The following example creates complex markers to indicate beaches near
+		// Sydney, NSW, Australia. Note that the anchor is set to (0,32) to correspond
+		// to the base of the flagpole.
+		function initMap() {
+		const map = new google.maps.Map(document.getElementById("map"), {
+			zoom: 5,
+			center: { lat: 26.366287, lng: 41.206223  },
+		});
+		setMarkers(map);
+		}
+		// Data for the markers consisting of a name, a LatLng and a zIndex for the
+		// order in which these markers should display on top of each other.
+		const beaches = [
+		["AL YARMUK", 24.814542, 46.789539, 4],
+		["AL MUNSIYAH", 24.826418, 46.767576, 5],
+		["AL QIRAWAN", 24.838375, 46.587263, 3],
+		["TABUK", 28.397419, 36.538424, 2],
+		["GRELE", 27.491307, 41.624987, 6],
+		["YANBU", 24.038023, 38.299797, 7],
+		];
+
+		function setMarkers(map) {
+		// Adds markers to the map.
+		// Marker sizes are expressed as a Size of X,Y where the origin of the image
+		// (0,0) is located in the top left of the image.
+		// Origins, anchor positions and coordinates of the marker increase in the X
+		// direction to the right and in the Y direction down.
+		// const image = {
+		// 	url: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+		// 	// This marker is 20 pixels wide by 32 pixels high.
+		// 	size: new google.maps.Size(20, 32),
+		// 	// The origin for this image is (0, 0).
+		// 	origin: new google.maps.Point(0, 0),
+		// 	// The anchor for this image is the base of the flagpole at (0, 32).
+		// 	anchor: new google.maps.Point(0, 32),
+		// };
+		// Shapes define the clickable region of the icon. The type defines an HTML
+		// <area> element 'poly' which traces out a polygon as a series of X,Y points.
+		// The final coordinate closes the poly by connecting to the first coordinate.
+		const shape = {
+			coords: [1, 1, 1, 20, 18, 20, 18, 1],
+			type: "poly",
+		};
+
+		for (let i = 0; i < beaches.length; i++) {
+			const beach = beaches[i];
+			new google.maps.Marker({
+			position: { lat: beach[1], lng: beach[2] },
+			map,
+			// icon: image,
+			shape: shape,
+			title: beach[0],
+			zIndex: beach[3],
+			});
+		}
+		}
+
+		// $("div[title|='TABUK']").addClass('hi');
+		// // const getTitle = document.querySelectorAll('[role="img"]');
+		// // getTitle.forEach(element => {
+		// // 	console.log("hi")
+		// // })
+		// $( document ).ready(function() {
+		// 	var atrrbt = $("div[role|='img']").attr("title");
+		// 	console.log(atrrbt)
+		// });
+	  </script>
+    </body>
+</html>
