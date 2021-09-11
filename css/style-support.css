@@ -1884,6 +1884,10 @@ footer .copyright p span {
 
 }
 @media screen and (max-width: 959px) {
+  .sc-header .second-sc-header {
+    display: table;
+    width: 26%;
+  }
   .banner .container {
     margin-top: 4rem;
   }
@@ -1924,10 +1928,6 @@ footer .copyright p span {
     color: rgba(1, 156, 27, 0.589);
   }
  
-  .sc-header .second-sc-header {
-    display: table;
-    width: 50%;
-  }
   .sc-header .socials{
     position: fixed;
     width: 100%;
@@ -2081,6 +2081,10 @@ footer .copyright p span {
 }
 
 @media screen and (max-width: 750px) {
+  .sc-header .second-sc-header {
+    display: table;
+    width: 40%;
+  }
   #background-video {
     display: none;
   }
@@ -2299,8 +2303,11 @@ footer .copyright p span {
   .testmonial .gallery-cell {
     width: 80%;
   }
-
+  .sc-header .second-sc-header {
+    width: 70%;
+  }
 }
+
 
 @media screen and (max-width: 450px) {
   .banner .row .title-banner h3 {
@@ -2468,5 +2475,13 @@ footer .copyright p span {
   }
   footer .row .col-3 .quick-links {
     justify-content: space-between;
+}
+}
+@media screen and (max-width: 320px) {
+  .sc-header .second-sc-header {
+    width: 90%;
+  }
+  label.logo {
+    margin: 0 0 0 1rem;
 }
 }

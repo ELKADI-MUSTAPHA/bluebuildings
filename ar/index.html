@@ -603,85 +603,63 @@
 	  <!--========== SCROLL REVEAL ==========-->
 	  <script src="https://unpkg.com/scrollreveal"></script>
 	  <script src="../js/flickity.pkgd.js"></script>
-	  <script src="..js/index.js"></script>
-
-	  <script src="../js/main.js"></script>
 	  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
+	  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwVVtbxIF1Pm4eMue5W-H-KtsGoU0KgJo&callback=initMap&libraries=&v=weekly" async ></script>
+	  <script src="..js/index.js"></script>
+	  <script src="../js/main.js"></script>
+	  <script src="../js/all.js"></script>
 	  <script>
-
-			function toggleLink(){
-				$('#ulList').toggleClass('toggle-it');
-				$('#socials').toggleClass('toggle-it');
-			};
-
-		var text = ['نصمم', 'نبني', 'نختبر'];
-		var counter = 0;
-		var elem = $("#typer");
-		setInterval(change, 2000);
-		function change() {
+		  var text = ['نصمم', 'نبني', 'نختبر'];
+			var counter = 0;
+			var elem = $("#typer");
+			setInterval(change, 2000);
+			function change() {
 			elem.fadeOut(function(){
 				elem.html(text[counter]);
 				counter++;
 				if(counter >= text.length) { counter = 0; }
 				elem.fadeIn();
 			});
-		}
+			}
 
-
-		
-			window.setTimeout(function(){$(".anim.one").addClass('scale-it');}, 500);
-			window.setTimeout(function(){$(".anim.two").addClass('scale-it');}, 700);
-			window.setTimeout(function(){$(".anim.three").addClass('scale-it');}, 900);
-
-			// $(document).ready(function(){
-				window.setTimeout(function(){
-					$("#loader").addClass('hide-it');
-				}, 6000);
-			// });
-		
-
-		
-
-	  </script>
-	  <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwVVtbxIF1Pm4eMue5W-H-KtsGoU0KgJo&callback=initMap&libraries=&v=weekly" async ></script>
-	  <script type="text/javascript">
+			
 		function initMap() {
-		const map = new google.maps.Map(document.getElementById("map"), {
+			const map = new google.maps.Map(document.getElementById("map"), {
 			zoom: 5,
 			center: { lat: 26.366287, lng: 41.206223  },
-		});
-		setMarkers(map);
-		}
-		
-		const beaches = [
-		["AL YARMUK", 24.814542, 46.789539, 4],
-		["AL MUNSIYAH", 24.826418, 46.767576, 5],
-		["AL QIRAWAN", 24.838375, 46.587263, 3],
-		["TABUK", 28.397419, 36.538424, 2],
-		["GRELE", 27.491307, 41.624987, 6],
-		["YANBU", 24.038023, 38.299797, 7],
-		];
-
-		function setMarkers(map) {
-		
-		const shape = {
-			coords: [1, 1, 1, 20, 18, 20, 18, 1],
-			type: "poly",
-		};
-
-		for (let i = 0; i < beaches.length; i++) {
-			const beach = beaches[i];
-			new google.maps.Marker({
-			position: { lat: beach[1], lng: beach[2] },
-			map,
-			shape: shape,
-			title: beach[0],
-			zIndex: beach[3],
 			});
-		}
-		}
+			setMarkers(map);
+			}
+			
+			const beaches = [
+			["AL YARMUK", 24.814542, 46.789539, 4],
+			["AL MUNSIYAH", 24.826418, 46.767576, 5],
+			["AL QIRAWAN", 24.838375, 46.587263, 3],
+			["TABUK", 28.397419, 36.538424, 2],
+			["GRELE", 27.491307, 41.624987, 6],
+			["YANBU", 24.038023, 38.299797, 7],
+			];
+
+			function setMarkers(map) {
+			
+			const shape = {
+				coords: [1, 1, 1, 20, 18, 20, 18, 1],
+				type: "poly",
+			};
+
+			for (let i = 0; i < beaches.length; i++) {
+				const beach = beaches[i];
+				new google.maps.Marker({
+				position: { lat: beach[1], lng: beach[2] },
+				map,
+				shape: shape,
+				title: beach[0],
+				zIndex: beach[3],
+				});
+			}
+    	}
+
 	  </script>
+		
     </body>
 </html>

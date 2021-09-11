@@ -27,11 +27,10 @@
 				<div class="second-sc-header">
 					
 					<nav class="nav" role="navigation">
-						<input type="checkbox" id="check"/>
-						<label for="check" class="checkbtn">
+						<button onclick="toggleLink()" class="toggle-btn" id="toggle-btn">
 							<i class="fas fa-bars"></i>
-						</label>
-						<ul>
+						</button>
+						<ul id="ulList">
 							<li><a href="/" class="active js-scroll-trigger">HOME<span></span><span></span><span></span><span></span></a></li>
 							<li><a href="/" class="js-scroll-trigger">ABOUT<span></span><span></span><span></span><span></span></a></li>
 							<li><a href="/" class="js-scroll-trigger">SERVICES<span></span><span></span><span></span><span></span></a></li>
@@ -39,7 +38,7 @@
 							<li><a href="/" class="js-scroll-trigger">CONTACT<span></span><span></span><span></span><span></span></a></li>
 						</ul>
 					</nav>
-					<ul class="socials">
+					<ul class="socials" id="socials">
 						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
 						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
 						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
@@ -355,10 +354,9 @@
 	  <!--========== SCROLL REVEAL ==========-->
 	  <script src="https://unpkg.com/scrollreveal"></script>
 	  <script src="../../js/flickity.pkgd.js"></script>
-	  <script src="../../js/index.js"></script>
-
-	  <script src="../../js/main.js"></script>
 	  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
+	  <script src="../../js/index.js"></script>
+	  <script src="./../js/main.js"></script>
+	  <script src="../../js/all.js"></script>
     </body>
 </html>
