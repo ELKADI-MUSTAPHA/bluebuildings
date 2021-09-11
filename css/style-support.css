@@ -306,18 +306,18 @@ label.logo img {
 .nav ul li:hover a {
   color: #ffffff;
 }
-.checkbtn {
+.toggle-btn {
   color: #0b5475;
   font-size: 30px;
   line-height: 80px;
   float: right;
   margin-right: 40px;
   cursor: pointer;
+  background: transparent;
+  border: none;
   display: none;
 }
-#check {
-  display: none;
-}
+
 /* Style The Dropdown Button */
 .dropbtn {
   background-color: transparent;
@@ -1891,8 +1891,11 @@ footer .copyright p span {
     margin-top: 1rem;
     margin-left: 2rem;
   }
-  .checkbtn {
+  .toggle-btn {
     display: block;
+  }
+  .toggle-it{
+    left: 0 !important;
   }
   nav ul {
     position: fixed;
@@ -1920,15 +1923,22 @@ footer .copyright p span {
     background: 0 0;
     color: rgba(1, 156, 27, 0.589);
   }
-  #check:checked ~ ul {
-    left: 0;
-  }
+ 
   .sc-header .second-sc-header {
     display: table;
+    width: 50%;
   }
-  .sc-header .socials,
-  footer .socials {
-    display: none;
+  .sc-header .socials{
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    bottom: 2rem;
+    left: -100%;
+    background: #fff;
+    text-align: center;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 999;
   }
   .inset {
     padding: 2rem 1.8rem;
