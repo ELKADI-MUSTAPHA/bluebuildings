@@ -134,7 +134,21 @@ q {
   color: #fff;
   background-color: #00c7b0;
 }
-.whatsapp span {
+.whatsapp:hover .span-wts {
+  border: 2px solid #50dfdb;
+  border-radius: 15px;
+  color: #000;
+  font-size: 1.8rem;
+  padding: 10px;
+  z-index: 100;
+  background-color: white;
+  right: 2rem;
+  width: 320px;
+  position: absolute;
+  bottom: 3rem;
+  text-decoration: none;
+}
+.whatsapp .span-wts {
   display: none
 }
 .hide-it2{
@@ -1465,18 +1479,22 @@ footer .copyright p span {
   margin: 2rem auto;
 }
 
+.testmonial .gallery,
 .inset.single .gallery {
   width: 100%;
 }
+.testmonial .gallery-cell,
 .inset.single .gallery-cell {
   width: 100%;
   height: 500px;
   counter-increment: gallery-cell;
   margin: 0 5px;
 }
+.testmonial .gallery-cell:before,
 .inset.single .gallery-cell:before {
   display: none;
 }
+.testmonial .nobuton .flickity-prev-next-button:disabled,
 .inset.single .nobuton .flickity-prev-next-button:disabled {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1720,6 +1738,96 @@ footer .copyright p span {
 .clear {
   clear: both;
 }
+/* ================================ testmonials ================================ */
+
+.testmonial {
+  width: 90%;
+}
+
+
+.testmonial .container{
+  width: 100%;
+  height: 600px;
+  position: relative;
+  text-align: center;
+}
+
+
+.testmonial .colorant{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 70%;
+  border-radius: 30px;
+  bottom: 0;
+  background: rgb(88,205,223);
+  background: linear-gradient(180deg, rgba(88,205,223,0.6697836154844703) 22%, rgba(191,191,191,0.7277104447527629) 65%);
+}
+.testmonial .container .row h1{
+  margin: 1rem auto;
+}
+
+
+.testmonial .gallery-cell {
+  width: 28%;
+  height: 450px;
+  margin: 1.5rem;
+  box-shadow: 6px 6px 16px 3px #b9b9b9;
+  border-radius: 20px;
+  background-color: white;
+}
+
+
+.testmonial .flickity-page-dots{
+  bottom: -40px;
+}
+
+
+.testmonial .gallery-cell .content{
+  width: 100%;
+  height: 100%;
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+
+.testmonial .gallery-cell .content p:first-child{
+  font-size: 1.2rem;
+  color: rgba(31, 31, 31, 0.699);
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+
+.testmonial .gallery-cell .content i{
+  font-size: 6rem;
+  color: #58cddf;
+  margin-bottom: 2rem;
+}
+
+
+.testmonial .gallery-cell .content .down-it{
+  position: absolute;
+  bottom: 2rem;
+  width: 90%;
+  margin: auto;
+}
+
+
+.testmonial .gallery-cell .content h3{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.testmonial .gallery-cell .content p:last-child{
+  font-size: 1rem;
+  color: rgba(31, 31, 31, 0.699);
+}
+
+
+
 @media screen and (min-width: 960px) {
   /* #background-video {
     max-height: 800px;
@@ -1769,6 +1877,11 @@ footer .copyright p span {
   .projects .row a {
     width: 32%;
   }
+  
+  .testmonial .gallery-cell {
+    width: 30%;
+  }
+
 }
 @media screen and (max-width: 959px) {
   .banner .container {
@@ -1868,6 +1981,9 @@ footer .copyright p span {
   .contact .darker {
     padding: 3rem 1rem;
   }
+  .testmonial .gallery-cell {
+    width: 34%;
+  }
 }
 
 @media only screen and (min-width: 850px) {
@@ -1941,6 +2057,9 @@ footer .copyright p span {
     display: block !important;
   }
   .banner .box .content .cnt a{
+    width: 40%;
+  }
+  .testmonial .gallery-cell {
     width: 40%;
   }
 }
@@ -2051,23 +2170,14 @@ footer .copyright p span {
     float: left;
   }
 
+  .testmonial .gallery-cell {
+    width: 60%;
+  }
 
 }
 @media only screen and (min-width: 700px) {
   .whatsapp:hover .span-wts {
-    border: 2px solid #50dfdb;
-    border-radius: 15px;
-    color: #000;
-    font-size: 1.8rem;
-    padding: 10px;
     display: block !important;
-    z-index: 100;
-    background-color: white;
-    right: 2rem;
-    width: 320px;
-    position: absolute;
-    bottom: 3rem;
-    text-decoration: none;
   }
   
 }
@@ -2176,6 +2286,9 @@ footer .copyright p span {
     padding: 2rem 0.3rem;
   }
 
+  .testmonial .gallery-cell {
+    width: 80%;
+  }
 
 }
 

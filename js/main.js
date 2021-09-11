@@ -58,7 +58,7 @@ const sr5 = ScrollReveal({
 sr5.reveal(`.offering .col`, {
     interval: 150
 })
-
+if(window.innerWidth <= 700){
 window.setTimeout(function(){
     const sr5 = ScrollReveal({
         origin: 'bottom',
@@ -70,7 +70,7 @@ window.setTimeout(function(){
         interval: 150
     })
 }, 6000);
-
+}
 
 
 if(window.innerWidth < 600){
@@ -90,8 +90,8 @@ const sr6 = ScrollReveal({
 sr6.reveal(`.inder-img span`, {
     interval: 150
 })
-// if(window.innerWidth <= 700){
+if(window.innerWidth <= 700){
 window.setTimeout(function(){
     $(".span-wts").addClass('hide-it2');
 }, 10000);
-// }
+}
