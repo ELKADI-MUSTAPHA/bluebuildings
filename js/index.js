@@ -1,23 +1,23 @@
 // Dom elements, global constants
-const backward = document.querySelector('.backward');
-const currentTime = document.querySelector('.current-time');
-const durationVideo = document.querySelector('.duration-video');
-const expand = document.querySelector('.expand');
-const forward = document.querySelector('.forward');
-const informationContainer = document.querySelector('.information-container');
-const pause = document.querySelector('.pause');
-const play = document.querySelector('.play');
-const player = document.querySelector('.player');
-const wrapper = document.querySelector('.wrapper');
-const progress = document.querySelector('.video-progress');
-const progressBar = document.querySelector('.video-progress-filled');
-const reduce = document.querySelector('.reduce');
-const silence = document.querySelector('.silence');
-const video = document.querySelector('.video');
-const volume = document.querySelector('.volume');
-const volumeProgress = document.querySelector('.volume-progress');
-const volumeProgressBar = document.querySelector('.volume-progress-filled');
-const playerHover = document.querySelector('.player-overlay');
+const backward = document.querySelector(".backward");
+const currentTime = document.querySelector(".current-time");
+const durationVideo = document.querySelector(".duration-video");
+const expand = document.querySelector(".expand");
+const forward = document.querySelector(".forward");
+const informationContainer = document.querySelector(".information-container");
+const pause = document.querySelector(".pause");
+const play = document.querySelector(".play");
+const player = document.querySelector(".player");
+const wrapper = document.querySelector(".wrapper");
+const progress = document.querySelector(".video-progress");
+const progressBar = document.querySelector(".video-progress-filled");
+const reduce = document.querySelector(".reduce");
+const silence = document.querySelector(".silence");
+const video = document.querySelector(".video");
+const volume = document.querySelector(".volume");
+const volumeProgress = document.querySelector(".volume-progress");
+const volumeProgressBar = document.querySelector(".volume-progress-filled");
+const playerHover = document.querySelector(".player-overlay");
 
 /**
 // global functions
@@ -103,7 +103,7 @@ function reduceVideo() {
 // show or hide controls
  */
 let timeout = 0;
-playerHover.addEventListener('mousemove', () => {
+playerHover.addEventListener("mousemove", () => {
   clearTimeout(timeout);
   playerHover.style.opacity = 1;
   timeout = setTimeout(function () {
@@ -117,12 +117,12 @@ playerHover.addEventListener('mousemove', () => {
 /**
 // video functionality
 */
-video.addEventListener('loadedmetadata', () => {
+video.addEventListener("loadedmetadata", () => {
   video.volume = 0.5;
-  volumeProgressBar.style.width = '50%';
+  volumeProgressBar.style.width = "50%";
 });
 
-video.addEventListener('timeupdate', () => {
+video.addEventListener("timeupdate", () => {
   // video current time & video duration time
   videoTime();
 
@@ -136,7 +136,7 @@ video.addEventListener('timeupdate', () => {
   }
 });
 
-video.addEventListener('volumechange', () => {
+video.addEventListener("volumechange", () => {
   if (video.volume > 0) {
     showVolumeIcon();
   } else {
@@ -148,29 +148,29 @@ video.addEventListener('volumechange', () => {
 */
 
 // progress bar functionality
-progress.addEventListener('click', (event) => {
+progress.addEventListener("click", (event) => {
   const progressTime = (event.offsetX / progress.offsetWidth) * video.duration;
   video.currentTime = progressTime;
 });
 
 // play functionality
-play.addEventListener('click', playVideo);
+play.addEventListener("click", playVideo);
 
 // pause functionality
-pause.addEventListener('click', pauseVideo);
+pause.addEventListener("click", pauseVideo);
 
 // backward functionality
-backward.addEventListener('click', () => {
+backward.addEventListener("click", () => {
   backwardVideo();
 });
 
 // forward functionality
-forward.addEventListener('click', () => {
+forward.addEventListener("click", () => {
   forwardVideo();
 });
 
 // play-pause on the video
-informationContainer.addEventListener('click', () => {
+informationContainer.addEventListener("click", () => {
   if (video.paused) {
     playVideo();
   } else {
@@ -181,23 +181,23 @@ informationContainer.addEventListener('click', () => {
 /**
 // volume functionality
 */
-volumeProgress.addEventListener('click', (event) => {
+volumeProgress.addEventListener("click", (event) => {
   const progressVolume = (event.offsetX / volumeProgress.offsetWidth) * 1;
   const percentage = progressVolume * 100;
   volumeProgressBar.style.width = `${percentage}%`;
   video.volume = progressVolume;
 });
 
-volume.addEventListener('click', () => {
+volume.addEventListener("click", () => {
   showVolumeIcon;
   video.volume = 0;
-  volumeProgressBar.style.width = '0';
+  volumeProgressBar.style.width = "0";
 });
 
-silence.addEventListener('click', () => {
+silence.addEventListener("click", () => {
   showSilenceIcon;
   video.volume = 0.5;
-  volumeProgressBar.style.width = '50%';
+  volumeProgressBar.style.width = "50%";
 });
 /**
 //
@@ -208,13 +208,13 @@ silence.addEventListener('click', () => {
 */
 
 // expand functionality
-expand.addEventListener('click', expandVideo);
+expand.addEventListener("click", expandVideo);
 
 // reduce functionality
-reduce.addEventListener('click', reduceVideo);
+reduce.addEventListener("click", reduceVideo);
 
 // chrome & safari
-document.addEventListener('webkitfullscreenchange', () => {
+document.addEventListener("webkitfullscreenchange", () => {
   if (!document.webkitIsFullScreen) {
     expand.hidden = false;
     reduce.hidden = true;
@@ -222,7 +222,7 @@ document.addEventListener('webkitfullscreenchange', () => {
 });
 
 // firefox
-document.addEventListener('fullscreenchange', () => {
+document.addEventListener("fullscreenchange", () => {
   if (!document.mozFullScreen) {
     expand.hidden = false;
     reduce.hidden = true;
@@ -234,9 +234,9 @@ document.addEventListener('fullscreenchange', () => {
 */
 
 // keyboard functionality
-document.addEventListener('keydown', (event) => {
+document.addEventListener("keydown", (event) => {
   // space bar - play/plause
-  if (event.code === 'Space') {
+  if (event.code === "Space") {
     if (video.paused) {
       playVideo();
     } else {
@@ -245,7 +245,7 @@ document.addEventListener('keydown', (event) => {
   }
 
   // letter F - fullscreen
-  if (event.code === 'KeyF') {
+  if (event.code === "KeyF") {
     expandVideo();
   }
 });
