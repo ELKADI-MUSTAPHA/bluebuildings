@@ -416,14 +416,14 @@ footer .row .col-3 .quick-links{display:-webkit-box;display:-ms-flexbox;display:
 .services .container .col-2 .col .padd p{font-size:.8rem}
 }
 @media screen and (max-width:480px){
-#loader .darker .centering h1{font-size:2rem;margin:1rem auto}
+#loader .darker .centering h1{font-size:2rem;margin:1rem auto;padding:1rem 5rem;}
 #loader .darker .centering p{font-size:1.5rem}
 .services .container .col-2 .col{width:75%}
 .services .container .col-2 h1{font-size:1.5rem}
 .projects .row a .col .back span{font-size:1.2rem}
 .carousel{height:270px}
 .projects-single .row a{width:98%}
-.inset{padding:2rem .3rem}
+.inset{padding:2rem 0.3rem}
 .testmonial .gallery-cell{width:80%}
 .sc-header .second-sc-header{width:70%}
 }
