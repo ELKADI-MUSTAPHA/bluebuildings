@@ -2,6 +2,7 @@
 function toggleLink(){
     $('#ulList').toggleClass('toggle-it');
     $('#socials').toggleClass('toggle-it');
+    $('.header').toggleClass('fixed-header');
 };
 
 

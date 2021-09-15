@@ -1946,7 +1946,14 @@ footer .copyright p span {
     background: 0 0;
     color: rgba(1, 156, 27, 0.589);
   }
- 
+ .fixed-header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+ }
   .sc-header .socials{
     position: fixed;
     width: 100%;
