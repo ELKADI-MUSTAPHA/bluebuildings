@@ -2509,11 +2509,19 @@ footer .copyright p span {
   }
   footer .row .col-3 .quick-links {
     justify-content: space-between;
-}
-.flickity-prev-next-button {
-  width: 34px !important;
-  height: 34px !important;
-}
+  }
+  .flickity-prev-next-button {
+    width: 34px !important;
+    height: 34px !important;
+  }
+  .inset.single .button {
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+  }
+  .inset.single .volume-progress {
+    width: 60px;
+  }
 }
 @media screen and (max-width: 320px) {
   .sc-header .second-sc-header {
