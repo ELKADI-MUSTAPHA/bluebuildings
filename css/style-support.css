@@ -183,6 +183,9 @@ q {
 .inter-link{
   color: #22bcb4;
 }
+.info-img{
+  width: 100%;
+}
 header {
   background-color: #fff;
   -webkit-transition: 0.5s;
@@ -338,10 +341,19 @@ label.logo img {
   border: none;
   cursor: pointer;
   background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+.dropbtn span, .dropdown-content a span {
+  margin-right: 0.3rem;
+}
+.dropdown-content a:last-child span {
+  margin-right: 0.6rem;
 }
 .dropdown {
   position: relative;
   display: inline-block;
+  padding: 0.5rem 0 0;
 }
 .dropdown-content {
   display: none;
@@ -357,7 +369,10 @@ label.logo img {
   padding: 8px 10px;
   text-decoration: none;
   display: block;
+  display: flex;
+  align-items: center;
 }
+
 .dropdown-content a:hover {
   background-color: #22bcb4;
 }
@@ -2103,7 +2118,7 @@ footer .copyright p span {
     margin-top: 4rem;
   }
   .dropdown {
-    margin-top: 1.4rem;
+    margin-top: 1.1rem;
     margin-right: 0.8rem;
     margin-left: 0;
   }
