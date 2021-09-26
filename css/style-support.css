@@ -347,7 +347,7 @@ label.logo img {
 .dropbtn span, .dropdown-content a span {
   margin-right: 0.3rem;
 }
-.dropdown-content a:last-child span {
+.dropdown-content a .span {
   margin-right: 0.6rem;
 }
 .dropdown {
