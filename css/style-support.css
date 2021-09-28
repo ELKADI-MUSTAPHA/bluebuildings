@@ -2559,9 +2559,7 @@ footer .copyright p span {
   .toggle-btn {
     line-height: 80px;
   }
-  .dropdown {
-    margin-top: 0.5rem;
-  }
+  
 }
 @media screen and (max-width: 450px) {
   .banner .row .title-banner h3 {
