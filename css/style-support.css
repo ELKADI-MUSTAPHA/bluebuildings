@@ -26,7 +26,7 @@ textarea {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 #loader {
-  background-image: url(../assets/img/salon15.jpg);
+  background-image: url(../assets/img/salon15.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -235,9 +235,7 @@ footer .socials li a {
 .sc-header .socials li i,
 footer .socials li i {
   font-size: 19.2px;
-  font-size: 19.2px;
   font-size: 1.2rem;
-  margin: 0 4.8px;
   margin: 0 4.8px;
   margin: 0 0.3rem;
   -webkit-transition: all 0.5s;
@@ -253,14 +251,12 @@ label.logo {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 0 0 48px;
-  margin: 0 0 0 48px;
   margin: 0 0 0 3rem;
   position: relative;
   float: left;
 }
 label.logo img {
   max-width: 200px;
-  margin-top: 12.8px;
   margin-top: 12.8px;
   margin-top: 0.8rem;
 }
@@ -660,7 +656,7 @@ label.logo img {
   width: 100%;
   height: 100%;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.596);
+  background-color: rgba(0, 0, 0, 0.39);
 }
 .banner .box {
   position: absolute;
@@ -1176,7 +1172,7 @@ label.logo img {
   max-height: 100%;
 }
 .offering .container {
-  background-image: url(../assets/img/chicken.jpg);
+  background-image: url(../assets/img/chicken.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2323,7 +2319,7 @@ footer .copyright p span {
   .banner .row {
     height: 100%;
     width: 100%;
-    background-image: url(../assets/img/villa-two2.jpg);
+    background-image: url(../assets/img/villa-two2.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2552,6 +2548,20 @@ footer .copyright p span {
     width: 90px;
     min-width: auto;
 }
+  label.logo img {
+    width: 60px;
+    height: 50px;
+    margin-top: 0;
+  }
+  .banner-single .container, .banner-single {
+    height: 250px;
+  }
+  .toggle-btn {
+    line-height: 60px;
+  }
+  .dropdown {
+    margin-top: 0.5rem;
+  }
 }
 @media screen and (max-width: 450px) {
   .banner .row .title-banner h3 {
