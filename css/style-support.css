@@ -1085,6 +1085,7 @@ label.logo img {
 .projects .row a .col .back span:first-child,
 .projects-single .row a .col .back span:first-child {
   border-top: 1px solid #22bcb4;
+  padding-top: 0.3rem;
 }
 .projects .row a .col .back span:last-child,
 .projects-single .row a .col .back span:last-child {
@@ -2517,7 +2518,7 @@ footer .copyright p span {
     font-size: 1.5rem;
   }
   .projects .row a .col .back span {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .carousel {
     height: 270px;
