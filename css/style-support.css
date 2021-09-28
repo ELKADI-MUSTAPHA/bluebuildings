@@ -2518,7 +2518,7 @@ footer .copyright p span {
     font-size: 1.5rem;
   }
   .projects .row a .col .back span {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   .carousel {
     height: 270px;
@@ -2529,7 +2529,7 @@ footer .copyright p span {
   .projects .row a .col .back,
   .projects-single .row a .col .back {
     padding: 4rem 1rem 0 !important;
-    background-color: rgba(0, 0, 0, 0.417);
+    background-color: rgba(0, 0, 0, 0.568);
   }
   .inset {
     padding: 2rem 0.3rem;
