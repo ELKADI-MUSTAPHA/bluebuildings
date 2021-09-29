@@ -1,0 +1,626 @@
+
+@media screen and (max-width: 959px) {
+    .sc-header .second-sc-header {
+      display: table;
+      width: 26%;
+      text-align: right;
+    }
+    .banner .container {
+      margin-top: 4rem;
+    }
+    .dropdown {
+      margin-top: 1.1rem;
+      margin-right: 0.8rem;
+      margin-left: 0;
+    }
+    .toggle-btn {
+      display: block;
+    }
+    .toggle-it {
+      left: 0 !important;
+    }
+    nav ul {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 80px;
+      left: -100%;
+      background: #fff;
+      text-align: center;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      z-index: 9;
+    }
+    nav ul li {
+      display: block !important;
+      width: 7rem !important;
+      margin: 15px auto !important;
+      line-height: 30px;
+      border-bottom: none !important;
+    }
+    nav ul li a {
+      font-size: 20px;
+    }
+    nav a.active,
+    nav a:hover {
+      background: 0 0;
+      color: rgba(1, 156, 27, 0.589);
+    }
+    .fixed-header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+    }
+    .sc-header .socials {
+      position: fixed;
+      width: 100%;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content;
+      bottom: 2rem;
+      left: -100%;
+      background: #fff;
+      text-align: center;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      z-index: 999;
+    }
+    .inset {
+      padding: 2rem 1.8rem;
+    }
+    .inset .Container {
+      height: auto;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+    .inset h2:first-child {
+      font-size: 26px;
+      letter-spacing: -1px;
+      line-height: 30px;
+      padding: 0;
+    }
+    .Container {
+      height: auto;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+    .headline {
+      font-size: 26px;
+    }
+    .inset .image,
+    .inset .image.ar {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .banner .row .title-banner h3 {
+      font-size: 1.5rem;
+    }
+    .banner .row .title-banner h2 {
+      font-size: 3rem;
+    }
+    .banner .box {
+      right: 5%;
+    }
+    .projects {
+      max-height: 100%;
+    }
+    .projects .container h1 {
+      width: 100%;
+      font-size: 1.5rem;
+    }
+    .contact .darker {
+      padding: 3rem 1rem;
+    }
+    .testmonial .gallery-cell {
+      width: 34%;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    #loader .darker .centering h1 {
+      font-size: 2.5rem;
+    }
+    footer .row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+    footer .row .col-3 {
+      width: 100% !important;
+      margin: 1.5rem;
+    }
+    footer .row .col-3 .quick-links {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+    }
+    .banner .row .title-banner {
+      display: none;
+    }
+    .banner .row .title-banner h3 {
+      font-size: 1.6rem;
+    }
+    .banner .row .title-banner h2 {
+      font-size: 3.5rem;
+    }
+    .scale-it {
+      width: 80px !important;
+      height: 80px !important;
+      font-size: 0.9rem !important;
+      -webkit-transform: scale(1) !important;
+      transform: scale(1) !important;
+    }
+    .banner .box {
+      top: auto;
+      bottom: 0;
+      right: auto;
+      left: 50% !important;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+    }
+    .banner .box .content .centering {
+      top: 65%;
+      width: 70%;
+    }
+    .banner .box .content .centering .fst {
+      display: none;
+    }
+    .banner .box .content .centering .lst {
+      display: block !important;
+    }
+    .banner .box .content .cnt a {
+      width: 40%;
+    }
+    .testmonial .gallery-cell {
+      width: 40%;
+    }
+  }
+  @media only screen and (max-width: 870px) {
+    .services .container .col-2 .col {
+      width: 45%;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .sc-header .second-sc-header {
+      display: table;
+      width: 40%;
+    }
+    #background-video {
+      display: none;
+    }
+    .banner .row {
+      height: 100%;
+      width: 100%;
+      background-image: url(../assets/img/villa-two2.webp);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .carousel {
+      height: 310px;
+    }
+    .carousel__slide {
+      background-color: #535353;
+    }
+    .carousel__slide img {
+      height: auto;
+    }
+    .carousel__slide .slide-content h2 {
+      font-size: 1.1rem;
+    }
+    .carousel__slide .slide-content p {
+      font-size: 0.8rem;
+    }
+    .projects .container h1 {
+      width: 90%;
+      font-size: 1.2rem;
+    }
+    .projects .row a,
+    .projects-single .row a {
+      width: 48%;
+    }
+    .services .container .col-2 .col {
+      padding: 0rem;
+    }
+    .services .container {
+      width: 100%;
+    }
+    .services .container .col-2 h1 {
+      font-size: 2rem;
+    }
+    .offering .row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+    .offering .row .col {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .offering .row .col h2 {
+      font-size: 1.3rem;
+    }
+    .offering .row .col p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    .contact .sec-two .col.first a {
+      font-size: 2rem;
+      width: 100px;
+      min-height: 100px;
+      border-radius: 50%;
+    }
+    .contact .sec-two .col.first i {
+      font-size: 1.4rem;
+    }
+    .contact .sec-two .col.first span {
+      font-size: 1rem !important;
+    }
+    .inset.single {
+      width: 100%;
+      float: none;
+    }
+    .inset.single .container .col {
+      min-height: 300px;
+    }
+    .inset.single .gallery-cell {
+      height: 300px;
+    }
+    .projects-single {
+      width: 100%;
+      padding-top: 0;
+      float: none;
+    }
+    .projects-single .row {
+      width: 100%;
+    }
+    .projects-single .row a {
+      width: 48%;
+      float: left;
+    }
+    .testmonial .gallery-cell {
+      width: 60%;
+    }
+    .inset-description {
+      width: 85%;
+    }
+  }
+  @media only screen and (min-width: 700px) {
+    .whatsapp:hover .span-wts {
+      display: block !important;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .modal-content {
+      width: 100%;
+    }
+    .projects .row a,
+    .projects-single .row a {
+      width: 45%;
+    }
+    .whatsapp {
+      width: 70px;
+      height: 70px;
+      font-size: 3.5rem;
+    }
+    .whatsapp i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    .whatsapp .span-wts {
+      border: 2px solid #22bcb4;
+      border-radius: 10px;
+      color: #000;
+      font-size: 1.3rem;
+      padding: 8px 4px;
+      display: block;
+      z-index: 100;
+      background-color: #fff;
+      right: 1.5rem;
+      width: 280px;
+      position: absolute;
+      bottom: 3rem;
+      text-decoration: none;
+    }
+    .inset.single .info .contact-us a {
+      display: table;
+    }
+    .inset.single .info .contact-us a i, .inset.single .info .contact-us a span {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .contact .darker {
+      padding: 3rem 0;
+    }
+    .contact #container {
+      width: 100%;
+      margin: 1rem auto;
+    }
+    .contact #container .form {
+      padding: 2rem 0.5rem;
+    }
+    .contact #container .form .row {
+      padding-right: 0.5rem;
+    }
+    .contact .sec-two {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+    .contact .sec-two .col {
+      width: 90%;
+    }
+    .contact input[type="text"],
+    .contact select,
+    .contact textarea {
+      width: 100%;
+    }
+    .services .container .col-2 h1 {
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+    }
+    .services .container .col-2 .col h2 {
+      font-size: 1rem;
+    }
+    .services .container .col-2 .col .padd p {
+      font-size: 0.8rem;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    #loader .darker .centering h1 {
+      font-size: 2rem;
+      margin: 1rem auto;
+      padding: 1rem 5rem;
+    }
+    #loader .darker .centering p {
+      font-size: 1.5rem;
+    }
+    .services .container .col-2 .col {
+      width: 75%;
+    }
+    .services .container .col-2 h1 {
+      font-size: 1.5rem;
+    }
+    .projects .row a .col .back span {
+      font-size: 1.3rem;
+    }
+    .carousel {
+      height: 270px;
+    }
+    .projects-single .row a {
+      width: 98%;
+    }
+    .projects .row a .col .back,
+    .projects-single .row a .col .back {
+      padding: 4rem 1rem 0 !important;
+      background-color: rgba(0, 0, 0, 0.568);
+    }
+    .inset {
+      padding: 2rem 0.3rem;
+    }
+    .testmonial .gallery-cell {
+      width: 80%;
+    }
+    .sc-header .second-sc-header {
+      width: 70%;
+    }
+    .inset-description {
+      width: 90%;
+    }
+    
+    .inset.single .info h3 {
+      color: rgb(63, 63, 63);
+      font-size: 1.3rem;
+    }
+    .inset.single .info .contact-us a {
+      padding: 0.4rem 0.5rem;
+      margin: 0 0.3rem;
+      width: 90px;
+      min-width: auto;
+  }
+    label.logo img {
+      width: 60px;
+      height: 50px;
+      margin-top: 0;
+    }
+    .banner-single .container, .banner-single {
+      height: 250px;
+    }
+    .toggle-btn {
+      line-height: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .banner .row .title-banner h3 {
+      font-size: 1.3rem;
+    }
+    .banner .row .title-banner h2 {
+      font-size: 3rem;
+    }
+    .banner .box .content .centering {
+      top: 60%;
+      width: 80%;
+    }
+    
+    .scale-it {
+      width: 60px !important;
+      height: 60px !important;
+      font-size: 0.8rem !important;
+    }
+    .carousel__control {
+      height: 30px;
+      width: 30px;
+    }
+    .banner .box .content .centering {
+      text-align: center;
+    }
+    .banner .box .content .centering h3 {
+      font-size: 1.3rem;
+      margin: 0 auto 0.3rem;
+    }
+    .banner .box .content .centering p {
+      font-size: 0.9rem;
+    }
+    .banner .box .content .cnt {
+      margin-top: 1rem;
+    }
+    .banner .box .content .cnt a {
+      font-size: 0.8rem;
+    }
+    .inset {
+      padding: 2rem 1rem;
+    }
+    .inset .Content {
+      padding: 40px 20px;
+    }
+    .inset .col-1 h1 {
+      font-size: 1.3rem;
+    }
+    .inset.single {
+      padding: 2rem 0;
+    }
+    .inset.single .container .col h1 {
+      padding: 0 1rem;
+    }
+    .inset.single .container .col h2 {
+      color: #22bcb5;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      padding: 0 1rem;
+    }
+    .projects .row a,
+    .projects-single .row a {
+      width: 100%;
+      height: 170px;
+      margin: 0.3rem 0;
+    }
+  
+    .projects .row a .col .back span:last-child,
+    .projects-single .row a .col .back span:last-child {
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    .services .container .col-2 .col {
+      width: 95%;
+    }
+    .services .container {
+      padding: 0 0.7rem;
+    }
+    .services .container .col-2 .col h2 i {
+      font-size: 1.5rem;
+    }
+    .services .container .col-2 .col .padd {
+      padding-left: 2.3rem;
+    }
+    .offering h1 {
+      font-size: 2rem;
+    }
+    .offering #typer {
+      font-size: 1.8rem;
+    }
+    .offering .row .col h2 {
+      font-size: 1.2rem;
+    }
+    .offering .row .col p {
+      font-size: 0.8rem;
+    }
+    .offering .row {
+      width: 100%;
+    }
+    .offering .row .col {
+      width: 95%;
+    }
+    .contact #container {
+      width: 100%;
+      padding: 2rem 0.2rem;
+      border: none;
+    }
+    .contact #container .form {
+      padding: 2rem 0;
+      margin: 0 auto;
+      width: 95%;
+    }
+    .contact .sec-two {
+      padding: 2rem 0 0;
+    }
+    .contact .sec-two h2 {
+      font-size: 1.4rem;
+    }
+    .contact .sec-two .col {
+      width: 100%;
+    }
+    .contact .sec-two .col.first a {
+      font-size: 1rem;
+      width: 80px;
+      min-height: 80px;
+      border-radius: 50%;
+    }
+    .contact .sec-two .col.first i {
+      font-size: 1.3rem;
+    }
+    .contact .sec-two .col.first span {
+      font-size: 0.8rem !important;
+    }
+    .contact .sec-two .col div {
+      width: 100%;
+    }
+    footer .container {
+      padding: 0 0 2rem;
+      margin: 0;
+    }
+    footer .row .col-3 {
+      width: 100% !important;
+      margin: 1.5rem 0;
+    }
+    footer .copyright p {
+      padding: 0 2rem;
+    }
+    footer .row .col-3 .quick-links {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+    .flickity-prev-next-button {
+      width: 34px !important;
+      height: 34px !important;
+    }
+    .inset.single .button {
+      width: 32px;
+      height: 32px;
+      margin-right: 5px;
+    }
+    .inset.single .volume-progress {
+      width: 60px;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .sc-header .second-sc-header {
+      width: 90%;
+    }
+    label.logo {
+      margin: 0 0 0 1rem;
+    }
+  }
+  
