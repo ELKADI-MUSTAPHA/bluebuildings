@@ -461,6 +461,11 @@
       display: grid;
       gap: 4rem;
     }
+    @supports not (display:grid){
+      .banner .box .content .centering p, .banner .box .content .centering h3 {
+        margin-bottom: 3rem;
+      }
+    }
     .banner .box .content .centering h3 {
       font-size: 1.3rem;
       margin: 0 auto 0.3rem;
@@ -470,6 +475,9 @@
     }
     .banner .box .content .cnt {
       margin-top: 1rem;
+    }
+    .banner .box .content .cnt a:last-child {
+      display: none !important;
     }
     .banner .box .content .cnt a {
       font-size: 1.2rem;
