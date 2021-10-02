@@ -475,6 +475,7 @@
     }
     .banner .box .content .cnt {
       margin-top: 1rem;
+      text-align: center;
     }
     .banner .box .content .cnt a:last-child {
       display: none !important;
