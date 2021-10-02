@@ -41,7 +41,7 @@
       width: 7rem !important;
       margin: 15px auto !important;
       line-height: 30px;
-      border-bottom: none !important;
+      /* border-bottom: none !important; */
     }
     nav ul li a {
       font-size: 20px;

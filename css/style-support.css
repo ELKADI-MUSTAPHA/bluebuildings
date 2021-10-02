@@ -63,15 +63,15 @@ textarea {
   background: -webkit-linear-gradient(#22bcb4, #22bcb4) #fff no-repeat 0 0;
   background: linear-gradient(#22bcb4, #22bcb4) #fff no-repeat 0 0;
   background-size: 0 100%;
-  -webkit-animation: colorIt 6s linear 1 forwards;
-  animation: colorIt 6s linear 1 forwards;
+  -webkit-animation: colorIt 3s linear 1 forwards;
+  animation: colorIt 3s linear 1 forwards;
 }
 #loader .darker .centering .blacker.ar {
   background: -webkit-linear-gradient(#22bcb4, #22bcb4) #fff no-repeat top right;
   background: linear-gradient(#22bcb4, #22bcb4) #fff no-repeat top right;
   background-size: 0 100%;
-  -webkit-animation: colorIt 6s linear 1 forwards;
-  animation: colorIt 6s linear 1 forwards;
+  -webkit-animation: colorIt 3s linear 1 forwards;
+  animation: colorIt 3s linear 1 forwards;
 }
 #loader .darker .centering p {
   color: #22bcb4;
@@ -260,7 +260,7 @@ label.logo img {
 .nav ul li {
   display: inline-block;
   margin: 0 5px;
-  border-bottom: 3px solid #22bcb4;
+  /* border-bottom: 3px solid #22bcb4; */
   width: 96px;
   width: 6rem;
   font-weight: 500;

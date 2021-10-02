@@ -17,5 +17,5 @@ window.setTimeout(function () {
 // $(document).ready(function(){
 window.setTimeout(function () {
   $("#loader").addClass("hide-it");
-}, 6000);
+}, 3000);
 // });

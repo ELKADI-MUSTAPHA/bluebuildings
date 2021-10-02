@@ -63,7 +63,7 @@ if (window.innerWidth <= 700) {
     sr5.reveal(`.span-wts`, {
       interval: 150,
     });
-  }, 6000);
+  }, 3000);
 }
 
 if (window.innerWidth < 600) {
@@ -82,8 +82,9 @@ const sr6 = ScrollReveal({
 sr6.reveal(`.inder-img span`, {
   interval: 150,
 });
+
 if (window.innerWidth <= 700) {
   window.setTimeout(function () {
     $(".span-wts").addClass("hide-it2");
-  }, 10000);
+  }, 7000);
 }
