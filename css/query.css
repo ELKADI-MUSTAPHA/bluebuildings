@@ -187,6 +187,9 @@
     .banner .box .content .centering .lst {
       display: block !important;
     }
+    .banner .box .content .centering .lst span{
+      color: #22bcb5;
+    }
     .banner .box .content .cnt a {
       width: 40%;
     }
@@ -406,6 +409,75 @@
     #loader .darker .centering p {
       font-size: 1.5rem;
     }
+
+    .carousel__slide .rv-img{
+      display: none;
+    }
+
+    .carousel__slide {
+      background-size: cover; 
+      background-position: center center; 
+      background-repeat: no-repeat;
+    }
+    .carousel__slide.one {
+      background-image: url(../assets/img/chalet2.jpg);
+    }
+    .carousel__slide.two {
+      background-image: url(../assets/img/coffee-shop5.jpg);
+    }
+    .carousel__slide.three {
+      background-image: url(../assets/img/commerc-buildings2.jpg);
+    }
+    .carousel__slide.four {
+      background-image: url(../assets/img/villa-white7.jpg);
+    }
+    .carousel__slide .slide-content{
+      padding: 2rem 2rem 4rem;
+    }
+    .carousel__indicators {
+      bottom: 25px;
+    }
+    .carousel__slide .slide-content h2 {
+      font-size: 1.6rem;
+    }
+    .carousel__slide .slide-content p {
+      font-size: 1.3rem;
+    }
+    .banner .row .title-banner h3 {
+      font-size: 1.3rem;
+    }
+    .banner .row .title-banner h2 {
+      font-size: 3rem;
+    }
+    .banner .box .content .centering {
+      top: 60%;
+      width: 80%;
+    }
+    
+    .banner .box .content .centering {
+      text-align: center;
+      top: 45%;
+      width: 90%;
+      display: grid;
+      gap: 4rem;
+    }
+    .banner .box .content .centering h3 {
+      font-size: 1.3rem;
+      margin: 0 auto 0.3rem;
+    }
+    .banner .box .content .centering p {
+      font-size: 1.2rem;
+    }
+    .banner .box .content .cnt {
+      margin-top: 1rem;
+    }
+    .banner .box .content .cnt a {
+      font-size: 1.2rem;
+    }
+    .banner .box .content .centering .lst {
+      font-size: 2.5rem;
+    }
+
     .services .container .col-2 .col {
       width: 75%;
     }
@@ -416,7 +488,7 @@
       font-size: 1.3rem;
     }
     .carousel {
-      height: 270px;
+      height: 90vh;
     }
     .projects-single .row a {
       width: 98%;
@@ -464,16 +536,6 @@
   }
   
   @media screen and (max-width: 450px) {
-    .banner .row .title-banner h3 {
-      font-size: 1.3rem;
-    }
-    .banner .row .title-banner h2 {
-      font-size: 3rem;
-    }
-    .banner .box .content .centering {
-      top: 60%;
-      width: 80%;
-    }
     
     .scale-it {
       width: 60px !important;
@@ -484,22 +546,7 @@
       height: 30px;
       width: 30px;
     }
-    .banner .box .content .centering {
-      text-align: center;
-    }
-    .banner .box .content .centering h3 {
-      font-size: 1.3rem;
-      margin: 0 auto 0.3rem;
-    }
-    .banner .box .content .centering p {
-      font-size: 0.9rem;
-    }
-    .banner .box .content .cnt {
-      margin-top: 1rem;
-    }
-    .banner .box .content .cnt a {
-      font-size: 0.8rem;
-    }
+    
     .inset {
       padding: 2rem 1rem;
     }
