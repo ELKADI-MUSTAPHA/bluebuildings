@@ -324,7 +324,7 @@ label.logo img {
   border: none;
   display: none;
 }
-.dropbtn {
+/* .dropbtn {
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -341,8 +341,23 @@ label.logo img {
   position: relative;
   display: inline-block;
   padding: 0.5rem 0 0;
+} */
+.lang {
+  position: relative;
+  display: inline-block;
 }
-.dropdown-content {
+.lang a {
+  color: #000;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  display: flex;
+  align-items: center;
+}
+.lang a span {
+  margin-right: 0.3rem;
+}
+/* .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -351,14 +366,7 @@ label.logo img {
   z-index: 9;
   text-align: center;
 }
-.dropdown-content a {
-  color: #000;
-  padding: 8px 10px;
-  text-decoration: none;
-  display: block;
-  display: flex;
-  align-items: center;
-}
+
 
 .dropdown-content a:hover {
   background-color: #22bcb4;
@@ -368,8 +376,8 @@ label.logo img {
 
 }
 .dropdown:hover .dropbtn {
-  /* background-color: #22bcb4; */
-}
+  background-color: #22bcb4;
+} */
 .under-header {
   height: auto;
   width: 100%;

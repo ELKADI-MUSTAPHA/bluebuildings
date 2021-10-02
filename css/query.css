@@ -8,11 +8,16 @@
     .banner .container {
       margin-top: 4rem;
     }
-    .dropdown {
+    .lang {
       margin-top: 1.1rem;
       margin-right: 0.8rem;
       margin-left: 0;
     }
+    /* .dropdown {
+      margin-top: 1.1rem;
+      margin-right: 0.8rem;
+      margin-left: 0;
+    } */
     .toggle-btn {
       display: block;
     }
@@ -299,6 +304,11 @@
     .inset-description {
       width: 85%;
     }
+    .projects .row a .col .back span:last-child,
+    .projects-single .row a .col .back span:last-child {
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
   }
   @media only screen and (min-width: 700px) {
     .whatsapp:hover .span-wts {
@@ -450,6 +460,7 @@
     .toggle-btn {
       line-height: 80px;
     }
+    
   }
   
   @media screen and (max-width: 450px) {
@@ -517,11 +528,7 @@
       margin: 0.3rem 0;
     }
   
-    .projects .row a .col .back span:last-child,
-    .projects-single .row a .col .back span:last-child {
-      opacity: 1;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    }
+
     .services .container .col-2 .col {
       width: 95%;
     }
