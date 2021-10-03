@@ -409,7 +409,9 @@
     #loader .darker .centering p {
       font-size: 1.5rem;
     }
-
+    .carousel {
+      height: 80vh;
+    }
     .carousel__slide .rv-img{
       display: none;
     }
@@ -496,9 +498,7 @@
     .projects .row a .col .back span {
       font-size: 1.3rem;
     }
-    .carousel {
-      height: 90vh;
-    }
+
     .projects-single .row a {
       width: 98%;
     }
