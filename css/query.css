@@ -678,12 +678,18 @@
       width: 60px;
     }
   }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 361px) {
     .sc-header .second-sc-header {
       width: 90%;
     }
     label.logo {
       margin: 0 0 0 1rem;
+    }
+    .banner .box .content .centering {
+      gap: 3rem;
+    }
+    .banner .box .content .centering .lst {
+      font-size: 2rem;
     }
   }
   
