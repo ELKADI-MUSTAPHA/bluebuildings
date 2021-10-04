@@ -1,17 +1,21 @@
 
 @media screen and (max-width: 959px) {
+    .sc-header {
+      padding: 0.3rem 0;
+    }
     .sc-header .second-sc-header {
       display: table;
       width: 26%;
       text-align: right;
     }
+    label.logo{
+      margin: 0 0 0 1rem;
+    }
     .banner .container {
       margin-top: 4rem;
     }
     .lang {
-      margin-top: 0.6rem;
-      margin-right: 0.2rem;
-      margin-left: 0;
+      margin: 0.3rem 0 0;
     }
     /* .dropdown {
       margin-top: 1.1rem;
@@ -556,7 +560,7 @@
       height: 250px;
     }
     .toggle-btn {
-      line-height: 65px;
+      margin: 0.5rem 1rem 0 0;
     }
     
   }
