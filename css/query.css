@@ -9,8 +9,8 @@
       margin-top: 4rem;
     }
     .lang {
-      margin-top: 1.1rem;
-      margin-right: 0.8rem;
+      margin-top: 0.5rem;
+      margin-right: 0.2rem;
       margin-left: 0;
     }
     /* .dropdown {
@@ -344,7 +344,7 @@
       color: #000;
       font-size: 1.3rem;
       padding: 8px 4px;
-      display: block;
+      display: none;
       z-index: 100;
       background-color: #fff;
       right: 1.5rem;
@@ -409,6 +409,17 @@
     #loader .darker .centering p {
       font-size: 1.5rem;
     }
+    .whatsapp{
+      right: -100%;
+      transition: 1s ease;
+    }
+    .whatsapp.show{
+      right: 0.5rem;
+      bottom: 0.5rem;
+    }
+    .whatsapp.hide{
+      right: -100%;
+    }
     .carousel {
       height: 80vh;
     }
@@ -421,7 +432,7 @@
       background-position: center center; 
       background-repeat: no-repeat;
     }
-    .carousel__slide.one {
+    /* .carousel__slide.one {
       background-image: url(../assets/img/chalet2.jpg);
     }
     .carousel__slide.two {
@@ -432,15 +443,16 @@
     }
     .carousel__slide.four {
       background-image: url(../assets/img/villa-white7.jpg);
-    }
+    } */
     .carousel__slide .slide-content{
-      padding: 2rem 2rem 4rem;
+      padding: 2rem 2rem 6rem;
     }
     .carousel__indicators {
       bottom: 25px;
     }
     .carousel__slide .slide-content h2 {
       font-size: 1.6rem;
+      margin-bottom: 2rem;
     }
     .carousel__slide .slide-content p {
       font-size: 1.3rem;
@@ -451,11 +463,16 @@
     .banner .row .title-banner h2 {
       font-size: 3rem;
     }
+    .banner .box{
+      border: none;
+    }
     .banner .box .content .centering {
       top: 60%;
       width: 80%;
     }
-    
+    .carousel__control{
+      top: 70%;
+    }
     .banner .box .content .centering {
       text-align: center;
       top: 45%;
@@ -531,15 +548,15 @@
       min-width: auto;
   }
     label.logo img {
-      width: 60px;
-      height: 50px;
+      width: 50px;
+      height: 40px;
       margin-top: 0;
     }
     .banner-single .container, .banner-single {
       height: 250px;
     }
     .toggle-btn {
-      line-height: 80px;
+      line-height: 60px;
     }
     
   }
