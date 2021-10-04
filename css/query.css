@@ -1,7 +1,7 @@
 
 @media screen and (max-width: 959px) {
     .sc-header {
-      padding: 0.3rem 0;
+      padding: 0.3rem 0 0;
     }
     .sc-header .second-sc-header {
       display: table;
