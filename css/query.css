@@ -507,6 +507,10 @@
     .carousel__control{
       top: 70%;
     }
+    .carousel__control {
+      height: 30px;
+      width: 30px;
+    }
     .banner .box .content .centering {
       text-align: center;
       top: 45%;
@@ -592,7 +596,64 @@
     .toggle-btn {
       margin: 0.5rem 1rem 0 0;
     }
-    
+    .testmonial {
+      width: 100%;
+    }
+    .contact {
+      margin-bottom: 0;
+    }
+    .contact #container {
+      padding: 2rem 0.2rem 0;
+      margin: 1rem auto 0;
+    }
+    .contact .darker {
+      padding: 3rem 0 0;
+    }
+    .contact .sec-two {
+      margin-bottom: 0;
+    }
+    .btm-links{
+      display: block;
+      background-color: #22bcb4;
+      padding: 1rem 0;
+    }
+    .btm-links .socials li a {
+      color: white;
+    }
+    .footer-spacer {
+      margin-bottom: 200px;
+    }
+    footer {
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+    footer .container {
+      background-color: #22bcb4;
+    }
+    footer .row .col-3 {
+      display: none;
+      width: 100% !important;
+      margin: 1.5rem 0;
+    }
+    /* footer .row .col-3.social1 {
+      display: block;
+    }
+    footer .row .col-3.social1 h3,footer .row .col-3.social1 p {
+      display: none;
+    }
+    footer .socials li a {
+      color: white;
+    } */
+    footer .copyright p {
+      color: white;
+    }
+    footer .copyright p span {
+      color: white;
+      font-weight: 700;
+    }
   }
   
   @media screen and (max-width: 450px) {
@@ -602,11 +663,7 @@
       height: 60px !important;
       font-size: 0.8rem !important;
     }
-    .carousel__control {
-      height: 30px;
-      width: 30px;
-    }
-    
+
     .inset {
       padding: 2rem 1rem;
     }
@@ -667,7 +724,7 @@
     }
     .contact #container {
       width: 100%;
-      padding: 2rem 0.2rem;
+      padding: 2rem 0.2rem 0;
       border: none;
     }
     .contact #container .form {
@@ -703,10 +760,7 @@
       padding: 0 0 2rem;
       margin: 0;
     }
-    footer .row .col-3 {
-      width: 100% !important;
-      margin: 1.5rem 0;
-    }
+    
     footer .copyright p {
       padding: 0 2rem;
     }

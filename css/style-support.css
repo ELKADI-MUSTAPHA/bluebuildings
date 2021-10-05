@@ -96,6 +96,7 @@ header,
 section {
   max-width: 1300px;
   margin: auto;
+  background-color: #f1f1f1;
 }
 
 ul {
@@ -206,7 +207,7 @@ header {
   justify-content: space-evenly;
 }
 .sc-header .socials,
-footer .socials {
+footer .socials, .btm-links .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,15 +219,18 @@ footer .socials {
   justify-content: center;
 }
 .sc-header .socials li,
-footer .socials li {
+footer .socials li,
+.btm-links .socials li{
   display: inline-block;
 }
 .sc-header .socials li a,
-footer .socials li a {
+footer .socials li a,
+.btm-links .socials li a{
   color: #22bcb4;
 }
 .sc-header .socials li i,
-footer .socials li i {
+footer .socials li i,
+.btm-links .socials li i {
   font-size: 19.2px;
   font-size: 1.2rem;
   margin: 0 4.8px;
@@ -235,7 +239,8 @@ footer .socials li i {
   transition: all 0.5s;
 }
 .sc-header .socials li:hover i,
-footer .socials li:hover i {
+footer .socials li:hover i,
+.btm-links .socials li:hover i {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
@@ -1372,6 +1377,9 @@ label.logo img {
   height: 99px !important;
   font-size: 64px;
   font-size: 4rem;
+}
+.btm-links{
+  display: none;
 }
 footer .container {
   padding: 48px 0;
