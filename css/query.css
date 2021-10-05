@@ -424,10 +424,8 @@
     .whatsapp.hide{
       right: -100%;
     }
-    @supports not (align-items: center){
-      .en{
-        margin-top: 0.2rem;
-      }
+    .en{
+      margin-top: 0.2rem;
     }
     .carousel {
       height: 85vh;
