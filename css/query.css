@@ -491,6 +491,9 @@
       letter-spacing: 10px;
       padding: 0 0 0 1rem;
     }
+    .carousel__slide .slide-content p,.carousel__slide .slide-content h2 {
+      color:#fff;
+    }
     .banner .box{
       border: none;
     }
