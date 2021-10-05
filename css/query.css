@@ -424,7 +424,7 @@
     .whatsapp.hide{
       right: -100%;
     }
-    @supports not (display: flex){
+    @supports not (align-items: center){
       .en{
         margin-top: 0.2rem;
       }
