@@ -424,6 +424,11 @@
     .whatsapp.hide{
       right: -100%;
     }
+    @supports not (display: flex){
+      .en{
+        margin-top: 0.2rem;
+      }
+    }
     .carousel {
       height: 85vh;
     }
