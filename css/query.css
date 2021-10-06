@@ -632,7 +632,7 @@
       color: white;
     }
     .footer-spacer {
-      margin-bottom: 200px;
+      margin-bottom: 340px;
     }
     footer {
       width: 100%;
@@ -658,6 +658,14 @@
     footer .socials li a {
       color: white;
     } */
+    footer .copyright h1, footer .copyright h3 {
+      display: block;
+      color: white;
+      text-transform: uppercase;
+    }
+    footer .copyright h3 {
+      padding: 0 2rem;
+    }
     footer .copyright p {
       color: white;
     }

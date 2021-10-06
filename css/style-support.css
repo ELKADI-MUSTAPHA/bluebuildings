@@ -1378,14 +1378,25 @@ label.logo img {
   font-size: 64px;
   font-size: 4rem;
 }
-.btm-links{
+/* .btm-links{
   display: none;
+} */
+.btm-links{
+  display: block;
+  background-color: #25d2c9;
+  padding: 1rem 0;
+}
+.btm-links .socials li a {
+  color: white;
+}
+footer{
+  background-color: #22bcb4;
 }
 footer .container {
   padding: 48px 0;
   padding: 3rem 0;
-  margin: 48px 48px 0;
-  margin: 3rem 3rem 0;
+  margin: 0 48px;
+  margin: 0 3rem;
 }
 footer .row {
   display: -webkit-box;
@@ -1416,7 +1427,7 @@ footer .row .col-3 ul {
   padding: 0;
 }
 footer .row .col-3 h3 {
-  color: #22bcb4;
+  color: white;
   font-size: 22.4px;
   font-size: 1.4rem;
 }
@@ -1426,7 +1437,7 @@ footer .row .col-3 ul li {
 footer .social1 p {
   text-align: left;
   line-height: 30px;
-  color: #6c757d;
+  color: white;
 }
 footer .social {
   display: -webkit-box;
@@ -1437,30 +1448,34 @@ footer .social li {
   margin: 15px;
 }
 footer .info li {
-  color: #6c757d;
+  color: white;
   margin: 15px auto;
 }
 footer .info li p {
   text-align: left;
-  color: #6c757d;
+  color: white;
 }
 footer .quick-links li {
   margin: 15px 0;
 }
 footer .quick-links li a {
   font-size: 18px;
-  color: #22bcb4;
+  color: white;
 }
 footer .copyright {
   width: 100%;
   text-align: center;
 }
+footer .copyright h1, footer .copyright h3 {
+  display: none;
+}
 footer .copyright p {
   margin: 50px auto 20px;
-  color: #6c757d;
+  color: white;
 }
 footer .copyright p span {
-  color: #22bcb4;
+  color: white;
+  font-weight: 700;
 }
 .banner-single {
   width: 100%;
