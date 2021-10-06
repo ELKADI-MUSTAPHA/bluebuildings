@@ -217,7 +217,7 @@
     .banner .row {
       height: 100%;
       width: 100%;
-      background-image: url(../assets/img/villa-two2.webp);
+      background-image: url(../assets/img/phone-bgd.webp);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -484,7 +484,7 @@
       top: 58%;
     }
     .banner-content {
-      background-color: rgba(0, 0, 0, 0.157);
+      background-color: rgba(0, 0, 0, 0.027);
     }
     .banner .row .title-banner h3 {
       padding: 0 0 0 1rem;
