@@ -615,6 +615,12 @@
       margin: 0 auto;
       padding: 2rem 0 0;
     }
+    .offering .row .col h2 {
+      font-size: 1.4rem;
+    }
+    .offering .row .col p {
+      font-size: 1rem;
+    }
     .testmonial {
       width: 100%;
       padding: 2rem 0 0;
@@ -742,12 +748,12 @@
     .offering #typer {
       font-size: 1.8rem;
     }
-    .offering .row .col h2 {
-      font-size: 1.2rem;
+    /* .offering .row .col h2 {
+      font-size: 1.3rem;
     }
     .offering .row .col p {
-      font-size: 0.8rem;
-    }
+      font-size: 0.9rem;
+    } */
     .offering .row {
       width: 100%;
     }
