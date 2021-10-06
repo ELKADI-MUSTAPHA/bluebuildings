@@ -544,11 +544,27 @@
       font-size: 2.5rem;
     }
 
+    .inset-description {
+      padding: 3rem 1rem;
+      width: 100%;
+      background-color: #f1f1f1;
+      margin-top: 0;
+    }
+
     .services .container .col-2 .col {
       width: 75%;
     }
     .services .container .col-2 h1 {
       font-size: 1.5rem;
+    }
+    .projects-single {
+      height: 100%;
+      display: table;
+      background-color: #f1f1f1;
+    }
+    .projects-single h1{
+      margin: 0 auto;
+      padding: 2rem 0;
     }
     .projects .row a .col .back span {
       font-size: 1.3rem;
@@ -571,10 +587,6 @@
     .sc-header .second-sc-header {
       width: 70%;
     }
-    .inset-description {
-      width: 90%;
-    }
-    
     .inset.single .info h3 {
       color: rgb(63, 63, 63);
       font-size: 1.3rem;
