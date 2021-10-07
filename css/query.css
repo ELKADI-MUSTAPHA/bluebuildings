@@ -209,7 +209,7 @@
   @media screen and (max-width: 750px) {
     .sc-header .second-sc-header {
       display: table;
-      width: 40%;
+      width: auto;
     }
     #background-video {
       display: none;
