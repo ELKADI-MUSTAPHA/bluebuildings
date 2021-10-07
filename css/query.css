@@ -596,7 +596,7 @@
       margin: 0 0.3rem;
       width: 90px;
       min-width: auto;
-  }
+    }
     label.logo img {
       width: 50px;
       height: 40px;
@@ -620,6 +620,12 @@
     }
     .offering .row .col p {
       font-size: 1rem;
+    }
+    .inset-description .first-info h1{
+      font-size: 1.8rem;
+    }
+    .link-chalet{
+      padding: 0 1.5rem;
     }
     .testmonial {
       width: 100%;
@@ -668,15 +674,6 @@
       width: 100% !important;
       margin: 1.5rem 0;
     }
-    /* footer .row .col-3.social1 {
-      display: block;
-    }
-    footer .row .col-3.social1 h3,footer .row .col-3.social1 p {
-      display: none;
-    }
-    footer .socials li a {
-      color: white;
-    } */
     footer .copyright h1, footer .copyright h3 {
       display: block;
       color: white;
