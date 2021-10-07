@@ -488,7 +488,7 @@
       display: none;
     }
     .banner-content {
-      background-color: rgba(0, 0, 0, 0.027);
+      background-color: rgba(0, 0, 0, 0);
     }
     .banner .row .title-banner h3 {
       display: none;
