@@ -831,7 +831,7 @@
   }
   @media screen and (max-width: 361px) {
     .sc-header .second-sc-header {
-      width: 90%;
+      width: auto;
     }
     label.logo {
       margin: 0 0 0 1rem;
