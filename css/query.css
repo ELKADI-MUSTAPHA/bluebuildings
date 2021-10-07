@@ -430,6 +430,7 @@
     .sc-header {
       justify-content: space-evenly;
       gap: 2rem;
+      padding: 0.8rem 0;
     }
     label.logo {
       float: none;
@@ -611,8 +612,8 @@
       min-width: auto;
     }
     label.logo img {
-      width: 120px;
-      height: 110px;
+      width: 100px;
+      height: 90px;
       margin-top: 0;
     }
     .banner-single .container, .banner-single {
