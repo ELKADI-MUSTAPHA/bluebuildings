@@ -346,6 +346,12 @@ label.logo img {
   display: inline-block;
   padding: 0.5rem 0 0;
 } */
+.lang.one{
+  display: none;
+}
+.lang.two{
+  display: block;
+}
 .lang {
   position: relative;
   display: inline-block;

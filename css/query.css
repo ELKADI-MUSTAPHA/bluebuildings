@@ -17,6 +17,12 @@
     .lang {
       margin: 0.3rem 0 0;
     }
+    .lang.one{
+      display: block;
+    }
+    .lang.two{
+      display: none;
+    }
     /* .dropdown {
       margin-top: 1.1rem;
       margin-right: 0.8rem;
@@ -32,7 +38,7 @@
       position: fixed;
       width: 100%;
       height: 100%;
-      top: 46px;
+      top: 112px;
       left: -100%;
       background: #fff;
       text-align: center;
