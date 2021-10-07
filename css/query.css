@@ -122,7 +122,7 @@
       margin-left: 0;
       margin-right: 0;
     }
-    .banner .row .title-banner h3 {
+    .banner .row .title-banner .centering h3 {
       font-size: 1.5rem;
     }
     .banner .row .title-banner h2 {
@@ -171,7 +171,7 @@
     .banner .row .title-banner {
       display: none;
     }
-    .banner .row .title-banner h3 {
+    .banner .row .title-banner .centering h3 {
       font-size: 1.6rem;
     }
     .banner .row .title-banner h2 {
