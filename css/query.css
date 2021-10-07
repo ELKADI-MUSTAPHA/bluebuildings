@@ -427,6 +427,9 @@
     .en{
       margin-top: 0.2rem;
     }
+    .sc-header {
+      justify-content: space-around;
+    }
     .carousel {
       height: 85vh;
     }
