@@ -428,7 +428,7 @@
       margin-top: 0.2rem;
     }
     .sc-header {
-      justify-content: space-around;
+      justify-content: space-evenly;
     }
     .carousel {
       height: 85vh;
