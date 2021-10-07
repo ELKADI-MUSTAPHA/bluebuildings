@@ -1598,13 +1598,15 @@ footer .copyright p span {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
-.inset.single .wrapper {
+.inset.single .wrapper, 
+.title-banner .wrapper {
   width: 100%;
   margin: 32px auto;
   margin: 2rem auto;
   background-color: transparent;
 }
-.inset.single .video {
+.inset.single .video, 
+.title-banner .video {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -1613,18 +1615,21 @@ footer .copyright p span {
 .playing {
   background-color: #ddd;
 }
-.inset.single .description {
+.inset.single .description, 
+.title-banner .description {
   font-size: 10px;
   line-height: 20px;
   width: auto;
   color: #fff;
 }
-.inset.single .title {
+.inset.single .title, 
+.title-banner .title {
   font-size: 26px;
   margin: 0;
   color: #fff;
 }
-.inset.single .button {
+.inset.single .button, 
+.title-banner .button {
   width: 42px;
   height: 42px;
   border: none;
@@ -1635,58 +1640,69 @@ footer .copyright p span {
   margin-right: 10px;
   outline: 0;
 }
-.inset.single .button:active {
+.inset.single .button:active, 
+.title-banner .button:active {
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
 }
-.inset.single .backward {
+.inset.single .backward, 
+.title-banner .backward {
   background-image: url(../assets/icons/backward.svg);
   background-size: 50%;
   background-repeat: no-repeat;
 }
-.inset.single .expand {
+.inset.single .expand, 
+.title-banner .expand {
   background-image: url(../assets/icons/expandd.svg);
   background-size: 50%;
   background-repeat: no-repeat;
   margin-right: 0;
 }
-.inset.single .forward {
+.inset.single .forward, 
+.title-banner .forward {
   background-image: url(../assets/icons/forward.svg);
   background-size: 50%;
   background-repeat: no-repeat;
 }
-.inset.single .pause {
+.inset.single .pause, 
+.title-banner .pause {
   background-image: url(../assets/icons/pause.svg);
   background-size: 50%;
   background-repeat: no-repeat;
 }
-.inset.single .play {
+.inset.single .play, 
+.title-banner .play {
   background-image: url(../assets/icons/play.svg);
   background-size: 50%;
   background-repeat: no-repeat;
 }
-.inset.single .reduce {
+.inset.single .reduce, 
+.title-banner .reduce {
   background-image: url(../assets/icons/reduce.svg);
   background-size: 50%;
   background-repeat: no-repeat;
   margin-right: 0;
 }
-.inset.single .silence {
+.inset.single .silence, 
+.title-banner .silence {
   background-image: url(../assets/icons/silence.svg);
   background-size: 50%;
   background-repeat: no-repeat;
 }
-.inset.single .volume {
+.inset.single .volume, 
+.title-banner .volume {
   background-image: url(../assets/icons/volume.svg);
   background-size: 50%;
   background-repeat: no-repeat;
 }
-.inset.single .player {
+.inset.single .player, 
+.title-banner .player {
   height: 100%;
   width: 100%;
   position: relative;
 }
-.inset.single .player-overlay {
+.inset.single .player-overlay, 
+.title-banner .player-overlay {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -1704,13 +1720,15 @@ footer .copyright p span {
   -webkit-transition: 0.3s opacity;
   transition: 0.3s opacity;
 }
-.inset.single .content {
+.inset.single .content, 
+.title-banner .content {
   width: 100%;
   height: 100%;
   display: -ms-grid;
   display: grid;
 }
-.inset.single .information-container {
+.inset.single .information-container, 
+.title-banner .information-container {
   width: 100%;
   height: 80%;
   padding: 0 30px;
@@ -1725,7 +1743,8 @@ footer .copyright p span {
   -ms-flex-pack: center;
   justify-content: center;
 }
-.inset.single .player-container {
+.inset.single .player-container, 
+.title-banner .player-container {
   padding: 0 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1741,10 +1760,12 @@ footer .copyright p span {
   right: 0;
   bottom: 0;
 }
-.inset.single .player-progress-bar {
+.inset.single .player-progress-bar, 
+.title-banner .player-progress-bar {
   width: 100%;
 }
-.inset.single .video-progress {
+.inset.single .video-progress, 
+.title-banner .video-progress {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1755,11 +1776,13 @@ footer .copyright p span {
   background-color: #7c7c7c;
   cursor: pointer;
 }
-.inset.single .video-progress-filled {
+.inset.single .video-progress-filled, 
+.title-banner .video-progress-filled {
   width: 0;
   background-color: #fff;
 }
-.inset.single .player-controls {
+.inset.single .player-controls, 
+.title-banner .player-controls {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -1769,7 +1792,8 @@ footer .copyright p span {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.inset.single .player-buttons {
+.inset.single .player-buttons, 
+.title-banner .player-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1777,7 +1801,8 @@ footer .copyright p span {
   -ms-flex-align: center;
   align-items: center;
 }
-.inset.single .volume-progress {
+.inset.single .volume-progress, 
+.title-banner .volume-progress {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1788,11 +1813,13 @@ footer .copyright p span {
   background-color: #7c7c7c;
   cursor: pointer;
 }
-.inset.single .volume-progress-filled {
+.inset.single .volume-progress-filled, 
+.title-banner .volume-progress-filled {
   width: 0;
   background-color: #fff;
 }
-.inset.single .time-container {
+.inset.single .time-container, 
+.title-banner .time-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1801,19 +1828,24 @@ footer .copyright p span {
   align-items: center;
   margin: 0 10px;
 }
-.inset.single .time-container p {
+.inset.single .time-container p, 
+.title-banner .time-container p {
   color: #fff;
 }
-.inset.single .current-time {
+.inset.single .current-time, 
+.title-banner .current-time {
   width: 40px;
 }
-.inset.single .duration-video {
+.inset.single .duration-video, 
+.title-banner .duration-video {
   width: 40px;
 }
-.inset.single .time-separator {
+.inset.single .time-separator, 
+.title-banner .time-separator {
   margin: 0 10px 0 5px;
 }
-.inset.single .expand-container {
+.inset.single .expand-container, 
+.title-banner .expand-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
