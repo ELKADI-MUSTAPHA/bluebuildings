@@ -480,13 +480,18 @@
     .banner .row .title-banner h2 {
       font-size: 3rem;
     }
-    .centering {
-      top: 58%;
+    .banner .row .title-banner .centering {
+      top: 20%;
+      text-align: center;
+    }
+    .banner .row .title-banner h2 .hide-lt {
+      display: none;
     }
     .banner-content {
       background-color: rgba(0, 0, 0, 0.027);
     }
     .banner .row .title-banner h3 {
+      display: none;
       padding: 0 0 0 1rem;
     }
     .banner .row .title-banner h2 {

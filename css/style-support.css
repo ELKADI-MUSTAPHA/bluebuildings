@@ -759,7 +759,7 @@ label.logo img {
   -webkit-transform: scale(1) !important;
   transform: scale(1) !important;
 }
-.banner .row .title-banner h2 span {
+.banner .row .title-banner h2 .blue {
   color: #22bcb4;
 }
 .banner .box .content .centering {
