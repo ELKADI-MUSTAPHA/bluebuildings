@@ -834,7 +834,7 @@
       width: auto;
     }
     label.logo {
-      margin: 0 0 0 1rem;
+      margin: 0;
     }
     .banner .box .content .centering {
       gap: 3rem;
