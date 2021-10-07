@@ -430,6 +430,9 @@
     .sc-header {
       justify-content: space-evenly;
     }
+    .sc-header .equal{
+      width: 33%;
+    }
     .carousel {
       height: 85vh;
     }
