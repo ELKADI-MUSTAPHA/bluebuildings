@@ -133,6 +133,58 @@
 				.banner .row .title-banner h2{
 					font-size: 3rem !important;
 				}
+				.wrapper .wrapper-play {
+					position: relative;
+					width: 150px;
+					height: 150px;
+					margin: 0 auto;
+				}
+				.wrapper .wrapper-play .circle {
+					width: 100px;
+					height: 100px;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					border-radius: 50%;
+					background-color: #32dad1;
+					margin: auto;
+					transform: scale(1, 1);
+				}
+				.wrapper .wrapper-play .circle.pulse {
+					animation-timing-function: ease;
+					animation: pulse 2s infinite;
+					background-color: #5ffaf2;
+				}
+				.wrapper .wrapper-play svg {
+					fill: #22bcb4;
+					stroke: #22bcb4;
+					stroke-linejoin: round;
+					stroke-width: 5;
+					transition: all 0.3s;
+				}
+				.wrapper .wrapper-play svg:hover {
+					cursor: pointer;
+					fill: #10a79f;
+					stroke: #10a79f;
+					transform: scale(1.2, 1.2);
+				}
+				@keyframes pulse {
+					0% {
+						transform: scale(1, 1);
+					}
+					25% {
+						transform: scale(1, 1);
+					}
+					50% {
+						transform: scale(1.2, 1.2);
+					}
+					100% {
+						transform: scale(1, 1);
+					}
+				}
+				
 			}
 		</style>
     </head>
@@ -230,6 +282,12 @@
 									  <div class="player-overlay" data-fullscreen="false">
 										<div class="content">
 										  <div class="information-container">
+											<div class="wrapper-play">
+												<div class="circle pulse"></div>
+												<div class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+														<polygon points="40,30 65,50 40,70"></polygon>
+													</svg></div>
+											</div>
 										  </div>
 										  <div class="player-container">
 											<div class="video-progress">
@@ -306,7 +364,6 @@
 									  <video
 										  id="myvid"
 										class="video"
-										poster="../assets/img/poster-chalet1.webp"
 										src="../assets/video/plaza-20000.mp4"
 									  ></video>
 									</div>
