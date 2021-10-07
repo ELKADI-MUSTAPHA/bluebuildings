@@ -18,6 +18,7 @@ const volume = document.querySelector(".volume");
 const volumeProgress = document.querySelector(".volume-progress");
 const volumeProgressBar = document.querySelector(".volume-progress-filled");
 const playerHover = document.querySelector(".player-overlay");
+const wrapperPlay = document.querySelector(".wrapper-play");
 
 /**
 // global functions
@@ -26,12 +27,14 @@ function pauseVideo() {
   video.pause();
   pause.hidden = true;
   play.hidden = false;
+  wrapperPlay.style.display = "block";
 }
 
 function playVideo() {
   video.play();
   play.hidden = true;
   pause.hidden = false;
+  wrapperPlay.style.display = "none";
 }
 
 function backwardVideo() {
@@ -102,14 +105,16 @@ function reduceVideo() {
 /**
 // show or hide controls
  */
-let timeout = 0;
-playerHover.addEventListener("mousemove", () => {
-  clearTimeout(timeout);
-  playerHover.style.opacity = 1;
-  timeout = setTimeout(function () {
-    playerHover.style.opacity = 0;
-  }, 3000);
-});
+if(window.innerWidth > 480){
+  let timeout = 0;
+  playerHover.addEventListener("mousemove", () => {
+    clearTimeout(timeout);
+    playerHover.style.opacity = 1;
+    timeout = setTimeout(function () {
+      playerHover.style.opacity = 0;
+    }, 3000);
+  });
+}
 /**
 //
  */
