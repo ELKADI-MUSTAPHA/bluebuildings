@@ -497,7 +497,7 @@
       height: 100%;
       position: relative;
     }
-    .banner .row .title-banner h3 {
+    .banner .row .title-banner .centering h3 {
       font-size: 1.3rem;
     }
     .banner .row .title-banner h2 {
@@ -513,7 +513,7 @@
     .banner-content {
       background-color: rgba(0, 0, 0, 0);
     }
-    .banner .row .title-banner h3 {
+    .banner .row .title-banner .centering h3 {
       display: none;
       padding: 0 0 0 1rem;
     }

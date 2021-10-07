@@ -95,7 +95,7 @@
 			.contact input[type="submit"] {
 				float: right;
 			}
-			.banner .row .title-banner h3{
+			.banner .row .title-banner .centering h3{
 				font-size: 2rem;
 			}
 			.banner .row .title-banner h2{
@@ -106,12 +106,20 @@
 				background-color: #22bcb4 !important;
 			}
 			@media screen and (max-width:480px) {
-				.title-banner .wrapper {
+				.title-banner .main-wrapper {
 					position: absolute;
 					bottom: 1rem;
 					width: 90%;
 					left: 50%;
 					transform: translateX(-50%);
+				}
+				.title-banner .main-wrapper h3 {
+					font-size: 1.5rem;
+					width: fit-content;
+					margin: 0 auto;
+				}
+				.title-banner .main-wrapper .wrapper {
+					margin: 1rem auto 2rem;
 				}
 				.title-banner .volume-progress {
 					display: none;
@@ -277,95 +285,98 @@
 										  <span class="anim three">نختبر</span>
 									  </div>
 								  </div>
-								  <div class="wrapper"  dir='ltr' lang='en'>
-									<div class="player">
-									  <div class="player-overlay" data-fullscreen="false">
-										<div class="content">
-										  <div class="information-container">
-											<div class="wrapper-play">
-												<div class="circle pulse"></div>
-												<div class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-														<polygon points="40,30 65,50 40,70"></polygon>
-													</svg></div>
-											</div>
-										  </div>
-										  <div class="player-container">
-											<div class="video-progress">
-											  <div class="video-progress-filled"></div>
-											</div>
-											<div class="player-controls">
-											  <div class="player-buttons">
-												<button
-												  aria-label="play"
-												  class="button play"
-												  title="play"
-												  type="button"
-												></button>
-												<button
-												  aria-label="pause"
-												  class="button pause"
-												  hidden
-												  title="pause"
-												  type="button"
-												></button>
-												<button
-												  aria-label="backward"
-												  class="button backward"
-												  title="backward"
-												  type="button"
-												></button>
-												<button
-												  aria-label="forward"
-												  class="button forward"
-												  title="forward"
-												  type="button"
-												></button>
-												<button
-												  aria-label="volume"
-												  class="button volume"
-												  title="volume"
-												  type="button"
-												></button>
-												<button
-												  aria-label="silence"
-												  class="button silence"
-												  hidden
-												  title="silence"
-												  type="button"
-												></button>
-												<div class="volume-progress">
-												  <div class="volume-progress-filled"></div>
+								  <div class="main-wrapper">
+									  <h3>مشروع حديث - بلازا</h3>
+									<div class="wrapper"  dir='ltr' lang='en'>
+										<div class="player">
+										<div class="player-overlay" data-fullscreen="false">
+											<div class="content">
+											<div class="information-container">
+												<div class="wrapper-play">
+													<div class="circle pulse"></div>
+													<div class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+															<polygon points="40,30 65,50 40,70"></polygon>
+														</svg></div>
 												</div>
-												<div class="time-container">
-												  <p class="current-time">0:00</p>
-												  <p class="time-separator">/</p>
-												  <p class="duration-video">0:00</p>
-												</div>
-											  </div>
-											  <div class="expand-container">
-												<button
-												  aria-label="expand"
-												  class="button expand"
-												  title="expand"
-												  type="button"
-												></button>
-												<button
-												  aria-label="reduce"
-												  class="button reduce"
-												  hidden
-												  title="reduce"
-												  type="button"
-												></button>
-											  </div>
 											</div>
-										  </div>
+											<div class="player-container">
+												<div class="video-progress">
+												<div class="video-progress-filled"></div>
+												</div>
+												<div class="player-controls">
+												<div class="player-buttons">
+													<button
+													aria-label="play"
+													class="button play"
+													title="play"
+													type="button"
+													></button>
+													<button
+													aria-label="pause"
+													class="button pause"
+													hidden
+													title="pause"
+													type="button"
+													></button>
+													<button
+													aria-label="backward"
+													class="button backward"
+													title="backward"
+													type="button"
+													></button>
+													<button
+													aria-label="forward"
+													class="button forward"
+													title="forward"
+													type="button"
+													></button>
+													<button
+													aria-label="volume"
+													class="button volume"
+													title="volume"
+													type="button"
+													></button>
+													<button
+													aria-label="silence"
+													class="button silence"
+													hidden
+													title="silence"
+													type="button"
+													></button>
+													<div class="volume-progress">
+													<div class="volume-progress-filled"></div>
+													</div>
+													<div class="time-container">
+													<p class="current-time">0:00</p>
+													<p class="time-separator">/</p>
+													<p class="duration-video">0:00</p>
+													</div>
+												</div>
+												<div class="expand-container">
+													<button
+													aria-label="expand"
+													class="button expand"
+													title="expand"
+													type="button"
+													></button>
+													<button
+													aria-label="reduce"
+													class="button reduce"
+													hidden
+													title="reduce"
+													type="button"
+													></button>
+												</div>
+												</div>
+											</div>
+											</div>
 										</div>
-									  </div>
-									  <video
-										  id="myvid"
-										class="video"
-										src="../assets/video/plaza-20000.mp4"
-									  ></video>
+										<video
+											id="myvid"
+											class="video"
+											src="../assets/video/plaza-20000.mp4"
+										></video>
+										</div>
 									</div>
 								</div>
 							  </div>
