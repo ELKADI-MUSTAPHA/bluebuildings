@@ -428,7 +428,8 @@
       margin-top: 0.2rem;
     }
     .sc-header {
-      justify-content: space-between;
+      justify-content: space-evenly;
+      gap: 2rem;
     }
     label.logo {
       float: none;
