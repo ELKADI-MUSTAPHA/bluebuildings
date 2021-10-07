@@ -600,6 +600,7 @@
     }
     .sc-header .second-sc-header {
       width: auto;
+      margin-left: 1rem;
     }
     .inset.single .info h3 {
       color: rgb(63, 63, 63);
@@ -612,8 +613,8 @@
       min-width: auto;
     }
     label.logo img {
-      width: 100px;
-      height: 90px;
+      width: 90px;
+      height: 80px;
       margin-top: 0;
     }
     .banner-single .container, .banner-single {
