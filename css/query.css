@@ -428,10 +428,10 @@
       margin-top: 0.2rem;
     }
     .sc-header {
-      justify-content: space-evenly;
+      justify-content: space-between;
     }
-    .sc-header .equal{
-      width: 33%;
+    label.logo {
+      float: none;
     }
     .carousel {
       height: 85vh;
