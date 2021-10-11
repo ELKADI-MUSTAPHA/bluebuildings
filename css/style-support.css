@@ -310,7 +310,7 @@ label.logo img {
   --m: 4;
 }
 .nav ul li a {
-  color: #3d3d3d;
+  color: #6b6b6b;
   font-weight: 600;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -365,6 +365,7 @@ label.logo img {
   align-items: center;
 }
 .lang a span {
+  color: #6b6b6b;
   margin-right: 0.3rem;
 }
 /* .dropdown-content {
@@ -646,6 +647,9 @@ label.logo img {
 }
 .carousel__slide .slide-content p {
   color: #f3f3f3;
+}
+.main-wrapper{
+  display: none;
 }
 #background-video {
   max-width: 1300px;
