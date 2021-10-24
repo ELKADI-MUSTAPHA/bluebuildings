@@ -19,6 +19,7 @@ const volumeProgress = document.querySelector(".volume-progress");
 const volumeProgressBar = document.querySelector(".volume-progress-filled");
 const playerHover = document.querySelector(".player-overlay");
 const wrapperPlay = document.querySelector(".wrapper-play");
+const playerContainer = document.querySelector(".player-container");
 
 /**
 // global functions
@@ -109,9 +110,9 @@ if(window.innerWidth > 480){
   let timeout = 0;
   playerHover.addEventListener("mousemove", () => {
     clearTimeout(timeout);
-    playerHover.style.opacity = 1;
+    playerContainer.style.opacity = 1;
     timeout = setTimeout(function () {
-      playerHover.style.opacity = 0;
+      playerContainer.style.opacity = 0;
     }, 3000);
   });
 }

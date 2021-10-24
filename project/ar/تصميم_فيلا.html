@@ -57,6 +57,23 @@
 		<link rel="stylesheet" media="(max-width:960px)" href="../../css/query.css">
 		<link rel="stylesheet" href="../../css/flickity.css" />
 		<style>
+			header {
+				box-shadow: 0px 0px 12px 0px #b9b6b6;
+			}
+			.banner-single {
+				width: 100%;
+				margin-top: 2rem;
+			}
+			.banner-single .container{
+				width: 90%;
+                margin: 0 auto;
+			}
+            .inset-description .first-info p{
+                border-left: none;
+                padding-left: 0;
+                border-right: 4px solid #636363;
+                padding-right: 1rem;
+            }
 			.projects-single{
 				float: left;
 			}
@@ -79,6 +96,10 @@
 			.inset-description .col.info ol {
 				padding-left: 0;
 				padding-right: 1.2rem;
+			}
+			.designer img {
+				margin-right: 0;
+				margin-left: 1.8rem;
 			}
 		</style>
     </head>
@@ -136,11 +157,15 @@
 
 	<div class="inset-description">
 		<div class="first-info">
-			<h1>تصميم فيلا</h1>
+			<h1>فلل فاخرة حديثة صممها فريق المهندسين المعماريين لبلوبلدنقز</h1>
 			<p>كل واحد  منا فكر من قبل أو يفكر بالمعيشة في فيلا بتصميم جميل إنه أحد طموحات أصحاب المنازل، فكون الفلل راقية في الشكل الخارجي وفي التصاميم الداخلية المريحة جعلها حلمًا يحاول الكثير الوصول إليه.</p>
 		</div>
 		<div class="col info">
-			<img class="info-img" src="../../assets/img/class-villa3.webp" alt="تصميم فيلا مودرن,تصميم فيلا 400 متر,تصميم فيلا ٥٠٠ متر,	تصميم فيلا صغيرة,تصميم فيلا حرف u,تصميم فيلا دور واحد,تصميم فيلا نيو كلاسيك,تصميم فيلا حرف h,تصميم فيلا" >
+			<img class="info-img" src="../../assets/img/class-villa3.webp" alt="تصميم فيلا" >
+			<div class="designer">
+				<img src="../../assets/img/logo.webp" alt="logo">
+				<h5>تصميم عبد الرحمن ماجد</h5>
+			</div>
 		</div>
 		<div class="col info">
 			<h2>معلومات عن تصميم الفيلا :</h2>
@@ -160,7 +185,7 @@
 					<div class="gallery-cell" style="background-image: url(../../assets/img/class-villa1.webp); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
 					<div class="gallery-cell" style="background-image: url(../../assets/img/class-villa2.webp); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
 					<div class="gallery-cell" style="background-image: url(../../assets/img/class-villa3.webp); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
-					<div class="gallery-cell" style="background-image: url(../../assets/img/claas-villa4.webp); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
+					<div class="gallery-cell" style="background-image: url(../../assets/img/class-villa4.webp); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
 					<div class="gallery-cell" style="background-image: url(../../assets/img/class-villa5.webp); background-size: 100% ; background-position: center center ; background-repeat: no-repeat;"></div>
 				</div>
 			</div>
@@ -172,8 +197,14 @@
 					<div class="player">
 					  <div class="player-overlay" data-fullscreen="false">
 						<div class="content">
-						  <div class="information-container">
-						  </div>
+							<div class="information-container">
+								<div class="wrapper-play">
+									<div class="circle pulse"></div>
+									<div class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+											<polygon points="40,30 65,50 40,70"></polygon>
+										</svg></div>
+								</div>
+							</div>
 						  <div class="player-container">
 							<div class="video-progress">
 							  <div class="video-progress-filled"></div>
@@ -249,7 +280,6 @@
 					  <video
 						  id="myvid"
 						class="video"
-						poster="../../assets/img/poster-chalet1.webp"
 						src="../../assets/video/villa-350.mp4"
 					  ></video>
 					</div>
@@ -294,7 +324,7 @@
 		</div>
 	</div>
 	<section class="inset single">
-		<div class="container">
+		<div class="container contact">
 			<div class="info">
 				<h2>بلوبلدنقز هي الحل لتصميم مشروعك الخاص و تنفيده.</h2>
 				<h3>راسلنا الآن للطلب و الإستفسار</h3>
@@ -311,7 +341,7 @@
 			<h1>المزيد من المشاريع</h1>
 			<div class="row">
 				<a href="/project/ar/تصميم_كوفي_شوب.html">
-					<div class="col" style="background-image: url(/assets/img/coffe-shop1.webp); background-size: 150% ; background-position: center center ; background-repeat: no-repeat;">
+					<div class="col" style="background-image: url(/assets/img/bgd-coffe-shop1.webp); background-size: 150% ; background-position: center center ; background-repeat: no-repeat;">
 						<div class="back">
 							<span>تصميم كوفي شوب</span><br>
 							<span>عرض</span>
@@ -319,7 +349,7 @@
 					</div>
 				</a>
 				<a href="/project/ar/تصميم_مركز_تجاري.html">
-					<div class="col" style="background-image: url(/assets/img/commerc-buildings.webp); background-size: 150% ; background-position: center center ; background-repeat: no-repeat;">
+					<div class="col" style="background-image: url(/assets/img/bgd-gaming5.webp); background-size: 150% ; background-position: center center ; background-repeat: no-repeat;">
 						<div class="back">
 							<span>مبنى تجاري </span><br>
 							<span>عرض</span>
@@ -327,7 +357,7 @@
 					</div>
 				</a>
 				<a href="/project/ar/تصميم_معماري_خارجي.html">
-					<div class="col" style="background-image: url(/assets/img/exterior1.webp); background-size: 150% ; background-position: center center ; background-repeat: no-repeat;">
+					<div class="col" style="background-image: url(/assets/img/bgd-exterior1.webp); background-size: 150% ; background-position: center center ; background-repeat: no-repeat;">
 						<div class="back">
 							<span>تصميم خارجي</span><br>
 							<span>عرض</span>
@@ -335,7 +365,7 @@
 					</div>
 				</a>
 				<a href="/project/ar/تصميم_معماري_وهندسي_للفلل.html">
-					<div class="col" style="background-image: url(/assets/img/full-vila20.webp); background-size: 150% ; background-position: center center ; background-repeat: no-repeat;">
+					<div class="col" style="background-image: url(/assets/img/bgd-full-vila20.webp); background-size: 150% ; background-position: center center ; background-repeat: no-repeat;">
 						<div class="back">
 							<span>فيلا | 745 م²</span><br>
 							<span>عرض</span>

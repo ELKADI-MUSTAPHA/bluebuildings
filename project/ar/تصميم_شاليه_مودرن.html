@@ -77,6 +77,23 @@
 		<link rel="stylesheet" media="(max-width:960px)" href="../../css/query.css">
 		<link rel="stylesheet" href="../../css/flickity.css" />
 		<style>
+			header {
+				box-shadow: 0px 0px 12px 0px #b9b6b6;
+			}
+			.banner-single {
+				width: 100%;
+				margin-top: 2rem;
+			}
+			.banner-single .container{
+				width: 90%;
+                margin: 0 auto;
+			}
+            .inset-description .first-info p{
+                 border-left: none;
+                 padding-left: 0;
+                border-right: 4px solid #636363;
+                padding-right: 1rem;
+            }
 			.projects-single{
 				float: left;
 			}
@@ -99,6 +116,10 @@
 			.inset-description .col.info ol {
 				padding-left: 0;
 				padding-right: 1.2rem;
+			}
+			.designer img {
+				margin-right: 0;
+				margin-left: 1.8rem;
 			}
 		</style>
     </head>
@@ -156,10 +177,16 @@
 
 	<div class="inset-description">
 		<div class="first-info">
-			<h1>تصميم شاليه | 910 م²</h1>
+			<h1>التصميم الحديث للشاليهات يجعل الحياة أسهل بكثير</h1>
 			<p>بمساحة 910م | في الرياض | حي الخير | تم تصميم هذا الشاليه بهندسة عصرية، تم الإعتماد على الواجهات الزجاجية بشكل أساسي في التصميم، فهي تعطي منظر رائع و تسمح للسكان بالإستمتاع برؤية حديقتهم الخاصة المزينة بأنواع كثيرة من الزهور و الأشجار، و الإستمتاع بهطول الأمطار، أما بالنسبة <a class="inter-link" href="/project/ar/تصميم_معماري_داخلي.html">للديكور الداخلي</a> و الألوان فتم إعتماد الألوان الفاتحة المريحة للعين و التي تعطي شعور بالراحة و الرقي، و كذلك الديكورات فهي بسيطة بألوان فاتحة خالية من التعقيدات.</p>
 		</div>
-			
+		<div class="col info">
+			<img class="info-img" src="../../assets/img/big-chalet7.webp" alt="تصميم شاليه" >
+			<div class="designer">
+				<img src="../../assets/img/logo.webp" alt="logo">
+				<h5>تصميم عبد الرحمن ماجد</h5>
+			</div>
+		</div>	
 	</div>
 	<section class="inset single">
 		
@@ -180,74 +207,80 @@
 				<h2>فيديو تصاميم شاليه - 900م</h2>
 				
 				<div class="wrapper"  dir='ltr' lang='en'>
-					<div class="player player2">
-					  <div class="player-overlay player-overlay2" data-fullscreen="false">
+					<div class="player">
+					  <div class="player-overlay" data-fullscreen="false">
 						<div class="content">
-						  <div class="information-container information-container2">
+						  <div class="information-container">
+							<div class="wrapper-play">
+								<div class="circle pulse"></div>
+								<div class="circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+										<polygon points="40,30 65,50 40,70"></polygon>
+									</svg></div>
+							</div>
 						  </div>
 						  <div class="player-container">
-							<div class="video-progress video-progress2">
-							  <div class="video-progress-filled video-progress-filled2"></div>
+							<div class="video-progress">
+							  <div class="video-progress-filled"></div>
 							</div>
 							<div class="player-controls">
 							  <div class="player-buttons">
 								<button
 								  aria-label="play"
-								  class="button play play2"
+								  class="button play"
 								  title="play"
 								  type="button"
 								></button>
 								<button
 								  aria-label="pause"
-								  class="button pause pause2"
+								  class="button pause"
 								  hidden
 								  title="pause"
 								  type="button"
 								></button>
 								<button
 								  aria-label="backward"
-								  class="button backward backward2"
+								  class="button backward"
 								  title="backward"
 								  type="button"
 								></button>
 								<button
 								  aria-label="forward"
-								  class="button forward forward2"
+								  class="button forward"
 								  title="forward"
 								  type="button"
 								></button>
 								<button
 								  aria-label="volume"
-								  class="button volume volume2"
+								  class="button volume"
 								  title="volume"
 								  type="button"
 								></button>
 								<button
 								  aria-label="silence"
-								  class="button silence silence2"
+								  class="button silence"
 								  hidden
 								  title="silence"
 								  type="button"
 								></button>
 								<div class="volume-progress">
-								  <div class="volume-progress-filled volume-progress-filled2"></div>
+								  <div class="volume-progress-filled"></div>
 								</div>
 								<div class="time-container">
-								  <p class="current-time current-time2">0:00</p>
+								  <p class="current-time">0:00</p>
 								  <p class="time-separator">/</p>
-								  <p class="duration-video duration-video2">0:00</p>
+								  <p class="duration-video">0:00</p>
 								</div>
 							  </div>
 							  <div class="expand-container">
 								<button
 								  aria-label="expand"
-								  class="button expand expand2"
+								  class="button expand"
 								  title="expand"
 								  type="button"
 								></button>
 								<button
 								  aria-label="reduce"
-								  class="button reduce reduce2"
+								  class="button reduce"
 								  hidden
 								  title="reduce"
 								  type="button"
@@ -259,13 +292,16 @@
 					  </div>
 					  <video
 						  id="myvid"
-						class="video video2"
-						poster="../../assets/img/poster-chalet1.webp"
+						class="video"
 						src="../../assets/video/chalet-900.mp4"
 					  ></video>
 					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+	<section class="inset single">
+		<div class="container contact">
 			<div class="info">
 				<h2>بلوبلدنقز هي الحل لتصميم مشروعك الخاص و تنفيده.</h2>
 				<h3>راسلنا الآن للطلب و الإستفسار</h3>
@@ -282,7 +318,7 @@
 			<h1>المزيد من المشاريع</h1>
 			<div class="row">
 				<a href="/project/ar/تصميم_فيلا.html">
-					<div class="col" style="background-image: url(/assets/img/class-villa1.webp); background-size: 150% ; background-position: center center ; background-repeat: no-repeat;">
+					<div class="col" style="background-image: url(/assets/img/bgd-class-villa1.webp); background-size: 150% ; background-position: center center ; background-repeat: no-repeat;">
 						<div class="back">
 							<span>فيلا | 350 م²</span><br>
 							<span>عرض</span>
@@ -290,7 +326,7 @@
 					</div>
 				</a>
 				<a href="/project/ar/تصميم_كوفي_شوب.html">
-					<div class="col" style="background-image: url(/assets/img/coffe-shop1.webp); background-size: 150% ; background-position: center center ; background-repeat: no-repeat;">
+					<div class="col" style="background-image: url(/assets/img/bgd-coffe-shop1.webp); background-size: 150% ; background-position: center center ; background-repeat: no-repeat;">
 						<div class="back">
 							<span>مقهى</span><br>
 							<span>عرض</span>
@@ -298,7 +334,7 @@
 					</div>
 				</a>
 				<a href="/project/ar/تصميم_مركز_تجاري.html">
-					<div class="col" style="background-image: url(/assets/img/commerc-buildings.webp); background-size: 150% ; background-position: center center ; background-repeat: no-repeat;">
+					<div class="col" style="background-image: url(/assets/img/bgd-gaming5.webp); background-size: 150% ; background-position: center center ; background-repeat: no-repeat;">
 						<div class="back">
 							<span>مبنى تجاري </span><br>
 							<span>عرض</span>
@@ -306,7 +342,7 @@
 					</div>
 				</a>
 				<a href="/project/ar/تصميم_معماري_خارجي.html">
-					<div class="col" style="background-image: url(/assets/img/exterior1.webp); background-size: 150% ; background-position: center center ; background-repeat: no-repeat;">
+					<div class="col" style="background-image: url(/assets/img/bgd-exterior1.webp); background-size: 150% ; background-position: center center ; background-repeat: no-repeat;">
 						<div class="back">
 							<span>تصميم خارجي</span><br>
 							<span>عرض</span>

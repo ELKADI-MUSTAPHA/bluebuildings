@@ -573,12 +573,14 @@
     }
 
     .inset-description {
-      padding: 3rem 1rem;
+      padding: 3rem 1.5rem 0;
       width: 100%;
-      background-color: #f1f1f1;
+      background-color: #fff;
       margin-top: 0;
     }
-
+    .inset-description .col.info p:last-child{
+      margin-bottom: 0;
+    }
     .services .container .col-2 .col {
       width: 75%;
     }
@@ -588,7 +590,7 @@
     .projects-single {
       height: 100%;
       display: table;
-      background-color: #f1f1f1;
+      background-color: #fff;
     }
     .projects-single h1{
       margin: 0 auto;
@@ -651,7 +653,7 @@
       font-size: 1rem;
     }
     .inset-description .first-info h1{
-      font-size: 1.8rem;
+      font-size: 2.3rem;
     }
     .link-chalet{
       padding: 0 1.5rem;
