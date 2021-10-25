@@ -593,6 +593,12 @@
     .inset-description .col.info p:last-child{
       margin-bottom: 0;
     }
+    .inset-description .col.info ol h3{
+      font-size: 1.6rem;
+    }
+    .inset-description .col.info p:last-child{
+      font-size: 1.2rem;
+    }
     .services .container .col-2 .col {
       width: 75%;
     }

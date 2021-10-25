@@ -1525,6 +1525,7 @@ footer .copyright p span {
   font-weight: bold;
 }
 .inset-description .first-info p {
+  text-align: justify;
   font-size: 22px;
   font-size: 1.4rem;
   line-height: 1.5;
@@ -1540,6 +1541,7 @@ footer .copyright p span {
   color: #636363;
 }
 .inset-description .col.info p {
+  text-align: justify;
   font-size: 22px;
   font-size: 1.4rem;
   line-height: 1.5;
@@ -1553,6 +1555,7 @@ footer .copyright p span {
   margin: 0 0 1rem;
 }
 .inset-description .col.info ul li p {
+  text-align: justify;
   margin: 0 0 3px;
 }
 .inset-description .col.info ol {
