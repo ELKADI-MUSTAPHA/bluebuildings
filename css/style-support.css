@@ -1859,6 +1859,9 @@ footer .copyright p span {
   -ms-flex-align: center;
   align-items: center;
 }
+.flickity-page-dots{
+  display: none;
+}
 .wrapper .wrapper-play {
   position: relative;
   width: 150px;

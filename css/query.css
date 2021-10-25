@@ -214,6 +214,10 @@
     .testmonial .gallery-cell {
       width: 40%;
     }
+    .inset.single .info h2{
+      font-size: 40px;
+      line-height: 50px;
+    }
   }
   @media only screen and (max-width: 870px) {
     .services .container .col-2 .col {
@@ -419,6 +423,14 @@
     }
   }
   @media screen and (max-width: 480px) {
+    #more {display: none;}
+    #myBtn{
+      border: none;
+      background: none;
+      color: #22bcb5;
+      font-size: 1.2rem;
+      margin-top: 0.6rem;
+    }
     #loader .darker .centering h1 {
       font-size: 2rem;
       margin: 1rem auto;
