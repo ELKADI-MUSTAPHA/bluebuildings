@@ -183,6 +183,7 @@ header {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .sc-header {
   width: 100%;
   display: -webkit-box;
@@ -1547,6 +1548,9 @@ footer .copyright p span {
   line-height: 1.5;
   font-weight: 500;
   color: rgb(49, 67, 81);
+}
+.inset-description .col.info a{
+  
 }
 .inset-description .col.info ul {
   padding: 0 0 2rem;
