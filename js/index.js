@@ -20,6 +20,7 @@ const volumeProgressBar = document.querySelector(".volume-progress-filled");
 const playerHover = document.querySelector(".player-overlay");
 const wrapperPlay = document.querySelector(".wrapper-play");
 const playerContainer = document.querySelector(".player-container");
+const videoOpacity = document.querySelector(".video-opacity");
 
 /**
 // global functions
@@ -36,6 +37,8 @@ function playVideo() {
   play.hidden = true;
   pause.hidden = false;
   wrapperPlay.style.display = "none";
+  videoOpacity.style.opacity = "1";
+  playerContainer.style.opacity = "1";
 }
 
 function backwardVideo() {

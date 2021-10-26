@@ -67,17 +67,6 @@
 				background-color: #22bcb4 !important;
 			}
 			@media screen and (max-width:480px) {
-				.banner .row .title-banner .centering {
-					text-align: center;
-				}
-				.banner .row .title-banner h2 {
-					font-size: 1.2rem;
-					width: max-content;
-					letter-spacing: 6px;
-				}
-				.banner .row .title-banner .anime {
-					justify-content: center;
-				}
 				.title-banner .main-wrapper {
 					display: block;
 					position: absolute;
@@ -98,20 +87,6 @@
 				.title-banner .player-container {
 					bottom: 0.2rem;
 				}
-				.title-banner .volume-progress {
-					display: none;
-				}
-				.title-banner .button {
-					width: 32px;
-					height: 32px;
-				}
-				.title-banner .current-time {
-					width: 30px;
-				}
-				.title-banner .time-separator {
-					margin: 0 5px 0 5px;
-				}
-				
 				.wrapper .wrapper-play {
 					position: relative;
 					width: 150px;
@@ -168,7 +143,7 @@
 	  
     </head>
     <body>
-		<div id="loader" class="center">
+		<div id="loader" class="center" style="display: none;">
 			<div class="darker">
 				<div class="centering">
 					<div class="blacker">
@@ -244,9 +219,9 @@
 						<div class="row">
 							<div class="banner-content">
 							  <div class="title-banner">
-								  <div class="centering">
-									  <h3>Welcome to</h3><br>
-									  <h2>The <span class="blue">Blue</span> Buildings</h2>
+								  <div class="centering2">
+									  <h1 class="h1-phone" style="display: block;">We <br>design <br>spaces to make <br>lives better<br>!</h1>
+									  <h2 class="h2-phone">The <span class="blue">Blue</span> Buildings</h2>
 									  <div class="anime">
 										  <span class="anim one">Design</span>
 										  <span class="anim two">Build</span>
@@ -341,14 +316,14 @@
 										</div>
 										<video
 											id="myvid"
-											class="video"
+											class="video video-opacity"
 											src="assets/video/plaza-20000.mp4"
 										></video>
 										</div>
 									</div>
 								</div>
 							  </div>
-								<div class="box">
+								<!-- <div class="box">
 									<div class="content">
 									  <div class="centering">
 										  <h3 class="fst">Build your house</h3>
@@ -360,7 +335,7 @@
 										  </div>
 									  </div>
 								  </div>
-								</div>
+								</div> -->
 						  </div>
 					  </div>
 					</li>
@@ -890,7 +865,7 @@
 		});
 	}
 }
-	if(window.innerWidth <= 480){
+	if(window.innerWidth <= 750){
 		function init() {
 			var imgDefer = document.querySelectorAll('li[data-src]');
 			var style = "background-image: url({url})";
