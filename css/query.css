@@ -58,6 +58,8 @@
     }
     nav ul li a {
       font-size: 20px;
+      color: rgb(97, 103, 111) !important;
+      font-size: 1rem !important;
     }
     nav a.active,
     nav a:hover {
