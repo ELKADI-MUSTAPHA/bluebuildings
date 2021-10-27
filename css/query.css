@@ -379,6 +379,27 @@
       gap: 2rem;
       align-items: center;
     }
+    .inset.why-us .col-1 {
+      flex-direction: inherit;
+      gap: 0;
+      align-items: inherit;
+    }
+    .inset.why-us {
+      padding: 2rem 0;
+    }
+    .inset.why-us .col-1 {
+      margin: 0 auto;
+    }
+    .inset.why-us .col-1 .ft-div{
+      width: 30%;
+    }
+    .inset.why-us .col-1 .sd-div{
+      width: 70%;
+    }
+    .inset.why-us .col-1 .sd-div h2{
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
     .inset .col-1 div{
       width: 90%;
     }
@@ -703,6 +724,9 @@
     .inset-description .col.info ol h3{
       font-size: 1.6rem;
     }
+    .inset.why-us .col-1 .sd-div h2 {
+      font-size: 18px;
+    }
     .services .container .col-2 .col {
       width: 75%;
     }
@@ -914,6 +938,12 @@
       font-size: 1.2rem;
       margin-bottom: 1rem;
       padding: 0 1rem;
+    }
+    .inset.why-us .col-1 .sd-div h2 {
+      font-size: 15px;
+    }
+    .inset.why-us .col-1 .sd-div span {
+      font-size: 12px;
     }
     .projects .row a,
     .projects-single .row a {

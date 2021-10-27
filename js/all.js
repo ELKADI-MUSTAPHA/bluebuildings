@@ -119,6 +119,18 @@ function myFunction3 () {
     moreText.style.display = "none";
   }
 }
+function myFunction4 () {
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (moreText.style.display === "none") {
+    btnText.innerHTML = "عرض أقل"; 
+    moreText.style.display = "block";
+  } else {
+    btnText.innerHTML = "مزيد من المشاريع"; 
+    moreText.style.display = "none";
+  }
+}
 function myFunction2() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
