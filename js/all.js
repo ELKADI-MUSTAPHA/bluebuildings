@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 })
 
-function myFunction() {
+function myFunction () {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("myBtn");
@@ -105,6 +105,18 @@ function myFunction() {
     dots.style.display = "none";
     btnText.innerHTML = "Read less"; 
     moreText.style.display = "inline";
+  }
+}
+function myFunction3 () {
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (moreText.style.display === "none") {
+    btnText.innerHTML = "SHOW LESS"; 
+    moreText.style.display = "block";
+  } else {
+    btnText.innerHTML = "SHOW MORE"; 
+    moreText.style.display = "none";
   }
 }
 function myFunction2() {
