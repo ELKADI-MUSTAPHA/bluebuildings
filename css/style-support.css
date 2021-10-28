@@ -1353,11 +1353,6 @@ label.logo img {
   color: #7c888d;
 }
 
-.contact label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-  color: #222;
-}
 .contact input[type="submit"] {
   background-color: transparent;
   color: #22bcb4;
@@ -1375,11 +1370,6 @@ label.logo img {
 .contact input[type="submit"]:hover {
   background-color: #22bcb4;
   color: white;
-}
-.contact .col-25 {
-  width: 100%;
-  margin-top: 6px;
-  text-align: left;
 }
 .contact .col-75 {
   width: 100%;
@@ -1406,75 +1396,7 @@ label.logo img {
 .sec-two .col {
   width: 100%;
 }
-.sec-two .col.first {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-}
-.sec-two .col.first a {
-  font-size: 40px;
-  font-size: 2.5rem;
-  color: #474747;
-  margin: 16px;
-  margin: 1rem;
-  line-height: 0.5;
-  width: 140px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 140px;
-  border-radius: 50%;
-  background-color: #22bcb4;
-}
-.sec-two .col.first a:hover i {
-  -webkit-animation: moveIt 0.3s;
-  animation: moveIt 0.3s;
-}
-@-webkit-keyframes moveIt {
-  0% {
-    -webkit-transform: rotate(20deg);
-    transform: rotate(20deg);
-  }
-  50% {
-    -webkit-transform: rotate(-20deg);
-    transform: rotate(-20deg);
-  }
-  100% {
-    -webkit-transform: rotate(20deg);
-    transform: rotate(20deg);
-  }
-}
-@keyframes moveIt {
-  0% {
-    -webkit-transform: rotate(20deg);
-    transform: rotate(20deg);
-  }
-  50% {
-    -webkit-transform: rotate(-20deg);
-    transform: rotate(-20deg);
-  }
-  100% {
-    -webkit-transform: rotate(20deg);
-    transform: rotate(20deg);
-  }
-}
-.sec-two .col.first a i {
-  color: #fff;
-}
-.sec-two .col.first a span {
-  font-size: 19.2px;
-  font-size: 1.2rem;
-  color: #fff;
-}
+
 .sec-two iframe {
   width: 100%;
   min-height: 350px;
@@ -1487,9 +1409,7 @@ label.logo img {
   font-size: 64px;
   font-size: 4rem;
 }
-/* .btm-links{
-  display: none;
-} */
+
 .btm-links{
   display: block;
   background-color: #25d2c9;
