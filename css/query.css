@@ -725,7 +725,7 @@
       font-size: 1.6rem;
     }
     .inset.why-us .col-1 .sd-div h2 {
-      font-size: 18px;
+      font-size: 24px;
     }
     .services .container .col-2 .col {
       width: 75%;
@@ -849,6 +849,13 @@
       font-size: 30px;
       line-height: 40px;
     }
+    .inset.why-us .col-1 .ft-div {
+      display: none;
+    }
+    .inset.why-us .col-1 .sd-div {
+      width: 100%;
+      padding: 2rem 0;
+    }
     .testmonial {
       width: 100%;
       padding: 2rem 0 0;
@@ -939,19 +946,11 @@
       margin-bottom: 1rem;
       padding: 0 1rem;
     }
-    .inset.why-us .col-1 .sd-div h2 {
-      font-size: 15px;
-    }
-    .inset.why-us .col-1 .sd-div span {
-      font-size: 12px;
-    }
     .projects .row a,
     .projects-single .row a {
       width: 90%;
       margin: 0.3rem 0;
     }
-  
-
     .services .container .col-2 .col {
       width: 95%;
     }
