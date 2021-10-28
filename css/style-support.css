@@ -747,6 +747,7 @@ label.logo img {
   width: 40%;
 }
 .inset.why-us .col-1 .sd-div{
+  padding: 1rem 2rem;
   width: 60%;
   text-align: center;
   display: flex;
