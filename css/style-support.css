@@ -363,7 +363,7 @@ label.logo img {
 .carousel {
   height: 90vh;
   min-height: 450px;
-  max-height: 450px;
+  max-height: 550px;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -633,14 +633,14 @@ label.logo img {
   align-items: center;
   justify-content: center;
 }
-@media only screen and (min-width: 750px) {
+/* @media only screen and (min-width: 750px) { */
   .main-wrapper .video-opacity{
     opacity: 0;
   }
   .title-banner .main-wrapper .player-container{
     opacity: 0;
   }
-}
+/* } */
 #background-video {
   max-width: 1300px;
   width: 100%;

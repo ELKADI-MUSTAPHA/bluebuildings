@@ -307,9 +307,9 @@
       width: 70%;
       margin: 0 auto !important;
     }
-    .carousel {
+    /* .carousel {
       height: 310px;
-    }
+    } */
     .carousel__slide {
       background-color: #535353;
     }
