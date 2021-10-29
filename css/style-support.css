@@ -758,14 +758,14 @@ label.logo img {
 }
 .inset.why-us .col-1 .sd-div h2{
   font-size: 24px;
+  margin-bottom: 0;
+  padding: 0;
 }
 .inset.why-us .col-1 .sd-div .quote{
-  margin: 2rem auto 0;
+  margin: 1rem auto 0;
   color: #ffffff;
-  /* background-color: white; */
   padding: 1rem 1.5rem;
   font-weight: 600;
-  /* border: 2px solid #1b8b8a; */
   position: relative;	
   transition: all 0.5s;
 }
