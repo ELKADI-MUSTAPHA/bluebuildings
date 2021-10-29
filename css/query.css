@@ -395,6 +395,11 @@
     }
   }
   @media only screen and (min-width: 700px) {
+    .inset.why-us .col-1 .sd-div {
+      padding: 2rem 0;
+    }
+  }
+  @media only screen and (min-width: 700px) {
     .whatsapp:hover .span-wts {
       display: block !important;
     }

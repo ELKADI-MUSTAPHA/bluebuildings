@@ -747,6 +747,7 @@ label.logo img {
   width: 40%;
 }
 .inset.why-us .col-1 .sd-div{
+  padding: 1rem 2rem;
   width: 60%;
   text-align: center;
   display: flex;
@@ -1349,6 +1350,10 @@ label.logo img {
 .btm-links .socials li a {
   color: white;
 }
+.btm-links .socials li a i {
+  font-size: 1.7rem;
+  margin: 0 0.8rem;
+}
 footer{
   background-color: #031b1a;
 }
@@ -1387,7 +1392,7 @@ footer .row .col-3 ul {
   padding: 0;
 }
 footer .row .col-3 h3 {
-  color: white;
+  color: #eee;
   font-size: 22.4px;
   font-size: 1.4rem;
 }
@@ -1397,7 +1402,7 @@ footer .row .col-3 ul li {
 footer .social1 p {
   text-align: left;
   line-height: 30px;
-  color: white;
+  color: #eee;
 }
 footer .social {
   display: -webkit-box;
@@ -1408,19 +1413,19 @@ footer .social li {
   margin: 15px;
 }
 footer .info li {
-  color: white;
+  color: #eee;
   margin: 15px auto;
 }
 footer .info li p {
   text-align: left;
-  color: white;
+  color: #eee;
 }
 footer .quick-links li {
   margin: 15px 0;
 }
 footer .quick-links li a {
   font-size: 18px;
-  color: white;
+  color: #eee;
 }
 footer .copyright {
   width: 100%;
@@ -1431,10 +1436,10 @@ footer .copyright h1, footer .copyright h3 {
 }
 footer .copyright p {
   margin: 50px auto 20px;
-  color: white;
+  color: #eee;
 }
 footer .copyright p span {
-  color: white;
+  color: #eee;
   font-weight: 700;
 }
 .banner-single {
