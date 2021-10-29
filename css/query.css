@@ -388,6 +388,9 @@
     .inset-description {
       width: 85%;
     }
+    .inset.why-us .col-1 .sd-div{
+        padding: 2rem 0;
+    }
     .projects .row a .col .back span:last-child,
     .projects-single .row a .col .back span:last-child {
       opacity: 1;
