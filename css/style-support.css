@@ -1034,7 +1034,7 @@ label.logo img {
 .projects .row .div-show-btn .show-more:hover {
   color: #03534f;
 }
-.projects .row #more {
+#more {
   display: none;
 }
 .services {
@@ -1971,7 +1971,7 @@ footer .copyright p span {
 .inset.single .info .contact-us a:hover{
     background-color: white;
 }
-#more {display: none;}
+/* #more {display: none;} */
 #myBtn{
   border: none;
   background: none;
