@@ -502,10 +502,10 @@
       margin-bottom: 1rem;
     }
     .services .container .col-2 .col h2 {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
     .services .container .col-2 .col .padd p {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
   }
   @media screen and (max-width: 480px) {
@@ -758,8 +758,9 @@
     .contact .darker {
       padding: 3rem 0 0;
     }
-    .contact .sec-two {
+    .sec-two {
       margin-bottom: 0;
+      padding: 2rem 0.5rem;
     }
     .btm-links{
       display: block;
