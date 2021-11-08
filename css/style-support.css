@@ -557,7 +557,7 @@ label.logo img {
 .banner.carousel__slide .centering2 h1{
   display: block;
   color: white;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bolder;
   font-family: 'Roboto';
 }
@@ -933,6 +933,7 @@ label.logo img {
   width: 90%;
   margin: 32px auto 0;
   margin: 2rem auto 0;
+  padding: 0 0 3rem;
 }
 .projects .row a {
   width: 29%;
