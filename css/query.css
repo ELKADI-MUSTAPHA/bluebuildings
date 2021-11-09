@@ -758,6 +758,12 @@
     .inset.single {
       padding: 20px 10px;
     }
+    .inset.single .container .col {
+      min-height: 350px;
+    }
+    .inset.single .gallery-cell {
+      height: 350px;
+    }
     .inset.single .info h3 {
       color: rgb(63, 63, 63);
       font-size: 20.8px;
